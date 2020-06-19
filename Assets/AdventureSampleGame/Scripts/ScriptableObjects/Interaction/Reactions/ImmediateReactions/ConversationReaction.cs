@@ -7,6 +7,7 @@ using DialogueEditor;
 public class ConversationReaction : Reaction
 {
     public NPCConversation conversation;                        // Reference to the NPC conversation component.
+    public Cinemachine.CinemachineVirtualCamera cutsceneCamera;
 
     private ConversationManager conversationManager;            // Reference to the component that take the conversation.
 
@@ -19,6 +20,21 @@ public class ConversationReaction : Reaction
 
     protected override void ImmediateReaction()
     {
-        conversationManager.StartConversation(conversation);
+        ConversationManager.OnConversationStarted += ChangeToEventCamera;
+        ConversationManager.OnConversationEnded += ChangeToMainCamera;
+        conversationManager.StartConversation(conversation);        
     }
+
+    private void ChangeToEventCamera()
+    {
+        cutsceneCamera.enabled = true;
+    }
+
+    private void ChangeToMainCamera()
+    {
+        cutsceneCamera.enabled = false;
+        ConversationManager.OnConversationStarted -= ChangeToEventCamera;
+        ConversationManager.OnConversationEnded -= ChangeToMainCamera;
+    }
+
 }

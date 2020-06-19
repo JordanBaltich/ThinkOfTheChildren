@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using DialogueEditor;
 using UnityEngine;
 
 public class CameraControl : MonoBehaviour
@@ -8,11 +10,14 @@ public class CameraControl : MonoBehaviour
     public Vector3 offset = new Vector3 (0f, 1.5f, 0f); // The offset from the player's position that the camera aims at.
     public Transform playerPosition;                    // Reference to the player's Transform to aim at.
 
+    public GameObject EventVCAM;
+    
 
     private IEnumerator Start ()
     {
+        
         // If the camera shouldn't move, do nothing.
-        if(!moveCamera)
+        if (!moveCamera)
             yield break;
 
         // Wait a single frame to ensure all other Starts are called first.
@@ -20,7 +25,11 @@ public class CameraControl : MonoBehaviour
 
         // Set the rotation of the camera to look at the player's position with a given offset.
         transform.rotation = Quaternion.LookRotation(playerPosition.position - transform.position + offset);
+
+        
     }
+
+
 
 
     // LateUpdate is used so that all position updates have happened before the camera aims.
@@ -36,4 +45,6 @@ public class CameraControl : MonoBehaviour
         // Spherically interpolate between the camera's current rotation and the new rotation.
         transform.rotation = Quaternion.Slerp (transform.rotation, newRotation, Time.deltaTime * smoothing);
     }
+
+
 }

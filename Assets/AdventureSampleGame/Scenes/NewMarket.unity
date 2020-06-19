@@ -397,7 +397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &364267330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364267329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
@@ -445,8 +445,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1731935810}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 876931017}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &389734730 stripped
 MonoBehaviour:
@@ -473,6 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation: {fileID: 876931016}
+  cutsceneCamera: {fileID: 364267330}
 --- !u!1001 &555740646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -790,9 +791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":39.5,"yPos":73},"ID":0,"TMPFontGUID":null,"Text":"\"Listen,
-    man, you''re products are no good.\"","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Customer","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0.1,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":37.5,"yPos":180},"ID":1,"TMPFontGUID":null,"Text":"\"You
-    come back to my stand and insult my goods. What do you expect, a refund?\"","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Shopkeeper","OptionUIDs":[],"SpeechUID":2,"TimeUntilAdvance":0.1,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":38.5,"yPos":285},"ID":2,"TMPFontGUID":null,"Text":"\"No
+  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":41,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"\"Listen,
+    man, you''re products are no good.\"","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Customer","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0.1,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":38,"yPos":130},"ID":1,"TMPFontGUID":null,"Text":"\"You
+    come back to my stand and insult my goods. What do you expect, a refund?\"","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Shopkeeper","OptionUIDs":[],"SpeechUID":2,"TimeUntilAdvance":0.1,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":40,"yPos":235},"ID":2,"TMPFontGUID":null,"Text":"\"No
     refund for you. Now, scram!\"","parentUIDs":[1,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Shopkeeper","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0.1,"Volume":0.194}]}'
   saveVersion: 103
   DefaultName: Customer/Shopkeeper
@@ -804,18 +805,7 @@ MonoBehaviour:
   - {fileID: 918545515}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 364267329}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &876931017
 Transform:
   m_ObjectHideFlags: 0
@@ -828,6 +818,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 918545516}
+  - {fileID: 364267331}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -865,19 +856,8 @@ MonoBehaviour:
   NodeID: 2
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 364267329}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  TMPFont: {fileID: 11400000, guid: 4422fd8cf2666b84386346b5283ad2a7, type: 2}
+      m_Calls: []
+  TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 8300000, guid: d18f058921ed94b17847871c11f8c9da, type: 3}
 --- !u!4 &918545516
@@ -1001,15 +981,15 @@ PrefabInstance:
       objectReference: {fileID: 544490205}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 389734730}
+      objectReference: {fileID: 1173830522}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnGroundClick
+      value: React
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1017,7 +997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1025,15 +1005,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 364267329}
+      objectReference: {fileID: 389734730}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: OnGroundClick
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1065,6 +1045,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17782,6 +17766,7 @@ GameObject:
   - component: {fileID: 1191693235}
   - component: {fileID: 1202403642}
   - component: {fileID: 1202403643}
+  - component: {fileID: 1202403645}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -17808,7 +17793,7 @@ MonoBehaviour:
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
-    m_Style: 1
+    m_Style: 0
     m_Time: 2
     m_CustomCurve:
       serializedVersion: 2
@@ -17862,6 +17847,23 @@ RectTransform:
   m_AnchoredPosition: {x: -4.8851113, y: 3.55}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1202403645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202403641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740e682d67841cb4ca4620d2bee866b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveCamera: 0
+  smoothing: 7
+  offset: {x: 0, y: 1.5, z: 0}
+  playerPosition: {fileID: 0}
+  EventVCAM: {fileID: 364267329}
 --- !u!1 &1202403841
 GameObject:
   m_ObjectHideFlags: 0
@@ -25395,7 +25397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000014075459501
 GameObject:
   m_ObjectHideFlags: 0
