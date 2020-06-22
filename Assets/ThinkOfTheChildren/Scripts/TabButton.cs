@@ -15,7 +15,7 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
     public Image background;
 
     public UnityEvent onTabSelected;
-    public UnityEvent deTabSelected;
+    public UnityEvent onTabDeselected;
 
     // Start is called before the first frame update
     void Start()
@@ -49,9 +49,9 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
 
     public void Deselect()
     {
-        if (deTabSelected != null)
+        if (onTabDeselected != null)
         {
-            deTabSelected.Invoke();
+            onTabDeselected.Invoke();
         }
     }
 }
