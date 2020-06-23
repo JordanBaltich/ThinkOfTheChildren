@@ -13,7 +13,7 @@ public class SlideTo : MonoBehaviour
 
     public bool tabsIsOpen;
 
-    public float speed;
+    public float slideSpeed;
 
     private void Start()
     {
@@ -45,15 +45,16 @@ public class SlideTo : MonoBehaviour
     public void Open()
     {
         tabsIsOpen = true;
+        iTween.MoveTo(folder, openPos.position, slideSpeed);
         SpawnCloseArea();
-        transform.position = openPos.position;
         
     }
 
     public void Close()
     {
         tabsIsOpen = false;
+        iTween.MoveTo(folder, closePos.position, slideSpeed);
         exitButton.SetActive(false);
-        transform.position = closePos.position;
+
     }
 }
