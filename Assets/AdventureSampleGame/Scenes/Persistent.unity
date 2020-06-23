@@ -247,17 +247,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b42d73cbc95594794ae08fa663b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoDescription:
-  - {fileID: 413519109}
-  - {fileID: 1354835993}
-  - {fileID: 1852011010}
-  - {fileID: 392003785}
-  keyInfo:
+  keyInfos:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  keyInfoDisplays:
+  - {fileID: 413519111}
+  - {fileID: 1354835995}
+  - {fileID: 1852011012}
+  - {fileID: 392003787}
   journalGameObject: {fileID: 635991385}
+  journalIsDisplayed: 0
+  scrollSpeed: 2
 --- !u!114 &313547318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +411,7 @@ GameObject:
   - component: {fileID: 392003784}
   - component: {fileID: 392003786}
   - component: {fileID: 392003785}
+  - component: {fileID: 392003787}
   m_Layer: 5
   m_Name: Text (3)
   m_TagString: Untagged
@@ -554,6 +557,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392003783}
   m_CullTransparentMesh: 0
+--- !u!114 &392003787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392003783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe625030a1a06b4aa4d12904f411791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoDescription: {fileID: 0}
+  ScrollSpeed: 2
+  m_targetScrollTextCount: 0
 --- !u!1 &413519107
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +583,7 @@ GameObject:
   - component: {fileID: 413519108}
   - component: {fileID: 413519110}
   - component: {fileID: 413519109}
+  - component: {fileID: 413519111}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -710,6 +729,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413519107}
   m_CullTransparentMesh: 0
+--- !u!114 &413519111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413519107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe625030a1a06b4aa4d12904f411791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoDescription: {fileID: 0}
+  ScrollSpeed: 2
+  m_targetScrollTextCount: 0
 --- !u!1001 &523830080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1481,6 +1515,7 @@ GameObject:
   - component: {fileID: 1354835992}
   - component: {fileID: 1354835994}
   - component: {fileID: 1354835993}
+  - component: {fileID: 1354835995}
   m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
@@ -1626,6 +1661,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354835991}
   m_CullTransparentMesh: 0
+--- !u!114 &1354835995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354835991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe625030a1a06b4aa4d12904f411791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoDescription: {fileID: 0}
+  ScrollSpeed: 2
+  m_targetScrollTextCount: 0
 --- !u!1 &1411155650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2105,7 @@ GameObject:
   - component: {fileID: 1852011009}
   - component: {fileID: 1852011011}
   - component: {fileID: 1852011010}
+  - component: {fileID: 1852011012}
   m_Layer: 5
   m_Name: Text (2)
   m_TagString: Untagged
@@ -2200,6 +2251,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852011008}
   m_CullTransparentMesh: 0
+--- !u!114 &1852011012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852011008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe625030a1a06b4aa4d12904f411791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoDescription: {fileID: 0}
+  ScrollSpeed: 2
+  m_targetScrollTextCount: 0
 --- !u!1001 &1878583914
 PrefabInstance:
   m_ObjectHideFlags: 0
