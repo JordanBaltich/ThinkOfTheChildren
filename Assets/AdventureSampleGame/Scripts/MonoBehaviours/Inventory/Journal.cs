@@ -36,6 +36,7 @@ public class Journal : MonoBehaviour
                 keyInfo[i] = infoToAdd;
                 infoDescription[i].text = infoToAdd.Description;
                 infoDescription[i].enabled = true;
+                journalGameObject.SetActive(true);
                 return;
             }
         }
