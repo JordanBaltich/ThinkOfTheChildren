@@ -56,6 +56,7 @@ namespace DialogueEditor
         public UIConversationButton ButtonPrefab;
         // Default values
         public Sprite BlankSprite;
+        public NPCConversation dummyCon;
 
         // Getter properties
         public bool IsConversationActive
@@ -104,6 +105,8 @@ namespace DialogueEditor
             NpcIcon.sprite = BlankSprite;
             DialogueText.text = "";
             TurnOffUI();
+            StartConversation(dummyCon);
+            EndConversation();
         }
 
         private void OnDestroy()

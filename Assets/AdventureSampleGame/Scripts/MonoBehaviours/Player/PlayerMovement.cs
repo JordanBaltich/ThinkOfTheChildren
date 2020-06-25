@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using DialogueEditor;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -34,7 +36,10 @@ public class PlayerMovement : MonoBehaviour
     private const float stopDistanceProportion = 0.1f;
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
-                                                // The maximum distance from the nav mesh a click can be to be accepted.
+
+    private bool canMove = true;
+
+    // The maximum distance from the nav mesh a click can be to be accepted.
 
 
     private void Start()
@@ -57,8 +62,20 @@ public class PlayerMovement : MonoBehaviour
         }
         // Set the initial destination as the player's current position.
         destinationPosition = transform.position;
+
+        ConversationManager.OnConversationStarted += DisableMoving;
+        ConversationManager.OnConversationEnded += EnableMoving;
     }
 
+    private void EnableMoving()
+    {
+        canMove = true;
+    }
+
+    private void DisableMoving()
+    {
+        canMove = false;
+    }
 
     private void OnAnimatorMove()
     {
@@ -158,6 +175,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // If the handle input flag is set to false then do nothing.
         if(!handleInput)
+            return;
+
+        if (!canMove)
             return;
         
         // The player is no longer headed for an interactable so set it to null.
