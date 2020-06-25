@@ -14,10 +14,10 @@ public class LinkToMap : MonoBehaviour
 
     private void Awake()
     {
-        myRectTransform = GetComponent<RectTransform>();
-        myImage = GetComponent<Image>();
-        linkedTransform = GameObject.Find(linkedObjectName).transform;
-        myRectTransform.position = new Vector3(linkedTransform.position.x, linkedTransform.position.z, 0);
+        //myRectTransform = GetComponent<RectTransform>();
+        //myImage = GetComponent<Image>();
+        //linkedTransform = GameObject.Find(linkedObjectName).transform;
+        //myRectTransform.position = new Vector3(linkedTransform.position.x, linkedTransform.position.z, 0);
     }
 
     private void Start()
@@ -28,6 +28,9 @@ public class LinkToMap : MonoBehaviour
 
     private void OnEnable()
     {
+        myRectTransform = GetComponent<RectTransform>();
+        myImage = GetComponent<Image>();
+        linkedTransform = GameObject.Find(linkedObjectName).transform;
         myRectTransform.position = new Vector3(linkedTransform.position.x, linkedTransform.position.z, 0);
     }
 

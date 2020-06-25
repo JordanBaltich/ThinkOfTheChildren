@@ -28,7 +28,6 @@ public class MapController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(myRectTransform.localScale.x);
 
         if (Input.mouseScrollDelta.y != 0)
         {
