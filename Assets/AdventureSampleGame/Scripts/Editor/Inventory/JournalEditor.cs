@@ -5,19 +5,20 @@ using UnityEditor;
 public class JournalEditor : Editor
 {
     private bool[] showInfoSlots = new bool[Journal.numInfoSlots];    // Whether the GUI for each Item slot is expanded.
-    private SerializedProperty infoDescriptionProperty;                      // Represents the array of Image components to display the Items.
+    private SerializedProperty textDisplayProperty;                // Represents the array of Image components to display the Items.
     private SerializedProperty infoProperty;                           // Represents the array of Items.
+    //private SerializedProperty infoDisplayProperty;
 
-
-    private const string journalPropInfoDescriptionName = "infoDescription";    // The name of the field that is an array of Image components.
-    private const string journalPropInfoName = "keyInfo";              // The name of the field that is an array of Items.
-
+    private const string journalProptextDisplayName = "keyInfoDisplays";    // The name of the field that is an array of Image components.
+    private const string journalPropInfoName = "keyInfos";              // The name of the field that is an array of Items.
+    //private const string journalPropInfoDisplayName = "keyInfoDisplays";
 
     private void OnEnable ()
     {
         // Cache the SerializedProperties.
-        infoDescriptionProperty = serializedObject.FindProperty (journalPropInfoDescriptionName);
+        textDisplayProperty = serializedObject.FindProperty (journalProptextDisplayName);
         infoProperty = serializedObject.FindProperty (journalPropInfoName);
+        //infoDisplayProperty = serializedObject.FindProperty(journalPropInfoDisplayName);
     }
 
 
@@ -48,7 +49,7 @@ public class JournalEditor : Editor
         // If the foldout is open then display default GUI for the specific elements in each array.
         if (showInfoSlots[index])
         {
-            EditorGUILayout.PropertyField (infoDescriptionProperty.GetArrayElementAtIndex (index));
+            EditorGUILayout.PropertyField (textDisplayProperty.GetArrayElementAtIndex (index));
             EditorGUILayout.PropertyField (infoProperty.GetArrayElementAtIndex (index));
         }
 

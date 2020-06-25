@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float slowingSpeed = 0.175f;         // The speed the player moves as it reaches close to it's destination.
     public float turnSpeedThreshold = 0.5f;     // The speed beyond which the player can move and turn normally.
     public float inputHoldDelay = 0.5f;         // How long after reaching an interactable before input is allowed again.
-    
+    public bool ignoreSaveData;
 
     private Interactable currentInteractable;   // The interactable that is currently being headed towards.
     private Vector3 destinationPosition;        // The position that is currently being headed towards, this is the interactionLocation of the currentInteractable if it is not null.
@@ -44,16 +44,17 @@ public class PlayerMovement : MonoBehaviour
 
         // Create the wait based on the delay.
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
+        if (!ignoreSaveData)
+        {
+            // Load the starting position from the save data and find the transform from the starting position's name.
+            string startingPositionName = "";
+            playerSaveData.Load(startingPositionKey, ref startingPositionName);
+            Transform startingPosition = StartingPosition.FindStartingPosition(startingPositionName);
 
-        // Load the starting position from the save data and find the transform from the starting position's name.
-        string startingPositionName = "";
-        playerSaveData.Load(startingPositionKey, ref startingPositionName);
-        Transform startingPosition = StartingPosition.FindStartingPosition(startingPositionName);
-
-        // Set the player's position and rotation based on the starting position.
-        transform.position = startingPosition.position;
-        transform.rotation = startingPosition.rotation;
-
+            // Set the player's position and rotation based on the starting position.
+            transform.position = startingPosition.position;
+            transform.rotation = startingPosition.rotation;
+        }
         // Set the initial destination as the player's current position.
         destinationPosition = transform.position;
     }
