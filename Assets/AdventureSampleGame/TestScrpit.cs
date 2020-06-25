@@ -15,13 +15,13 @@ public class TestScrpit : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.K))
         {
-            //reaction.React();
-            interact.Interact();
+            reaction.React();
+            //interact.Interact();
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            //journal.ScrapNote(testKeyInfo);
+            journal.ScrapNote(testKeyInfo);
         }
     }
 
