@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource voice, effects, music, ambient;
-    [SerializeField] AudioClip[] voiceClips, effectsClips, musicClips, ambientClips;
+    [SerializeField] AudioSource voice, effects, music, ambient, UI;
+    [SerializeField] AudioClip[] voiceClips, effectsClips, musicClips, ambientClips, UIClips;
 
     void PlayVoiceClip(int index)
     {
