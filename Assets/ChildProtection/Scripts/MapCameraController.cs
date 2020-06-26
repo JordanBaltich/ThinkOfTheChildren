@@ -20,11 +20,13 @@ public class MapCameraController : MonoBehaviour
     {
         transform.position = new Vector3(playerIconPosition.position.x, transform.position.y, playerIconPosition.position.z);
         StopTime(true);
+        AudioManager.Instance.PlayMusicClip(0);
     }
 
     private void OnDisable()
     {
         StopTime(false);
+        AudioManager.Instance.StopMusic();
     }
 
     // Update is called once per frame
