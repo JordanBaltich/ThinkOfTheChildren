@@ -34,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
     private const float stopDistanceProportion = 0.1f;
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
-                                                // The maximum distance from the nav mesh a click can be to be accepted.
+
+    public bool AcceptingOnMove;
+
+    // The maximum distance from the nav mesh a click can be to be accepted.
 
 
     private void Start()
@@ -59,13 +62,14 @@ public class PlayerMovement : MonoBehaviour
         destinationPosition = transform.position;
     }
 
-
     private void OnAnimatorMove()
     {
+        if(AcceptingOnMove)
             // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
             agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
 
+    
 
     private void Update()
     {

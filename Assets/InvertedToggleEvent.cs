@@ -19,3 +19,4 @@ public class InvertedToggleEvent : MonoBehaviour
         GetComponent<Toggle>().onValueChanged.AddListener((on) => { onValueChangedInverse.Invoke(!on); });
     }
 }
+
