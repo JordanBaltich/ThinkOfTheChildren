@@ -12,5 +12,11 @@ public class ChangeScene : MonoBehaviour
         {
             SceneManager.LoadScene(5);
         }
+      
+        /*if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(4);
+        }*/
     }
+    
 }
