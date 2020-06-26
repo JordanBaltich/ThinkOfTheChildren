@@ -7,7 +7,7 @@ public class MapCameraController : MonoBehaviour
 {
     [SerializeField] float scaleSpeed, maxScale, minScale, mouseDragSpeed;
     RectTransform myRectTransform;
-    [SerializeField] RectTransform playerIconPosition;
+    [SerializeField] Transform playerIconPosition;
 
     CinemachineVirtualCamera myCamera;
 
@@ -18,7 +18,13 @@ public class MapCameraController : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.localPosition = playerIconPosition.localPosition;
+        transform.position = new Vector3(playerIconPosition.position.x, transform.position.y, playerIconPosition.position.z);
+        StopTime(true);
+    }
+
+    private void OnDisable()
+    {
+        StopTime(false);
     }
 
     // Update is called once per frame
@@ -28,7 +34,7 @@ public class MapCameraController : MonoBehaviour
 
         if (Input.mouseScrollDelta.y != 0)
         {
-            myCamera.m_Lens.FieldOfView += -Input.mouseScrollDelta.y * scaleSpeed * Time.deltaTime;
+            myCamera.m_Lens.FieldOfView += -Input.mouseScrollDelta.y * scaleSpeed * Time.unscaledDeltaTime;
 
             myCamera.m_Lens.FieldOfView = Mathf.Clamp(myCamera.m_Lens.FieldOfView, minScale, maxScale);
         }
@@ -42,5 +48,18 @@ public class MapCameraController : MonoBehaviour
 
             transform.position += inputDirection * mouseDragSpeed * Time.unscaledDeltaTime;
         }
+    }
+
+    public void StopTime(bool timeStopped)
+    {
+        if (timeStopped)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+        
     }
 }
