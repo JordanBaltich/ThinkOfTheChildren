@@ -173,6 +173,7 @@ public class PlayerMovement : MonoBehaviour
     // This is called when the player is moving normally.  In such cases the player is moved by the nav mesh agent, but rotated by this function.
     private void Moving ()
     {
+
         // Create a rotation looking down the nav mesh agent's desired velocity.
         Quaternion targetRotation = Quaternion.LookRotation(agent.desiredVelocity);
 
