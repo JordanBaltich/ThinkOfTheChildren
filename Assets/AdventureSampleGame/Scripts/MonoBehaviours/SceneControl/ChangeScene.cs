@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-
+   // GameObject player;
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.name == "Player")
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(3);
         }
       
         /*if (other.CompareTag("Player"))
