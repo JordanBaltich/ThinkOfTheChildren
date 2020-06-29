@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
 
+    public bool AcceptingOnMove;
     private bool canMove = true;
 
     // The maximum distance from the nav mesh a click can be to be accepted.
@@ -79,32 +80,42 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
-        agent.velocity = animator.deltaPosition / Time.deltaTime;
+        if(AcceptingOnMove)
+            // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
+            agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
+
 
 
     private void Update()
     {
-        // If the nav mesh agent is currently waiting for a path, do nothing.
-        if (agent.pathPending)
-            return;
+        if (agent.enabled)
+        {
+            // If the nav mesh agent is currently waiting for a path, do nothing.
+            if (agent.pathPending)
+                return;
 
-        // Cache the speed that nav mesh agent wants to move at.
-        float speed = agent.desiredVelocity.magnitude;
-        
-        // If the nav mesh agent is very close to it's destination, call the Stopping function.
-        if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
-            Stopping (out speed);
-        // Otherwise, if the nav mesh agent is close to it's destination, call the Slowing function.
-        else if (agent.remainingDistance <= agent.stoppingDistance)
-            Slowing(out speed, agent.remainingDistance);
-        // Otherwise, if the nav mesh agent wants to move fast enough, call the Moving function.
-        else if (speed > turnSpeedThreshold)
-            Moving ();
-        
-        // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
-        animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+            // Cache the speed that nav mesh agent wants to move at.
+            float speed = agent.desiredVelocity.magnitude;
+
+            // If the nav mesh agent is very close to it's destination, call the Stopping function.
+            if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
+                Stopping(out speed);
+            // Otherwise, if the nav mesh agent is close to it's destination, call the Slowing function.
+            else if (agent.remainingDistance <= agent.stoppingDistance)
+                Slowing(out speed, agent.remainingDistance);
+            // Otherwise, if the nav mesh agent wants to move fast enough, call the Moving function.
+            else if (speed > turnSpeedThreshold)
+                Moving();
+
+            // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
+            animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+        }
+        else
+        {
+            agent.SetDestination(transform.position);
+        }
+
     }
 
 
@@ -179,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!canMove)
             return;
-        
+
         // The player is no longer headed for an interactable so set it to null.
         currentInteractable = null;
 
