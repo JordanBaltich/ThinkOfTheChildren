@@ -26,6 +26,7 @@ namespace DialogueEditor
         [SerializeField] private int saveVersion;
         [SerializeField] public string DefaultName;
         [SerializeField] public Sprite DefaultSprite;
+        [SerializeField] public Transform DefaultNPCCameraTarget;
         [SerializeField] public TMPro.TMP_FontAsset DefaultFont;
         [FormerlySerializedAs("Events")]
         [SerializeField] private List<NodeEventHolder> NodeSerializedDataList;

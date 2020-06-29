@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using DialogueEditor;
 
 // This is one of the core features of the game.
 // Each one acts like a hub for all things that transpire
@@ -14,10 +15,30 @@ public class Interactable : MonoBehaviour
                                                             // All the different Conditions and relevant Reactions that can happen based on them.
     public ReactionCollection defaultReactionCollection;    // If none of the ConditionCollections are reacted to, this one is used.
 
+    private bool canInteract = true;
+
+    private void Start()
+    {
+        ConversationManager.OnConversationStarted += DisableInteraction;
+        ConversationManager.OnConversationEnded += EnableInteraction;
+    }
+
+    private void EnableInteraction()
+    {
+        canInteract = true;
+    }
+
+    private void DisableInteraction()
+    {
+        canInteract = false;
+    }
 
     // This is called when the player arrives at the interactionLocation.
     public void Interact ()
     {
+        if (!canInteract)
+            return;
+
         // Go through all the ConditionCollections...
         for (int i = 0; i < conditionCollections.Length; i++)
         {

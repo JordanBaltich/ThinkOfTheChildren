@@ -27,12 +27,12 @@ public class ConversationReaction : Reaction
 
     private void ChangeToEventCamera()
     {
-        cutsceneCamera.enabled = true;
+        //cutsceneCamera.enabled = true;
     }
 
     private void ChangeToMainCamera()
     {
-        cutsceneCamera.enabled = false;
+        //cutsceneCamera.enabled = false;
         ConversationManager.OnConversationStarted -= ChangeToEventCamera;
         ConversationManager.OnConversationEnded -= ChangeToMainCamera;
     }
