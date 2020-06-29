@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float slowingSpeed = 0.175f;         // The speed the player moves as it reaches close to it's destination.
     public float turnSpeedThreshold = 0.5f;     // The speed beyond which the player can move and turn normally.
     public float inputHoldDelay = 0.5f;         // How long after reaching an interactable before input is allowed again.
-    
+    public bool ignoreSaveData;
 
     private Interactable currentInteractable;   // The interactable that is currently being headed towards.
     private Vector3 destinationPosition;        // The position that is currently being headed towards, this is the interactionLocation of the currentInteractable if it is not null.
@@ -34,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
     private const float stopDistanceProportion = 0.1f;
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
-                                                // The maximum distance from the nav mesh a click can be to be accepted.
+
+    public bool AcceptingOnMove;
+
+    // The maximum distance from the nav mesh a click can be to be accepted.
 
 
     private void Start()
@@ -44,49 +47,59 @@ public class PlayerMovement : MonoBehaviour
 
         // Create the wait based on the delay.
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
+        if (!ignoreSaveData)
+        {
+            // Load the starting position from the save data and find the transform from the starting position's name.
+            string startingPositionName = "";
+            playerSaveData.Load(startingPositionKey, ref startingPositionName);
+            Transform startingPosition = StartingPosition.FindStartingPosition(startingPositionName);
 
-        // Load the starting position from the save data and find the transform from the starting position's name.
-        string startingPositionName = "";
-        playerSaveData.Load(startingPositionKey, ref startingPositionName);
-        Transform startingPosition = StartingPosition.FindStartingPosition(startingPositionName);
-
-        // Set the player's position and rotation based on the starting position.
-        transform.position = startingPosition.position;
-        transform.rotation = startingPosition.rotation;
-
+            // Set the player's position and rotation based on the starting position.
+            transform.position = startingPosition.position;
+            transform.rotation = startingPosition.rotation;
+        }
         // Set the initial destination as the player's current position.
         destinationPosition = transform.position;
     }
 
-
     private void OnAnimatorMove()
     {
-        // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
-        agent.velocity = animator.deltaPosition / Time.deltaTime;
+        if(AcceptingOnMove)
+            // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
+            agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
 
+    
 
     private void Update()
     {
-        // If the nav mesh agent is currently waiting for a path, do nothing.
-        if (agent.pathPending)
-            return;
+        if (agent.enabled)
+        {
+            // If the nav mesh agent is currently waiting for a path, do nothing.
+            if (agent.pathPending)
+                return;
 
-        // Cache the speed that nav mesh agent wants to move at.
-        float speed = agent.desiredVelocity.magnitude;
-        
-        // If the nav mesh agent is very close to it's destination, call the Stopping function.
-        if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
-            Stopping (out speed);
-        // Otherwise, if the nav mesh agent is close to it's destination, call the Slowing function.
-        else if (agent.remainingDistance <= agent.stoppingDistance)
-            Slowing(out speed, agent.remainingDistance);
-        // Otherwise, if the nav mesh agent wants to move fast enough, call the Moving function.
-        else if (speed > turnSpeedThreshold)
-            Moving ();
-        
-        // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
-        animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+            // Cache the speed that nav mesh agent wants to move at.
+            float speed = agent.desiredVelocity.magnitude;
+
+            // If the nav mesh agent is very close to it's destination, call the Stopping function.
+            if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
+                Stopping(out speed);
+            // Otherwise, if the nav mesh agent is close to it's destination, call the Slowing function.
+            else if (agent.remainingDistance <= agent.stoppingDistance)
+                Slowing(out speed, agent.remainingDistance);
+            // Otherwise, if the nav mesh agent wants to move fast enough, call the Moving function.
+            else if (speed > turnSpeedThreshold)
+                Moving();
+
+            // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
+            animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+        }
+        else
+        {
+            agent.SetDestination(transform.position);
+        }
+       
     }
 
 
