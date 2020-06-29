@@ -26,20 +26,32 @@ public class AudioManager : MonoBehaviour
 
     public void PlayVoiceClip(int index)
     {
-        voice.clip = voiceClips[index];
-        voice.Play();
+        if (CheckforValidIndex(index, voiceClips))
+        {
+            voice.clip = voiceClips[index];
+            voice.Play();
+        }
+       
     }
 
     public void PlayFXClip(int index)
     {
-        effects.clip = effectsClips[index];
-        effects.Play();
+        if (CheckforValidIndex(index, effectsClips))
+        {
+            effects.clip = effectsClips[index];
+            effects.Play();
+        }
+       
     }
 
     public void PlayMusicClip(int index)
     {
-        music.clip = musicClips[index];
-        music.Play();
+        if (CheckforValidIndex(index, musicClips))
+        {
+            music.clip = musicClips[index];
+            music.Play();
+        }
+       
     }
 
     public void StopMusic()
@@ -49,12 +61,27 @@ public class AudioManager : MonoBehaviour
 
     public void PlayAmbientClip(int index)
     {
-        ambient.clip = ambientClips[index];
-        ambient.Play();
+        if (CheckforValidIndex(index, ambientClips))
+        {
+            ambient.clip = ambientClips[index];
+            ambient.Play();
+        }
+        
     }
 
     public void StopAmbient()
     {
         ambient.Stop();
+    }
+
+    bool CheckforValidIndex(int index, AudioClip[] givenClips)
+    {
+
+        if (index >= givenClips.Length)
+        {
+            print("ERROR: Clip at index point does not exists.");
+            return false;
+        }
+        else return true;
     }
 }
