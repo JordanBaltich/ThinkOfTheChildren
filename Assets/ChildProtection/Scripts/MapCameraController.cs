@@ -32,7 +32,6 @@ public class MapCameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(Input.mouseScrollDelta.y);
 
         if (Input.mouseScrollDelta.y != 0)
         {

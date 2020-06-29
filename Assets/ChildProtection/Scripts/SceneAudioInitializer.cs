@@ -9,16 +9,33 @@ public class SceneAudioInitializer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayAmbientClip(ambientIndex);
-            AudioManager.Instance.PlayMusicClip(musicIndex);
-        }
+        SoundOnOff(true);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SoundOnOff(bool isOn)
+    {
+        if (isOn)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayAmbientClip(ambientIndex);
+               // AudioManager.Instance.PlayMusicClip(musicIndex);
+            }
+        }
+        else
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.StopAmbient();
+               // AudioManager.Instance.StopMusic();
+
+            }
+        }
     }
 }
