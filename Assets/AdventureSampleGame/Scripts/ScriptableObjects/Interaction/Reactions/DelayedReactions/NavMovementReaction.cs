@@ -11,6 +11,7 @@ public class NavMovementReaction : DelayedReaction
     {
         Debug.Log("Moving");
         agent.SetDestination(targetLocation.transform.position);
-        agent.speed = speed;
+        if(!agent.GetComponent<PlayerMovement>())
+            agent.speed = speed;
     }
 }
