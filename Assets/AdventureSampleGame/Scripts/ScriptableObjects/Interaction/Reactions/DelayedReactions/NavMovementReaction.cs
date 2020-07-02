@@ -10,8 +10,16 @@ public class NavMovementReaction : DelayedReaction
     protected override void ImmediateReaction()
     {
         Debug.Log("Moving");
-        agent.SetDestination(targetLocation.transform.position);
-        if(!agent.GetComponent<PlayerMovement>())
+        
+        if (!agent.GetComponent<PlayerMovement>())
+        {
+            agent.SetDestination(targetLocation.transform.position);
             agent.speed = speed;
+        }
+        else
+        {
+            agent.GetComponent<PlayerMovement>().OnLocationGo(targetLocation.transform);
+        }
+            
     }
 }

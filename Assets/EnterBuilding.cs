@@ -8,59 +8,52 @@ using UnityEngine.AI;
 public class EnterBuilding : MonoBehaviour
 {
     public CinemachineVirtualCameraBase m_camera;
-    private Collider m_collider;
+    private Collider m_EnterCollider;
+    public Collider m_ExitCollider;
     private PlayerMovement playerMove;
     private Collider playerCollider;
-    private bool inside;
-    private bool entering;
+    private bool doorClicked;
+    private bool matClicked;
+    public Transform insideTarget;
+    public Transform outsideTarget;
 
     // Start is called before the first frame update
     void Start()
     {
         playerMove = FindObjectOfType<PlayerMovement>();
-        m_collider = GetComponent<Collider>();
+        m_EnterCollider = GetComponent<Collider>();
         playerCollider = playerMove.GetComponent<BoxCollider>(); 
+    }
+
+    public void DoorWasClicked()
+    {
+        doorClicked = true;
+        playerMove.OnLocationGo(insideTarget);
+    }
+
+    public void MatWasClicked()
+    {
+        matClicked = true;
+        playerMove.OnLocationGo(outsideTarget);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other == playerCollider)
+        if (other == playerCollider )
         {
-            if (entering)
-                return;
-
-            inside = !inside;
-            m_camera.gameObject.SetActive(inside);
-            entering = true;
-            WaitForABit();
+            if (doorClicked)
+            {
+                m_camera.gameObject.SetActive(true);
+                doorClicked = false;
+            }
+            if (matClicked)
+            {
+                m_camera.gameObject.SetActive(false);
+                matClicked = false;
+            }
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other == playerCollider)
-        {
-            entering = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other == playerCollider)
-        {
-            entering = false;
-        }
-    }
-
-    public void WaitForABit()
-    {
-        StartCoroutine("WaitingForABit", entering);
-    }
-
-    IEnumerator WaitingForABit(bool b)
-    {
-        yield return new WaitForSeconds(2f);
-        b = false;
-    }
+    
 
 }

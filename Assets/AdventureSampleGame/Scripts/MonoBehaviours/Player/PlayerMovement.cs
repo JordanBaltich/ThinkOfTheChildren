@@ -211,6 +211,24 @@ public class PlayerMovement : MonoBehaviour
         agent.isStopped = false;
     }
 
+    public void OnLocationGo(Transform target)
+    {
+        //// If the handle input flag is set to false then do nothing.
+        //if (!handleInput)
+        //    return;
+
+        //if (!canMove)
+        //    return;
+
+        // The player is no longer headed for an interactable so set it to null.
+        currentInteractable = null;
+
+        destinationPosition = target.position;
+
+        // Set the destination of the nav mesh agent to the found destination position and start the nav mesh agent going.
+        agent.SetDestination(destinationPosition);
+        agent.isStopped = false;
+    }
 
     // This function is called by the EventTrigger on an Interactable, the Interactable component is passed into it.
     public void OnInteractableClick(Interactable interactable)
