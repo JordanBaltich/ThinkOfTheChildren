@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
 
-    public bool AcceptingOnMove;
+    public bool acceptingOnMove = true;
     private bool canMove = true;
 
     // The maximum distance from the nav mesh a click can be to be accepted.
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        if(AcceptingOnMove)
+        if(acceptingOnMove)
             // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
             agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
@@ -190,6 +190,9 @@ public class PlayerMovement : MonoBehaviour
             return;
 
         if (!canMove)
+            return;
+
+        if (!acceptingOnMove)
             return;
 
         // The player is no longer headed for an interactable so set it to null.
