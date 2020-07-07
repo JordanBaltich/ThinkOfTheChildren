@@ -29,21 +29,21 @@ public class EnterBuilding : MonoBehaviour
     {        
         doorClicked = true;
         playerMove.OnLocationGo(insideTarget);
-        playerMove.acceptingOnMove = false;
+        playerMove.DisableMoving();
     }
 
     public void MatWasClicked()
     {
         matClicked = true;
         playerMove.OnLocationGo(outsideTarget);
-        playerMove.acceptingOnMove = false;
+        playerMove.DisableMoving();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other == playerCollider )
         {
-            playerMove.acceptingOnMove = true;
+            playerMove.EnableMoving();
 
             if (doorClicked)
             {

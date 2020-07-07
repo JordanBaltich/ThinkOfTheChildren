@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;                   // Reference to the animator component.
     public NavMeshAgent agent;                  // Reference to the nav mesh agent component.
     public SaveData playerSaveData;             // Reference to the save data asset containing the player's starting position.
+    public DestinationTracker destinationTracker; 
     public float turnSmoothing = 15f;           // The amount of smoothing applied to the player's turning using spherical interpolation.
     public float speedDampTime = 0.1f;          // The approximate amount of time it takes for the speed parameter to reach its value upon being set.
     public float slowingSpeed = 0.175f;         // The speed the player moves as it reaches close to it's destination.
@@ -37,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
                                                 // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
     private const float navMeshSampleDistance = 4f;
 
-    public bool acceptingOnMove = true;
     private bool canMove = true;
 
     // The maximum distance from the nav mesh a click can be to be accepted.
@@ -68,23 +68,22 @@ public class PlayerMovement : MonoBehaviour
         ConversationManager.OnConversationEnded += EnableMoving;
     }
 
-    private void EnableMoving()
+    public void EnableMoving()
     {
         canMove = true;
     }
 
-    private void DisableMoving()
+    public void DisableMoving()
     {
         canMove = false;
     }
 
     private void OnAnimatorMove()
     {
-        if(acceptingOnMove)
+        if(canMove)
             // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
             agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
-
 
 
     private void Update()
@@ -130,6 +129,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Set the speed (which is what the animator will use) to zero.
         speed = 0f;
+
+        destinationTracker.OnStop();
 
         // If the player is stopping at an interactable...
         if (currentInteractable)
@@ -192,9 +193,6 @@ public class PlayerMovement : MonoBehaviour
         if (!canMove)
             return;
 
-        if (!acceptingOnMove)
-            return;
-
         // The player is no longer headed for an interactable so set it to null.
         currentInteractable = null;
 
@@ -211,6 +209,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Set the destination of the nav mesh agent to the found destination position and start the nav mesh agent going.
         agent.SetDestination(destinationPosition);
+        destinationTracker.OnClick(destinationPosition);
         agent.isStopped = false;
     }
 

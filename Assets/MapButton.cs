@@ -25,12 +25,14 @@ public class MapButton : MonoBehaviour
 
     public void WaitForABit()
     {
-        StartCoroutine("WaitingForABit", pm.acceptingOnMove);
+        pm.DisableMoving();
+        StartCoroutine("WaitingForABit");
     }
 
-    IEnumerator WaitingForABit(bool b)
+    IEnumerator WaitingForABit()
     {
         yield return new WaitForSeconds(1f);
-        b = true;
+        pm.EnableMoving();
+
     }
 }
