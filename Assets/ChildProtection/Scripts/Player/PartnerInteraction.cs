@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class PartnerInteraction : MonoBehaviour
 {
 
-    public string hoverText;
     public Text displayText;
     public bool displayInfo;
     public Transform lookAtCamera;
+    public Camera playerCamera;
 
     // Update is called once per frame
     void Update()
@@ -33,7 +33,6 @@ public class PartnerInteraction : MonoBehaviour
     {
         if (displayInfo)
         {
-            displayText.text = hoverText;
             displayText.color = Color.black;
         } else
         {
@@ -46,22 +45,23 @@ public class PartnerInteraction : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
 
+            
             if( Physics.Raycast(ray, out hit, 100.0f))
             {
-                if (hit.transform != null)
-                {
+                //if (hit.transform != null)
+                //{
                     if (hit.transform.GetComponent<Rigidbody>())
                     {
                         PrintName(hit.transform.gameObject);
                     }
-                }
+                //}
             }
         }
     }
 
-    void PrintName(GameObject objectName)
+    public void PrintName(GameObject objectName)
     {
         print(objectName.name);
     }
