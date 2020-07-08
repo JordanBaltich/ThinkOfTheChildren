@@ -26,21 +26,25 @@ public class EnterBuilding : MonoBehaviour
     }
 
     public void DoorWasClicked()
-    {
+    {        
         doorClicked = true;
         playerMove.OnLocationGo(insideTarget);
+        playerMove.DisableMoving();
     }
 
     public void MatWasClicked()
     {
         matClicked = true;
         playerMove.OnLocationGo(outsideTarget);
+        playerMove.DisableMoving();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other == playerCollider )
         {
+            playerMove.EnableMoving();
+
             if (doorClicked)
             {
                 m_camera.gameObject.SetActive(true);

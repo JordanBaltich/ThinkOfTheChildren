@@ -42,7 +42,7 @@ public class StateCamera : MonoBehaviour
 
     private void SwitchInToConversation()
     {
-        m_animator.SetTrigger("FocusOnChild");
+        //m_animator.SetTrigger("FocusOnChild");
     }
 
     public void SwitchToPlayer()
@@ -60,13 +60,24 @@ public class StateCamera : MonoBehaviour
         m_animator.SetTrigger("FocusOnAdult");
     }
 
+    public void SwitchToCivilian()
+    {
+        m_animator.SetTrigger("FocusOnCivilian");
+    }
+
     public void SetChildCamera(GameObject target)
+    {
+        m_Cameras[2].LookAt = target.transform;
+        m_Cameras[2].Follow = target.transform;
+    }
+
+    public void SetAdultCamera(GameObject target)
     {
         m_Cameras[3].LookAt = target.transform;
         m_Cameras[3].Follow = target.transform;
     }
 
-    public void SetAdultCamera(GameObject target)
+    public void SetCivilanCamera(GameObject target)
     {
         m_Cameras[4].LookAt = target.transform;
         m_Cameras[4].Follow = target.transform;
