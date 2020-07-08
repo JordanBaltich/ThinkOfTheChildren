@@ -22,14 +22,17 @@ public class MapCameraController : MonoBehaviour
 
         // stop time and play music clip
         StopTime(true);
-        AudioManager.Instance.PlayMusicClip(0);
+
+        if(AudioManager.Instance != null)
+            AudioManager.Instance.PlayMusicClip(0);
     }
 
     private void OnDisable()
     {
         // restart time and stop music
         StopTime(false);
-        AudioManager.Instance.StopMusic();
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.StopMusic();
     }
 
     // Update is called once per frame
