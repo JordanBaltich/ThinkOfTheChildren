@@ -6,27 +6,25 @@ public class DisappearReappear : MonoBehaviour
 {
 
     public SpriteRenderer appearingObject;
-    public bool inArea;
 
-    private void Update()
+    private void Awake()
     {
-        if (inArea)
-        {
-            appearingObject.color = Color.clear;
-        }
-        else
+        appearingObject.color = Color.clear;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
         {
             appearingObject.color = Color.white;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        inArea = true;
-    }
-
     private void OnTriggerExit(Collider other)
     {
-        inArea = false;
+        if (other.tag == "Player")
+        {
+            appearingObject.color = Color.clear;
+        }
     }
 }
