@@ -32,7 +32,7 @@ public class StatusBar : MonoBehaviour
 
     public void ShowImprovement(float amount)
     {
-        improvementFillAmount += amount;
+        improvementFillAmount = currentFillAmount + amount;
         UpdateBars();
     }
 
