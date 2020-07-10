@@ -11,11 +11,12 @@ public class PartnerInteraction : MonoBehaviour
     public Transform lookAtCamera;
     public Camera playerCamera;
 
+    public GameObject inspectPopup;
+
     // Update is called once per frame
     void Update()
     {
         DisplayText();
-        Clicked();
         displayText.transform.LookAt(lookAtCamera);
     }
 
@@ -37,27 +38,6 @@ public class PartnerInteraction : MonoBehaviour
         } else
         {
             displayText.color = Color.clear;
-        }
-    }
-
-    void Clicked()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-
-            
-            if( Physics.Raycast(ray, out hit, 100.0f))
-            {
-                //if (hit.transform != null)
-                //{
-                    if (hit.transform.GetComponent<Rigidbody>())
-                    {
-                        PrintName(hit.transform.gameObject);
-                    }
-                //}
-            }
         }
     }
 
