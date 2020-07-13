@@ -74,6 +74,16 @@ public class AudioManager : MonoBehaviour
         ambient.Stop();
     }
 
+    public void PlayUIClip(int index)
+    {
+        if (CheckforValidIndex(index, UIClips))
+        {
+            UI.clip = UIClips[index];
+            UI.Play();
+        }
+
+    }
+
     bool CheckforValidIndex(int index, AudioClip[] givenClips)
     {
 
