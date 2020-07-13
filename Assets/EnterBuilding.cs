@@ -22,7 +22,8 @@ public class EnterBuilding : MonoBehaviour
     {
         playerMove = FindObjectOfType<PlayerMovement>();
         m_EnterCollider = GetComponent<Collider>();
-        playerCollider = playerMove.GetComponent<BoxCollider>(); 
+        playerCollider = playerMove.GetComponent<BoxCollider>();
+        m_camera.gameObject.SetActive(false);
     }
 
     public void DoorWasClicked()

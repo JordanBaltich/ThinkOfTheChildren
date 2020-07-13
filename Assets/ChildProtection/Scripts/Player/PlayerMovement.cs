@@ -61,6 +61,12 @@ public class PlayerMovement : MonoBehaviour
             transform.position = startingPosition.position;
             transform.rotation = startingPosition.rotation;
         }
+        else
+        {
+            Transform startingPosition = StartingPosition.FindStartingPosition(FindObjectOfType<StartingPosition>().name);
+            transform.position = startingPosition.position;
+            transform.rotation = startingPosition.rotation;
+        }
         // Set the initial destination as the player's current position.
         destinationPosition = transform.position;
 
