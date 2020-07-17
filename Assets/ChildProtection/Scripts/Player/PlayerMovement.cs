@@ -16,13 +16,14 @@ public class PlayerMovement : MonoBehaviour
     public float slowingSpeed = 0.175f;         // The speed the player moves as it reaches close to it's destination.
     public float turnSpeedThreshold = 0.5f;     // The speed beyond which the player can move and turn normally.
     public float inputHoldDelay = 0.5f;         // How long after reaching an interactable before input is allowed again.
+    public float doubleClickDelay = 1f;       // How quick between consecitive onGroundClicks will it be considered a double click
     public bool ignoreSaveData;
 
     private Interactable currentInteractable;   // The interactable that is currently being headed towards.
     private Vector3 destinationPosition;        // The position that is currently being headed towards, this is the interactionLocation of the currentInteractable if it is not null.
     private bool handleInput = true;            // Whether input is currently being handled.
     private WaitForSeconds inputHoldWait;       // The WaitForSeconds used to make the user wait before input is handled again.
-
+    private WaitForSeconds inputDoubleClick;    
 
     private readonly int hashSpeedPara = Animator.StringToHash("Speed");
                                                 // An hash representing the Speed animator parameter, this is used at runtime in place of a string.
@@ -39,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     private const float navMeshSampleDistance = 4f;
 
     private bool canMove = true;
+    private int clickCount;
+    private float clickTime;
+
 
     // The maximum distance from the nav mesh a click can be to be accepted.
 
@@ -50,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Create the wait based on the delay.
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
+
+        inputDoubleClick = new WaitForSeconds(doubleClickDelay);
         if (!ignoreSaveData)
         {
             // Load the starting position from the save data and find the transform from the starting position's name.
@@ -58,6 +64,12 @@ public class PlayerMovement : MonoBehaviour
             Transform startingPosition = StartingPosition.FindStartingPosition(startingPositionName);
 
             // Set the player's position and rotation based on the starting position.
+            transform.position = startingPosition.position;
+            transform.rotation = startingPosition.rotation;
+        }
+        else
+        {
+            Transform startingPosition = StartingPosition.FindStartingPosition(FindObjectOfType<StartingPosition>().name);
             transform.position = startingPosition.position;
             transform.rotation = startingPosition.rotation;
         }
@@ -116,7 +128,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-
 
     // This is called when the nav mesh agent is very close to it's destination.
     private void Stopping (out float speed)
@@ -182,17 +193,35 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSmoothing * Time.deltaTime);
     }
 
+    void DoubleClickCheck()
+    {
+        clickCount++;
+        if (clickCount == 1)
+            clickTime = Time.time;
+
+        if (clickCount > 1 && Time.time - clickTime < doubleClickDelay)
+        {
+            clickCount = 0;
+            clickTime = 0;
+            //Debug.Log("double click");
+            animator.SetTrigger("Run");
+        }
+        else if (clickCount > 2 || Time.time - clickTime > 1)
+            clickCount = 0;
+    }
 
     // This function is called by the EventTrigger on the scene's ground when it is clicked on.
     public void OnGroundClick(BaseEventData data)
-    {
+    {        
         // If the handle input flag is set to false then do nothing.
-        if(!handleInput)
+        if (!handleInput)
             return;
 
         if (!canMove)
             return;
 
+        DoubleClickCheck();
+        
         // The player is no longer headed for an interactable so set it to null.
         currentInteractable = null;
 
@@ -238,6 +267,8 @@ public class PlayerMovement : MonoBehaviour
         // If the handle input flag is set to false then do nothing.
         if(!handleInput)
             return;
+
+        DoubleClickCheck();
 
         // Store the interactble that was clicked on.
         currentInteractable = interactable;
