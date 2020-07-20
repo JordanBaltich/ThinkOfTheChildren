@@ -10,7 +10,6 @@ public class TestScrpit : MonoBehaviour
     public ReactionCollection reaction;
     public Interactable interact;
 
-
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.K))
