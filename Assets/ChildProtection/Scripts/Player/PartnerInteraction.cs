@@ -11,8 +11,6 @@ public class PartnerInteraction : MonoBehaviour
     public Transform lookAtCamera;
     public Camera playerCamera;
 
-    public GameObject inspectPopup;
-
     // Update is called once per frame
     void Update()
     {
