@@ -10,6 +10,8 @@ public class PurchaseButton : MonoBehaviour
 
     PointsSystem pointsSystem;
 
+    [SerializeField] GameObject NotEnoughPointsPanel;
+
     private void Awake()
     {
         m_Button = GetComponent<Button>();
@@ -44,6 +46,10 @@ public class PurchaseButton : MonoBehaviour
                 currentSelection.GetComponent<Button>().interactable = false;
                 currentSelection = null;
                 pointsSystem.SpendPoints(currentSelection.cost);
+            }
+            else
+            {
+                NotEnoughPointsPanel.SetActive(true);
             }
         }
     }
