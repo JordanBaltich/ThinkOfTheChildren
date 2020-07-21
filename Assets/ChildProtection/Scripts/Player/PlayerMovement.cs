@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public bool ignoreSaveData;
 
     private Interactable currentInteractable;   // The interactable that is currently being headed towards.
-    private Vector3 destinationPosition;        // The position that is currently being headed towards, this is the interactionLocation of the currentInteractable if it is not null.
+    public Vector3 destinationPosition;        // The position that is currently being headed towards, this is the interactionLocation of the currentInteractable if it is not null.
     private bool handleInput = true;            // Whether input is currently being handled.
     private WaitForSeconds inputHoldWait;       // The WaitForSeconds used to make the user wait before input is handled again.
     private WaitForSeconds inputDoubleClick;    
