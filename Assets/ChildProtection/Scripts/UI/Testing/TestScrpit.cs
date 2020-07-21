@@ -10,11 +10,14 @@ public class TestScrpit : MonoBehaviour
     public ReactionCollection reaction;
     public Interactable interact;
 
+    public Report ReportScript;
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.K))
         {
             reaction.React();
+            Debug.Log(ReportScript.journalCount);
             //interact.Interact();
         }
 

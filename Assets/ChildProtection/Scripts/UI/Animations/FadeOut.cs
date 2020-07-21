@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class FadeOut : MonoBehaviour
 {
+    public Color someColor;
+    public float timeTofade;
+
     // Update is called once per frame
-    void Start()
+    void Update()
     {
-        iTween.FadeTo(this.gameObject, 1f, 0f);
+        iTween.FadeTo(this.gameObject, iTween.Hash(
+                        "alpha", 0f,
+                        "time", timeTofade,
+                        "onCompleteTarget", gameObject,
+                        "onComplete", "destroy",
+                        "oncompleteparams", this.gameObject)
+                    );
+
     }
 }
