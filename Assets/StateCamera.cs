@@ -50,9 +50,9 @@ public class StateCamera : MonoBehaviour
         m_animator.SetTrigger("FocusOnPlayer");
     }
 
-    public void SwitchToChild()
+    public void SwitchToChild(int childNum)
     {
-        m_animator.SetTrigger("FocusOnChild");
+        m_animator.SetTrigger("FocusOnChild" + childNum.ToString());
     }
 
     public void SwitchToAdult()

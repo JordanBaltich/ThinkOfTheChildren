@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.AI;
-
+using DialogueEditor;
 
 public class EnterBuilding : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class EnterBuilding : MonoBehaviour
     private bool doorClicked;
     private bool matClicked;
     public Transform insideTarget;
-    public Transform outsideTarget;
+    public Transform outsideTarget;    
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +24,24 @@ public class EnterBuilding : MonoBehaviour
         m_EnterCollider = GetComponent<Collider>();
         playerCollider = playerMove.GetComponent<BoxCollider>();
         m_camera.gameObject.SetActive(false);
+        ConversationManager.OnConversationStarted+= ConverStart;
+        ConversationManager.OnConversationEnded += ConverEnd;
+    }
+
+    public void ConverStart()
+    {
+        if (m_camera.gameObject.activeInHierarchy && m_camera.enabled == true)
+        {
+            m_camera.enabled = false;
+        }
+    }
+
+    public void ConverEnd()
+    {
+        if (m_camera.gameObject.activeInHierarchy && m_camera.enabled==false)
+        {
+            m_camera.enabled = true;
+        }
     }
 
     public void DoorWasClicked()
