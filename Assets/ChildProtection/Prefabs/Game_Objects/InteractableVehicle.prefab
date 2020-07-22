@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 6716407051532300207}
   - component: {fileID: 6716407051532300206}
   - component: {fileID: 6716407051532300205}
-  - component: {fileID: 6716407051532300208}
+  - component: {fileID: 1857238809}
   m_Layer: 5
   m_Name: village
   m_TagString: Untagged
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6716407051532300208}
+      - m_Target: {fileID: 0}
         m_MethodName: React
         m_Mode: 1
         m_Arguments:
@@ -404,7 +404,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6716407051532300208
+--- !u!114 &1857238809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,8 +587,8 @@ GameObject:
   - component: {fileID: 6716407051898064835}
   - component: {fileID: 6716407051898064839}
   - component: {fileID: 6716407051898064838}
-  - component: {fileID: 6716407051898064837}
   - component: {fileID: 6716407051898064836}
+  - component: {fileID: 1857238805}
   m_Layer: 0
   m_Name: InteractableVehicle
   m_TagString: Untagged
@@ -603,7 +603,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6716407051898064834}
-  m_LocalRotation: {x: -0, y: -0.52951145, z: -0, w: 0.8483028}
+  m_LocalRotation: {x: 0, y: -0.5295122, z: 0, w: 0.84830236}
   m_LocalPosition: {x: 6.605774, y: -13.930591, z: -5.0706177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -612,7 +612,7 @@ Transform:
   - {fileID: 6716407050912055174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -63.945004, z: 0}
 --- !u!114 &6716407051898064839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 6716407051898064835}
   conditionCollections: []
-  defaultReactionCollection: {fileID: 6716407051898064837}
+  defaultReactionCollection: {fileID: 0}
 --- !u!114 &6716407051898064838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,20 +656,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &6716407051898064837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6716407051898064834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reactions:
-  - {fileID: 0}
 --- !u!65 &6716407051898064836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -683,6 +669,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.369999, y: 4.328148, z: 5.9298363}
   m_Center: {x: 25.000265, y: 2.164074, z: 13.153522}
+--- !u!114 &1857238805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6716407051898064834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 0}
 --- !u!1 &6716407051911910962
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 6716407051929132672}
   - component: {fileID: 6716407051929132799}
   - component: {fileID: 6716407051929132798}
-  - component: {fileID: 6716407051929132797}
+  - component: {fileID: 1857238808}
   m_Layer: 5
   m_Name: exit
   m_TagString: Untagged
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6716407051929132797}
+      - m_Target: {fileID: 0}
         m_MethodName: React
         m_Mode: 1
         m_Arguments:
@@ -894,7 +894,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6716407051929132797
+--- !u!114 &1857238808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
