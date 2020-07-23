@@ -106,7 +106,7 @@ namespace DialogueEditor
             DialogueText.text = "";
             TurnOffUI();
             StartConversation(dummyCon);
-            EndConversation();
+           // EndConversation();
         }
 
         private void OnDestroy()
