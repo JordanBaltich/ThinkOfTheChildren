@@ -48,24 +48,29 @@ public class StateCamera : MonoBehaviour
 
     public void SwitchToPlayer()
     {
-        m_animator = GetComponent<Animator>();
+        if(m_animator==null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnPlayer");
     }
 
     public void SwitchToChild(int childNum)
     {
-        m_animator = GetComponent<Animator>();
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnChild" + childNum.ToString());
     }
 
     public void SwitchToAdult()
     {
-        m_animator = GetComponent<Animator>();
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnAdult");
     }
 
     public void SwitchToCivilian()
     {
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnCivilian");
     }
 
