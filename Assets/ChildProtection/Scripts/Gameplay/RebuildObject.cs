@@ -9,38 +9,12 @@ public class RebuildObject : MonoBehaviour
 
     [SerializeField] int neededPoints = 1;
 
-    public int reliefProjectIndex; 
+    public int reliefProjectIndex;
+    public string reliefProjectName;
 
     private void Awake()
     {
-
-        if (GameObject.FindObjectOfType<ReliefProjectTracker>() != null)
-        {
-            ReliefProjectTracker tracker = GameObject.FindObjectOfType<ReliefProjectTracker>();
-
-            if (tracker.rebuildProjects.Count == 0)
-            {
-                tracker.AddProjectToTracker(gameObject.name, isFixed);
-            }
-            else
-            {
-                for (int i = 0; i < tracker.rebuildProjects.Count; i++)
-                {
-                    if (tracker.rebuildProjects[i] == gameObject.name)
-                    {
-                        return;
-                    }
-                    else if (i == tracker.rebuildProjects.Count - 1)
-                    {
-                        tracker.AddProjectToTracker(gameObject.name, isFixed);
-                        reliefProjectIndex = i + 1;
-                        return;
-                    }
-                }
-            }
-        }
-
-           
+        DestroyTheObject();
     }
 
     private void Start()
@@ -88,6 +62,35 @@ public class RebuildObject : MonoBehaviour
             else
             {
                 DestroyTheObject();
+            }
+        }
+    }
+
+    public void AddProjectToTracker()
+    {
+        if (GameObject.FindObjectOfType<ReliefProjectTracker>() != null)
+        {
+            ReliefProjectTracker tracker = GameObject.FindObjectOfType<ReliefProjectTracker>();
+
+            if (tracker.rebuildProjects.Count == 0)
+            {
+                tracker.AddProjectToTracker(reliefProjectName, isFixed);
+            }
+            else
+            {
+                for (int i = 0; i < tracker.rebuildProjects.Count; i++)
+                {
+                    if (tracker.rebuildProjects[i] == reliefProjectName)
+                    {
+                        return;
+                    }
+                    else if (i == tracker.rebuildProjects.Count - 1)
+                    {
+                        tracker.AddProjectToTracker(reliefProjectName, isFixed);
+                        reliefProjectIndex = i + 1;
+                        return;
+                    }
+                }
             }
         }
     }

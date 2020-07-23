@@ -14,5 +14,16 @@ public class ReliefProjectTracker : MonoBehaviour
         projectStates.Add(state);
     }
 
-
+    public void UpdateProjectState(string projectName, bool state)
+    {
+        string givenName = projectName;
+        //check if name is in list
+        if (rebuildProjects.IndexOf(givenName) != -1)
+        {
+            //get index of listed item
+            int positionInList = rebuildProjects.IndexOf(givenName);
+            //set item to given state
+            projectStates[positionInList] = state;
+        }
+    }
 }

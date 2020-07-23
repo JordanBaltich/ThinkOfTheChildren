@@ -11657,12 +11657,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
---- !u!1 &702207929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6904224407266398946, guid: 0195c609b626b8e4fbeb7d123325d51c,
-    type: 3}
-  m_PrefabInstance: {fileID: 702207928}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &729752819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11670,46 +11664,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 702207929}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997543, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997545, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997545, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 567997545, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4331024904300514857, guid: d757effda9012c24dbfe5f36f751fa01,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11769,126 +11723,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RebuildObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024904300514862, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166403035, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166407201, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.089999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166407201, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855692
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166407201, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166410371, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.089999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166410371, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855692
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166410371, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166419701, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.089999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166419701, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855692
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166419701, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166442951, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166442951, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855692
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166442951, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166485919, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.089999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166485919, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855692
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331024905166485919, guid: d757effda9012c24dbfe5f36f751fa01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d757effda9012c24dbfe5f36f751fa01, type: 3}
@@ -17428,11 +17262,15 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: 1699057335
     m_ParentHash: 756556552
-  - m_Hash: 862783207
+  - m_Hash: -1115556502
     m_ParentHash: 756556552
   - m_Hash: -110230735
     m_ParentHash: 756556552
   - m_Hash: 746805789
+    m_ParentHash: 756556552
+  - m_Hash: 612934864
+    m_ParentHash: 756556552
+  - m_Hash: 1401918534
     m_ParentHash: 756556552
 --- !u!4 &911008982
 Transform:
@@ -26119,131 +25957,131 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 293
-  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":371.5,"yPos":328},"ID":171,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[170,170],"SpeechUID":174},{"EditorInfo":{"isRoot":false,"xPos":619.5,"yPos":449},"ID":172,"TMPFontGUID":null,"Text":"Approach
-    Child","parentUIDs":[170,170],"SpeechUID":227},{"EditorInfo":{"isRoot":false,"xPos":900.5,"yPos":329},"ID":173,"TMPFontGUID":null,"Text":"Shout
-    at Child","parentUIDs":[170,227,170,227],"SpeechUID":268},{"EditorInfo":{"isRoot":false,"xPos":141.5,"yPos":436},"ID":175,"TMPFontGUID":null,"Text":"Answer
-    Zack","parentUIDs":[174,174],"SpeechUID":219},{"EditorInfo":{"isRoot":false,"xPos":-107.5,"yPos":329},"ID":176,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[174,174],"SpeechUID":177},{"EditorInfo":{"isRoot":false,"xPos":-350.5,"yPos":592},"ID":179,"TMPFontGUID":null,"Text":"Answer
-    Zack","parentUIDs":[178,178],"SpeechUID":223},{"EditorInfo":{"isRoot":false,"xPos":-600.5,"yPos":476},"ID":180,"TMPFontGUID":null,"Text":"Snap
-    Back","parentUIDs":[178,178],"SpeechUID":181},{"EditorInfo":{"isRoot":false,"xPos":-575.5,"yPos":1665},"ID":192,"TMPFontGUID":null,"Text":"Explain","parentUIDs":[190,195,190,195],"SpeechUID":237},{"EditorInfo":{"isRoot":false,"xPos":-850.5,"yPos":1778},"ID":193,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[190,190],"SpeechUID":194},{"EditorInfo":{"isRoot":false,"xPos":-853.5,"yPos":2135},"ID":196,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[195,195],"SpeechUID":197},{"EditorInfo":{"isRoot":false,"xPos":-619.5,"yPos":3524},"ID":208,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[207,207],"SpeechUID":210},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":3637},"ID":209,"TMPFontGUID":null,"Text":"Blame
-    Zack","parentUIDs":[207,207],"SpeechUID":213},{"EditorInfo":{"isRoot":false,"xPos":-112.5,"yPos":846},"ID":221,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[220,224,220,224],"SpeechUID":226},{"EditorInfo":{"isRoot":false,"xPos":138.5,"yPos":956},"ID":222,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[220,224,220,224],"SpeechUID":225},{"EditorInfo":{"isRoot":false,"xPos":611.5,"yPos":697},"ID":228,"TMPFontGUID":null,"Text":"Be
-    Friendly","parentUIDs":[227,227],"SpeechUID":229},{"EditorInfo":{"isRoot":false,"xPos":845.5,"yPos":1193},"ID":234,"TMPFontGUID":null,"Text":"Be
-    firm","parentUIDs":[232,232],"SpeechUID":270},{"EditorInfo":{"isRoot":false,"xPos":615.5,"yPos":1301},"ID":235,"TMPFontGUID":null,"Text":"Inform
-    Him","parentUIDs":[232,232],"SpeechUID":236},{"EditorInfo":{"isRoot":false,"xPos":-124.5,"yPos":2260},"ID":241,"TMPFontGUID":null,"Text":"Explain
-    more","parentUIDs":[240,240],"SpeechUID":243},{"EditorInfo":{"isRoot":false,"xPos":619.5,"yPos":2100},"ID":242,"TMPFontGUID":null,"Text":"Tell
-    him about humanitarian aid","parentUIDs":[240,257,245,240,245,257],"SpeechUID":258},{"EditorInfo":{"isRoot":false,"xPos":-124.5,"yPos":2776},"ID":246,"TMPFontGUID":null,"Text":"Tell
-    him to go home","parentUIDs":[245,267,245,267],"SpeechUID":247},{"EditorInfo":{"isRoot":false,"xPos":353.5,"yPos":1546},"ID":254,"TMPFontGUID":null,"Text":"Tell
-    him to go home","parentUIDs":[253,257,253,257],"SpeechUID":266},{"EditorInfo":{"isRoot":false,"xPos":618.5,"yPos":1660},"ID":255,"TMPFontGUID":null,"Text":"Question
-    him","parentUIDs":[253,253],"SpeechUID":256},{"EditorInfo":{"isRoot":false,"xPos":1105.5,"yPos":1854},"ID":275,"TMPFontGUID":null,"Text":"Calm
-    down and explain","parentUIDs":[274,274],"SpeechUID":277},{"EditorInfo":{"isRoot":false,"xPos":1381.5,"yPos":1731},"ID":276,"TMPFontGUID":null,"Text":"Snap
-    at Jomaphie","parentUIDs":[274,274],"SpeechUID":278},{"EditorInfo":{"isRoot":false,"xPos":1334.5,"yPos":2169},"ID":282,"TMPFontGUID":null,"Text":"Be
-    firm","parentUIDs":[281,281],"SpeechUID":284},{"EditorInfo":{"isRoot":false,"xPos":1635.5,"yPos":2303},"ID":283,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[281,281],"SpeechUID":288}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":622,"yPos":165},"ID":0,"TMPFontGUID":null,"Text":"You
-    and Zack notice a child standing near a restricted area.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":170,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":312},"ID":170,"TMPFontGUID":null,"Text":"The
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":-231.5,"yPos":185},"ID":171,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[170,170],"SpeechUID":174},{"EditorInfo":{"isRoot":false,"xPos":16.5,"yPos":306},"ID":172,"TMPFontGUID":null,"Text":"Approach
+    Child","parentUIDs":[170,170],"SpeechUID":227},{"EditorInfo":{"isRoot":false,"xPos":297.5,"yPos":186},"ID":173,"TMPFontGUID":null,"Text":"Shout
+    at Child","parentUIDs":[170,227,170,227],"SpeechUID":268},{"EditorInfo":{"isRoot":false,"xPos":-461.5,"yPos":293},"ID":175,"TMPFontGUID":null,"Text":"Answer
+    Zack","parentUIDs":[174,174],"SpeechUID":219},{"EditorInfo":{"isRoot":false,"xPos":-710.5,"yPos":186},"ID":176,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[174,174],"SpeechUID":177},{"EditorInfo":{"isRoot":false,"xPos":-953.5,"yPos":449},"ID":179,"TMPFontGUID":null,"Text":"Answer
+    Zack","parentUIDs":[178,178],"SpeechUID":223},{"EditorInfo":{"isRoot":false,"xPos":-1203.5,"yPos":333},"ID":180,"TMPFontGUID":null,"Text":"Snap
+    Back","parentUIDs":[178,178],"SpeechUID":181},{"EditorInfo":{"isRoot":false,"xPos":-1178.5,"yPos":1522},"ID":192,"TMPFontGUID":null,"Text":"Explain","parentUIDs":[190,195,190,195],"SpeechUID":237},{"EditorInfo":{"isRoot":false,"xPos":-1453.5,"yPos":1635},"ID":193,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[190,190],"SpeechUID":194},{"EditorInfo":{"isRoot":false,"xPos":-1456.5,"yPos":1992},"ID":196,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[195,195],"SpeechUID":197},{"EditorInfo":{"isRoot":false,"xPos":-1222.5,"yPos":3381},"ID":208,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[207,207],"SpeechUID":210},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":3494},"ID":209,"TMPFontGUID":null,"Text":"Blame
+    Zack","parentUIDs":[207,207],"SpeechUID":213},{"EditorInfo":{"isRoot":false,"xPos":-715.5,"yPos":703},"ID":221,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[220,224,220,224],"SpeechUID":226},{"EditorInfo":{"isRoot":false,"xPos":-464.5,"yPos":813},"ID":222,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[220,224,220,224],"SpeechUID":225},{"EditorInfo":{"isRoot":false,"xPos":8.5,"yPos":554},"ID":228,"TMPFontGUID":null,"Text":"Be
+    Friendly","parentUIDs":[227,227],"SpeechUID":229},{"EditorInfo":{"isRoot":false,"xPos":242.5,"yPos":1050},"ID":234,"TMPFontGUID":null,"Text":"Be
+    firm","parentUIDs":[232,232],"SpeechUID":270},{"EditorInfo":{"isRoot":false,"xPos":12.5,"yPos":1158},"ID":235,"TMPFontGUID":null,"Text":"Inform
+    Him","parentUIDs":[232,232],"SpeechUID":236},{"EditorInfo":{"isRoot":false,"xPos":-727.5,"yPos":2117},"ID":241,"TMPFontGUID":null,"Text":"Explain
+    more","parentUIDs":[240,240],"SpeechUID":243},{"EditorInfo":{"isRoot":false,"xPos":16.5,"yPos":1957},"ID":242,"TMPFontGUID":null,"Text":"Tell
+    him about humanitarian aid","parentUIDs":[240,257,245,240,245,257],"SpeechUID":258},{"EditorInfo":{"isRoot":false,"xPos":-727.5,"yPos":2633},"ID":246,"TMPFontGUID":null,"Text":"Tell
+    him to go home","parentUIDs":[245,267,245,267],"SpeechUID":247},{"EditorInfo":{"isRoot":false,"xPos":-249.5,"yPos":1403},"ID":254,"TMPFontGUID":null,"Text":"Tell
+    him to go home","parentUIDs":[253,257,253,257],"SpeechUID":266},{"EditorInfo":{"isRoot":false,"xPos":15.5,"yPos":1517},"ID":255,"TMPFontGUID":null,"Text":"Question
+    him","parentUIDs":[253,253],"SpeechUID":256},{"EditorInfo":{"isRoot":false,"xPos":502.5,"yPos":1711},"ID":275,"TMPFontGUID":null,"Text":"Calm
+    down and explain","parentUIDs":[274,274],"SpeechUID":277},{"EditorInfo":{"isRoot":false,"xPos":778.5,"yPos":1588},"ID":276,"TMPFontGUID":null,"Text":"Snap
+    at Jomaphie","parentUIDs":[274,274],"SpeechUID":278},{"EditorInfo":{"isRoot":false,"xPos":731.5,"yPos":2026},"ID":282,"TMPFontGUID":null,"Text":"Be
+    firm","parentUIDs":[281,281],"SpeechUID":284},{"EditorInfo":{"isRoot":false,"xPos":1032.5,"yPos":2160},"ID":283,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[281,281],"SpeechUID":288}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":19,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"You
+    and Zack notice a child standing near a restricted area.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":170,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":169},"ID":170,"TMPFontGUID":null,"Text":"The
     Child is carrying a jug and is trying to figure out a way to get through the
-    landmine field.","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[171,172,173],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":140.5,"yPos":313},"ID":174,"TMPFontGUID":null,"Text":"What
-    are you doing?!","parentUIDs":[171,171],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[175,176],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-353.5,"yPos":321},"ID":177,"TMPFontGUID":null,"Text":"You
-    ignore Zack, but Zack blocks you.","parentUIDs":[176,176],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":178,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-352.5,"yPos":460},"ID":178,"TMPFontGUID":null,"Text":"What
-    is your problem? You saw that child right?","parentUIDs":[177,177],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[179,180],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-845.5,"yPos":467},"ID":181,"TMPFontGUID":null,"Text":"Yes
-    I saw  the child! There''s a lot of them around Zack!","parentUIDs":[180,180],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":182,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-846.5,"yPos":612},"ID":182,"TMPFontGUID":null,"Text":"Zack
-    is stunned","parentUIDs":[181,181],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":183,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-848.5,"yPos":738},"ID":183,"TMPFontGUID":null,"Text":"Did
-    you take notice that the child is close to the landmine field?","parentUIDs":[182,182],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":184,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-844.5,"yPos":866},"ID":184,"TMPFontGUID":null,"Text":"You
-    look where the child was. He is about to go into the landmine field.","parentUIDs":[183,225,183,225],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":185,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-848.5,"yPos":989},"ID":185,"TMPFontGUID":null,"Text":"Realizing
-    your mistake, you run towards the child. Zack follows.","parentUIDs":[184,184],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":186,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-849.5,"yPos":1123},"ID":186,"TMPFontGUID":null,"Text":"Hey
-    wait! Don''t go in there!","parentUIDs":[185,185],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":187,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-847.5,"yPos":1259},"ID":187,"TMPFontGUID":null,"Text":"The
-    child looks around and sees you and Zack running towards him. ","parentUIDs":[186,186],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":188,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-846.5,"yPos":1385},"ID":188,"TMPFontGUID":null,"Text":"The
-    child stops in his tracks as Zack and you approach him.","parentUIDs":[187,187],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":189,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-847.5,"yPos":1510},"ID":189,"TMPFontGUID":null,"Text":"You
-    can''t go in there, its dangerous!","parentUIDs":[188,188],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":190,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-849.5,"yPos":1652},"ID":190,"TMPFontGUID":null,"Text":"Besides,
-    all of the other kids cross this field.","parentUIDs":[189,189],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[192,193],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":1876},"ID":194,"TMPFontGUID":null,"Text":"
+    landmine field.","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[171,172,173],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-462.5,"yPos":170},"ID":174,"TMPFontGUID":null,"Text":"What
+    are you doing?!","parentUIDs":[171,171],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[175,176],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-956.5,"yPos":178},"ID":177,"TMPFontGUID":null,"Text":"You
+    ignore Zack, but Zack blocks you.","parentUIDs":[176,176],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":178,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-955.5,"yPos":317},"ID":178,"TMPFontGUID":null,"Text":"What
+    is your problem? You saw that child right?","parentUIDs":[177,177],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[179,180],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1448.5,"yPos":324},"ID":181,"TMPFontGUID":null,"Text":"Yes
+    I saw  the child! There''s a lot of them around Zack!","parentUIDs":[180,180],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":182,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1449.5,"yPos":469},"ID":182,"TMPFontGUID":null,"Text":"Zack
+    is stunned","parentUIDs":[181,181],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":183,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1451.5,"yPos":595},"ID":183,"TMPFontGUID":null,"Text":"Did
+    you take notice that the child is close to the landmine field?","parentUIDs":[182,182],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":184,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1447.5,"yPos":723},"ID":184,"TMPFontGUID":null,"Text":"You
+    look where the child was. He is about to go into the landmine field.","parentUIDs":[183,225,183,225],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":185,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1451.5,"yPos":846},"ID":185,"TMPFontGUID":null,"Text":"Realizing
+    your mistake, you run towards the child. Zack follows.","parentUIDs":[184,184],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":186,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1452.5,"yPos":980},"ID":186,"TMPFontGUID":null,"Text":"Hey
+    wait! Don''t go in there!","parentUIDs":[185,185],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":187,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1450.5,"yPos":1116},"ID":187,"TMPFontGUID":null,"Text":"The
+    child looks around and sees you and Zack running towards him. ","parentUIDs":[186,186],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":188,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1449.5,"yPos":1242},"ID":188,"TMPFontGUID":null,"Text":"The
+    child stops in his tracks as Zack and you approach him.","parentUIDs":[187,187],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":189,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1450.5,"yPos":1367},"ID":189,"TMPFontGUID":null,"Text":"You
+    can''t go in there, its dangerous!","parentUIDs":[188,188],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":190,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1452.5,"yPos":1509},"ID":190,"TMPFontGUID":null,"Text":"Besides,
+    all of the other kids cross this field.","parentUIDs":[189,189],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[192,193],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":1733},"ID":194,"TMPFontGUID":null,"Text":"
     Just because other children go through a land mine field to get water doesn''t
-    mean you have to do it.","parentUIDs":[193,193],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":195,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":2007},"ID":195,"TMPFontGUID":null,"Text":"Well
-    I need water, no one has gotten hurt when they go through the field.","parentUIDs":[194,194],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[192,196],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-853.5,"yPos":2239},"ID":197,"TMPFontGUID":null,"Text":"You
-    heard that no one gets hurt while crossing the field? You sure about that?","parentUIDs":[196,196],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":198,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":2371},"ID":198,"TMPFontGUID":null,"Text":"Jomaphie
-    gives you a dirty look. ","parentUIDs":[197,197],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":199,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":2509},"ID":199,"TMPFontGUID":null,"Text":"Yeah,
-    I''m sure of it! I''ve done it before and I can do it again! ","parentUIDs":[198,198],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":200,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":2630},"ID":200,"TMPFontGUID":null,"Text":"Jomaphie
-    tries to jump over the fence into the land mine field but Zack intervenes. ","parentUIDs":[199,199],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":201,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":2759},"ID":201,"TMPFontGUID":null,"Text":"Listen,
-    we can help you out...","parentUIDs":[200,200],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":202,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":2886},"ID":202,"TMPFontGUID":null,"Text":"Jomaphie
-    starts to get mad","parentUIDs":[201,201],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":203,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-853.5,"yPos":3010},"ID":203,"TMPFontGUID":null,"Text":"
-    I need water for my family!","parentUIDs":[202,202],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":204,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":3132},"ID":204,"TMPFontGUID":null,"Text":"
+    mean you have to do it.","parentUIDs":[193,193],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":195,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":1864},"ID":195,"TMPFontGUID":null,"Text":"Well
+    I need water, no one has gotten hurt when they go through the field.","parentUIDs":[194,194],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[192,196],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1456.5,"yPos":2096},"ID":197,"TMPFontGUID":null,"Text":"You
+    heard that no one gets hurt while crossing the field? You sure about that?","parentUIDs":[196,196],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":198,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":2228},"ID":198,"TMPFontGUID":null,"Text":"Jomaphie
+    gives you a dirty look. ","parentUIDs":[197,197],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":199,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":2366},"ID":199,"TMPFontGUID":null,"Text":"Yeah,
+    I''m sure of it! I''ve done it before and I can do it again! ","parentUIDs":[198,198],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":200,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":2487},"ID":200,"TMPFontGUID":null,"Text":"Jomaphie
+    tries to jump over the fence into the land mine field but Zack intervenes. ","parentUIDs":[199,199],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":201,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":2616},"ID":201,"TMPFontGUID":null,"Text":"Listen,
+    we can help you out...","parentUIDs":[200,200],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":202,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":2743},"ID":202,"TMPFontGUID":null,"Text":"Jomaphie
+    starts to get mad","parentUIDs":[201,201],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":203,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1456.5,"yPos":2867},"ID":203,"TMPFontGUID":null,"Text":"
+    I need water for my family!","parentUIDs":[202,202],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":204,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":2989},"ID":204,"TMPFontGUID":null,"Text":"
     If you won''t let me cross the field to get water, I''ll go somewhere else, or
-    steal water!","parentUIDs":[203,203],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":205,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":3257},"ID":205,"TMPFontGUID":null,"Text":"Jomaphie
+    steal water!","parentUIDs":[203,203],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":205,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":3114},"ID":205,"TMPFontGUID":null,"Text":"Jomaphie
     storms away from Zack. The villagers saw the whole situation and stare at you
-    and Zack.  ","parentUIDs":[204,204],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":206,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-852.5,"yPos":3380},"ID":206,"TMPFontGUID":null,"Text":"Zack
-    is embarrassed by you and is slightly mad.","parentUIDs":[205,205],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":207,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-850.5,"yPos":3509},"ID":207,"TMPFontGUID":null,"Text":"
+    and Zack.  ","parentUIDs":[204,204],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":206,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1455.5,"yPos":3237},"ID":206,"TMPFontGUID":null,"Text":"Zack
+    is embarrassed by you and is slightly mad.","parentUIDs":[205,205],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":207,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1453.5,"yPos":3366},"ID":207,"TMPFontGUID":null,"Text":"
     You barely did anything to help out. You just argued with him and made us look
-    like fools.","parentUIDs":[206,206],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[208,209],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-613.5,"yPos":3621},"ID":210,"TMPFontGUID":null,"Text":"Zack,
-    I''m sorry that...","parentUIDs":[208,208],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":211,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-614.5,"yPos":3869},"ID":211,"TMPFontGUID":null,"Text":"
-    Lets just finish patrolling the village.","parentUIDs":[210,214,210,214],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":212,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-612.5,"yPos":4065},"ID":212,"TMPFontGUID":null,"Text":"You
-    lost Reputation Points","parentUIDs":[211,211],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":3742},"ID":213,"TMPFontGUID":null,"Text":"Well
-    its not like you did any better.","parentUIDs":[209,209],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":214,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-851.5,"yPos":3869},"ID":214,"TMPFontGUID":null,"Text":"Zack
-    shakes his head in disappointment.    ","parentUIDs":[213,213],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":211,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":140.5,"yPos":539},"ID":219,"TMPFontGUID":null,"Text":"Patrolling
-    the village, why?","parentUIDs":[175,175],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":220,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":140.5,"yPos":683},"ID":220,"TMPFontGUID":null,"Text":"There
+    like fools.","parentUIDs":[206,206],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[208,209],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1216.5,"yPos":3478},"ID":210,"TMPFontGUID":null,"Text":"Zack,
+    I''m sorry that...","parentUIDs":[208,208],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":211,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1217.5,"yPos":3726},"ID":211,"TMPFontGUID":null,"Text":"
+    Lets just finish patrolling the village.","parentUIDs":[210,214,210,214],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":212,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1215.5,"yPos":3922},"ID":212,"TMPFontGUID":null,"Text":"You
+    lost Reputation Points","parentUIDs":[211,211],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":3599},"ID":213,"TMPFontGUID":null,"Text":"Well
+    its not like you did any better.","parentUIDs":[209,209],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":214,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1454.5,"yPos":3726},"ID":214,"TMPFontGUID":null,"Text":"Zack
+    shakes his head in disappointment.    ","parentUIDs":[213,213],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":211,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-462.5,"yPos":396},"ID":219,"TMPFontGUID":null,"Text":"Patrolling
+    the village, why?","parentUIDs":[175,175],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":220,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-462.5,"yPos":540},"ID":220,"TMPFontGUID":null,"Text":"There
     is a kid who looks like he is about to walk onto the landmine field. I think
-    we should check it out.","parentUIDs":[219,219],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[221,222],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-353.5,"yPos":705},"ID":223,"TMPFontGUID":null,"Text":"Yes,
+    we should check it out.","parentUIDs":[219,219],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[221,222],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-956.5,"yPos":562},"ID":223,"TMPFontGUID":null,"Text":"Yes,
     I saw  the child near the fence. You think he might actually jump into the landmine
-    field?","parentUIDs":[179,179],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":224,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-350.5,"yPos":818},"ID":224,"TMPFontGUID":null,"Text":"
-    I think so. We should check on him.","parentUIDs":[223,223],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[221,222],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-589.5,"yPos":870},"ID":225,"TMPFontGUID":null,"Text":"Zack,
-    He seems smart enough not to hop the fence. Here, look at him.","parentUIDs":[222,222],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":184,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":355.5,"yPos":801},"ID":226,"TMPFontGUID":null,"Text":"Alright
-    lets see what he is doing.","parentUIDs":[221,221],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":227,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":616.5,"yPos":546},"ID":227,"TMPFontGUID":null,"Text":"You
-    and Zack approach Child","parentUIDs":[172,226,226,172],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[228,173],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":609.5,"yPos":799},"ID":229,"TMPFontGUID":null,"Text":"Hey
-    little guy, What are you doing?","parentUIDs":[228,228],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":230,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":610.5,"yPos":921},"ID":230,"TMPFontGUID":null,"Text":"Jomaphie
-    notices that you''re talking to him.","parentUIDs":[229,229],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":231,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":611.5,"yPos":1056},"ID":231,"TMPFontGUID":null,"Text":"Me?
-    I''m trying to figure out how to cross the field To get water.","parentUIDs":[230,269,230,269],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":232,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":612.5,"yPos":1178},"ID":232,"TMPFontGUID":null,"Text":"You
-    look around the fence and see the red sign with a skull on it.","parentUIDs":[231,231],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[234,235],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":618.5,"yPos":1397},"ID":236,"TMPFontGUID":null,"Text":"See
+    field?","parentUIDs":[179,179],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":224,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-953.5,"yPos":675},"ID":224,"TMPFontGUID":null,"Text":"
+    I think so. We should check on him.","parentUIDs":[223,223],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[221,222],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1192.5,"yPos":727},"ID":225,"TMPFontGUID":null,"Text":"Zack,
+    He seems smart enough not to hop the fence. Here, look at him.","parentUIDs":[222,222],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":184,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-247.5,"yPos":658},"ID":226,"TMPFontGUID":null,"Text":"Alright
+    lets see what he is doing.","parentUIDs":[221,221],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":227,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":13.5,"yPos":403},"ID":227,"TMPFontGUID":null,"Text":"You
+    and Zack approach Child","parentUIDs":[172,226,226,172],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[228,173],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":6.5,"yPos":656},"ID":229,"TMPFontGUID":null,"Text":"Hey
+    little guy, What are you doing?","parentUIDs":[228,228],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":230,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":7.5,"yPos":778},"ID":230,"TMPFontGUID":null,"Text":"Jomaphie
+    notices that you''re talking to him.","parentUIDs":[229,229],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":231,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":8.5,"yPos":913},"ID":231,"TMPFontGUID":null,"Text":"Me?
+    I''m trying to figure out how to cross the field To get water.","parentUIDs":[230,269,230,269],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":232,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":9.5,"yPos":1035},"ID":232,"TMPFontGUID":null,"Text":"You
+    look around the fence and see the red sign with a skull on it.","parentUIDs":[231,231],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[234,235],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":15.5,"yPos":1254},"ID":236,"TMPFontGUID":null,"Text":"See
     that sign? It means the field is filled with landmines. You know what that is
-    right?","parentUIDs":[235,235],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":253,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-130.5,"yPos":1653},"ID":237,"TMPFontGUID":null,"Text":"Listen,
-    this field is dangerous. You see the warning sighs?","parentUIDs":[192,192],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":238,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-129.5,"yPos":1805},"ID":238,"TMPFontGUID":null,"Text":"You
-    point to the red sign that has a skull on it saying danger.","parentUIDs":[237,237],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":239,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-129.5,"yPos":1952},"ID":239,"TMPFontGUID":null,"Text":"That
+    right?","parentUIDs":[235,235],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":253,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-733.5,"yPos":1510},"ID":237,"TMPFontGUID":null,"Text":"Listen,
+    this field is dangerous. You see the warning sighs?","parentUIDs":[192,192],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":238,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-732.5,"yPos":1662},"ID":238,"TMPFontGUID":null,"Text":"You
+    point to the red sign that has a skull on it saying danger.","parentUIDs":[237,237],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":239,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-732.5,"yPos":1809},"ID":239,"TMPFontGUID":null,"Text":"That
     sign means there are landmines in the area. Its not safe to go in there. You
-    can get hurt.","parentUIDs":[238,277,238,277],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":240,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-128.5,"yPos":2110},"ID":240,"TMPFontGUID":null,"Text":"But....I
-    need water for my family","parentUIDs":[239,239],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[241,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-121.5,"yPos":2376},"ID":243,"TMPFontGUID":null,"Text":"
+    can get hurt.","parentUIDs":[238,277,238,277],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":240,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-731.5,"yPos":1967},"ID":240,"TMPFontGUID":null,"Text":"But....I
+    need water for my family","parentUIDs":[239,239],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[241,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-724.5,"yPos":2233},"ID":243,"TMPFontGUID":null,"Text":"
     I know you need water but its not worth the risk. There are different types of
-    land mines in there and a good chance that you will get hurt.","parentUIDs":[241,241],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":244,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-121.5,"yPos":2524},"ID":244,"TMPFontGUID":null,"Text":"Lands
-    mines that can even blow up tanks!","parentUIDs":[243,243],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":245,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-123.5,"yPos":2650},"ID":245,"TMPFontGUID":null,"Text":"Jomaphie
-    feels disheartened and looks down at the ground.","parentUIDs":[244,244],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[246,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-122.5,"yPos":2876},"ID":247,"TMPFontGUID":null,"Text":"Jomaphie
-    turns around and starts walking home. Zack approaches you.","parentUIDs":[246,246],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":248,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-122.5,"yPos":3003},"ID":248,"TMPFontGUID":null,"Text":"Well,
-    he didn''t go into the land mine field. That''s good.","parentUIDs":[247,247],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":249,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-124.5,"yPos":3147},"ID":249,"TMPFontGUID":null,"Text":"Jomaphie
+    land mines in there and a good chance that you will get hurt.","parentUIDs":[241,241],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":244,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-724.5,"yPos":2381},"ID":244,"TMPFontGUID":null,"Text":"Lands
+    mines that can even blow up tanks!","parentUIDs":[243,243],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":245,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-726.5,"yPos":2507},"ID":245,"TMPFontGUID":null,"Text":"Jomaphie
+    feels disheartened and looks down at the ground.","parentUIDs":[244,244],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[246,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-725.5,"yPos":2733},"ID":247,"TMPFontGUID":null,"Text":"Jomaphie
+    turns around and starts walking home. Zack approaches you.","parentUIDs":[246,246],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":248,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-725.5,"yPos":2860},"ID":248,"TMPFontGUID":null,"Text":"Well,
+    he didn''t go into the land mine field. That''s good.","parentUIDs":[247,247],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":249,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-727.5,"yPos":3004},"ID":249,"TMPFontGUID":null,"Text":"Jomaphie
     disappears into the distance, only to go home empty handed and no promise of
-    water from the Peacekeepers.","parentUIDs":[248,248],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":250,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-124.5,"yPos":3282},"ID":250,"TMPFontGUID":null,"Text":"We
-    should''ve offered him different options on obtaining water safely. ","parentUIDs":[249,249],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":251,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-124.5,"yPos":3415},"ID":251,"TMPFontGUID":null,"Text":"
-    hope that child doesn''t get hurt. Let''s continue our patrol for now.","parentUIDs":[250,250],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":252,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-125.5,"yPos":3553},"ID":252,"TMPFontGUID":null,"Text":"No
-    reputation points earned.","parentUIDs":[251,251],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":1528},"ID":253,"TMPFontGUID":null,"Text":"
-    I do...but....","parentUIDs":[236,236],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[254,255],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":1768},"ID":256,"TMPFontGUID":null,"Text":"Why
-    are you planning to cross the land mine field?","parentUIDs":[255,255],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":257,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":1900},"ID":257,"TMPFontGUID":null,"Text":"I
-    need to get water for my family...","parentUIDs":[256,256],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[254,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":618.5,"yPos":2211},"ID":258,"TMPFontGUID":null,"Text":"We
-    have someone who is a humanitarian aid worker. They can give you supplies.","parentUIDs":[242,242],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":259,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":2361},"ID":259,"TMPFontGUID":null,"Text":"I
+    water from the Peacekeepers.","parentUIDs":[248,248],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":250,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-727.5,"yPos":3139},"ID":250,"TMPFontGUID":null,"Text":"We
+    should''ve offered him different options on obtaining water safely. ","parentUIDs":[249,249],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":251,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-727.5,"yPos":3272},"ID":251,"TMPFontGUID":null,"Text":"
+    hope that child doesn''t get hurt. Let''s continue our patrol for now.","parentUIDs":[250,250],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":252,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-728.5,"yPos":3410},"ID":252,"TMPFontGUID":null,"Text":"No
+    reputation points earned.","parentUIDs":[251,251],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":1385},"ID":253,"TMPFontGUID":null,"Text":"
+    I do...but....","parentUIDs":[236,236],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[254,255],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":1625},"ID":256,"TMPFontGUID":null,"Text":"Why
+    are you planning to cross the land mine field?","parentUIDs":[255,255],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":257,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":1757},"ID":257,"TMPFontGUID":null,"Text":"I
+    need to get water for my family...","parentUIDs":[256,256],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[254,242],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":15.5,"yPos":2068},"ID":258,"TMPFontGUID":null,"Text":"We
+    have someone who is a humanitarian aid worker. They can give you supplies.","parentUIDs":[242,242],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":259,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":2218},"ID":259,"TMPFontGUID":null,"Text":"I
     can inform them of your situation when I''m able too. They will give you water
-    to help you out. Are you okay with that?","parentUIDs":[258,258],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":260,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":2490},"ID":260,"TMPFontGUID":null,"Text":"Jomaphie
-    looks up to you.","parentUIDs":[259,259],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":261,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":618.5,"yPos":2629},"ID":261,"TMPFontGUID":null,"Text":"Really?!
-    You can do that for me?!","parentUIDs":[260,260],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":262,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":619.5,"yPos":2754},"ID":262,"TMPFontGUID":null,"Text":"Of
-    course!  Someone will drop off some water for you and your family.","parentUIDs":[261,261],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":263,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":622.5,"yPos":2883},"ID":263,"TMPFontGUID":null,"Text":"Jomaphie
-    walks away with a smile on his face. Zack approaches you.","parentUIDs":[262,262],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":264,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":618.5,"yPos":3007},"ID":264,"TMPFontGUID":null,"Text":"I''m
-    glad you helped him. Lets continue our patrol.","parentUIDs":[263,263],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":265,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":613.5,"yPos":3134},"ID":265,"TMPFontGUID":null,"Text":"You
-    gained reputation points","parentUIDs":[264,264],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":113.5,"yPos":1534},"ID":266,"TMPFontGUID":null,"Text":"It
-    might be best to go home for your safety. You don''t want to get hurt right?","parentUIDs":[254,254],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":267,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":115.5,"yPos":2433},"ID":267,"TMPFontGUID":null,"Text":"But
-    I still need water...","parentUIDs":[266,266],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[246],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1167.5,"yPos":317},"ID":268,"TMPFontGUID":null,"Text":"Hey!
-    what are you doing?","parentUIDs":[173,173],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":269,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1399.5,"yPos":317},"ID":269,"TMPFontGUID":null,"Text":"Jomaphie
-    is startled. you got his attention. ","parentUIDs":[268,268],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":231,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1103.5,"yPos":1177},"ID":270,"TMPFontGUID":null,"Text":"Listen,
-    Don''t cross that field or you''ll regret it.","parentUIDs":[234,234],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":271,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1103.5,"yPos":1300},"ID":271,"TMPFontGUID":null,"Text":"What
-    do you mean?","parentUIDs":[270,270],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":272,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1105.5,"yPos":1440},"ID":272,"TMPFontGUID":null,"Text":"
-    It means if  you cross that field you''re going to get hurt!","parentUIDs":[271,271],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":273,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1101.5,"yPos":1578},"ID":273,"TMPFontGUID":null,"Text":"
-    Heck, you might even lose some limbs crossing the restricted area.","parentUIDs":[272,272],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":274,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1103.5,"yPos":1715},"ID":274,"TMPFontGUID":null,"Text":"But
-    I...","parentUIDs":[273,273],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[275,276],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1102.5,"yPos":1957},"ID":277,"TMPFontGUID":null,"Text":"I
+    to help you out. Are you okay with that?","parentUIDs":[258,258],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":260,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17.5,"yPos":2347},"ID":260,"TMPFontGUID":null,"Text":"Jomaphie
+    looks up to you.","parentUIDs":[259,259],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":261,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":15.5,"yPos":2486},"ID":261,"TMPFontGUID":null,"Text":"Really?!
+    You can do that for me?!","parentUIDs":[260,260],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":262,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":16.5,"yPos":2611},"ID":262,"TMPFontGUID":null,"Text":"Of
+    course!  Someone will drop off some water for you and your family.","parentUIDs":[261,261],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":263,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":19.5,"yPos":2740},"ID":263,"TMPFontGUID":null,"Text":"Jomaphie
+    walks away with a smile on his face. Zack approaches you.","parentUIDs":[262,262],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":264,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":15.5,"yPos":2864},"ID":264,"TMPFontGUID":null,"Text":"I''m
+    glad you helped him. Lets continue our patrol.","parentUIDs":[263,263],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":265,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":10.5,"yPos":2991},"ID":265,"TMPFontGUID":null,"Text":"You
+    gained reputation points","parentUIDs":[264,264],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-489.5,"yPos":1391},"ID":266,"TMPFontGUID":null,"Text":"It
+    might be best to go home for your safety. You don''t want to get hurt right?","parentUIDs":[254,254],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":267,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-487.5,"yPos":2290},"ID":267,"TMPFontGUID":null,"Text":"But
+    I still need water...","parentUIDs":[266,266],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[246],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":564.5,"yPos":174},"ID":268,"TMPFontGUID":null,"Text":"Hey!
+    what are you doing?","parentUIDs":[173,173],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":269,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":796.5,"yPos":174},"ID":269,"TMPFontGUID":null,"Text":"Jomaphie
+    is startled. you got his attention. ","parentUIDs":[268,268],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":231,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":500.5,"yPos":1034},"ID":270,"TMPFontGUID":null,"Text":"Listen,
+    Don''t cross that field or you''ll regret it.","parentUIDs":[234,234],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":271,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":500.5,"yPos":1157},"ID":271,"TMPFontGUID":null,"Text":"What
+    do you mean?","parentUIDs":[270,270],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[],"SpeechUID":272,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":502.5,"yPos":1297},"ID":272,"TMPFontGUID":null,"Text":"
+    It means if  you cross that field you''re going to get hurt!","parentUIDs":[271,271],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":273,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":498.5,"yPos":1435},"ID":273,"TMPFontGUID":null,"Text":"
+    Heck, you might even lose some limbs crossing the restricted area.","parentUIDs":[272,272],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":274,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":500.5,"yPos":1572},"ID":274,"TMPFontGUID":null,"Text":"But
+    I...","parentUIDs":[273,273],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jomaphie","OptionUIDs":[275,276],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":499.5,"yPos":1814},"ID":277,"TMPFontGUID":null,"Text":"I
     didn''t mean to scare you. I want you to know that the field is not safe to walk
-    through","parentUIDs":[275,275],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":239,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1626.5,"yPos":1716},"ID":278,"TMPFontGUID":null,"Text":"It
-    doesn''t matter why you want to cross that field, that area is dangerous!","parentUIDs":[276,276],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":279,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1631.5,"yPos":1849},"ID":279,"TMPFontGUID":null,"Text":"There
-    are other ways to get water. Stop wasting your time here and go some where else.","parentUIDs":[278,278],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":280,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1633.5,"yPos":1987},"ID":280,"TMPFontGUID":null,"Text":"Jomaphie
-    gives you a dirty look, turns around and walks away. Zack approaches you.","parentUIDs":[279,279],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":281,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1634.5,"yPos":2150},"ID":281,"TMPFontGUID":null,"Text":"Why
-    were you rude to him?","parentUIDs":[280,280],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[282,283],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1076.5,"yPos":2155},"ID":284,"TMPFontGUID":null,"Text":"He
-    should know that he was about to enter a landmine field.","parentUIDs":[282,282],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":285,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1076.5,"yPos":2298},"ID":285,"TMPFontGUID":null,"Text":"There
+    through","parentUIDs":[275,275],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":239,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1023.5,"yPos":1573},"ID":278,"TMPFontGUID":null,"Text":"It
+    doesn''t matter why you want to cross that field, that area is dangerous!","parentUIDs":[276,276],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":279,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1028.5,"yPos":1706},"ID":279,"TMPFontGUID":null,"Text":"There
+    are other ways to get water. Stop wasting your time here and go some where else.","parentUIDs":[278,278],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":280,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1030.5,"yPos":1844},"ID":280,"TMPFontGUID":null,"Text":"Jomaphie
+    gives you a dirty look, turns around and walks away. Zack approaches you.","parentUIDs":[279,279],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":281,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1031.5,"yPos":2007},"ID":281,"TMPFontGUID":null,"Text":"Why
+    were you rude to him?","parentUIDs":[280,280],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[282,283],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":473.5,"yPos":2012},"ID":284,"TMPFontGUID":null,"Text":"He
+    should know that he was about to enter a landmine field.","parentUIDs":[282,282],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":285,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":473.5,"yPos":2155},"ID":285,"TMPFontGUID":null,"Text":"There
     is no reason to be harsh to the children. We need to be professional. The villagers
-    noticed how you talked to the child.","parentUIDs":[284,284],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":286,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1075.5,"yPos":2454},"ID":286,"TMPFontGUID":null,"Text":"You
-    look around and you notice the villagers are staring at you.","parentUIDs":[285,285],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":287,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1077.5,"yPos":2584},"ID":287,"TMPFontGUID":null,"Text":"The
+    noticed how you talked to the child.","parentUIDs":[284,284],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":286,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":472.5,"yPos":2311},"ID":286,"TMPFontGUID":null,"Text":"You
+    look around and you notice the villagers are staring at you.","parentUIDs":[285,285],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":287,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":474.5,"yPos":2441},"ID":287,"TMPFontGUID":null,"Text":"The
     way you talk to the children affects how we look. Next time, behave yourself.
-    Let''s continue our patrol.","parentUIDs":[286,286],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":292,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1635.5,"yPos":2423},"ID":288,"TMPFontGUID":null,"Text":"I''m
-    sorry  you had to see that Zack. I had to... ","parentUIDs":[283,283],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":289,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1636.5,"yPos":2552},"ID":289,"TMPFontGUID":null,"Text":"Don''t
-    apologize to me. That child left upset. The villagers noticed how you acted.","parentUIDs":[288,288],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":290,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1634.5,"yPos":2683},"ID":290,"TMPFontGUID":null,"Text":"You
-    look around and you notice the villagers are staring at you.","parentUIDs":[289,289],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":291,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1634.5,"yPos":2828},"ID":291,"TMPFontGUID":null,"Text":"There
+    Let''s continue our patrol.","parentUIDs":[286,286],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":292,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1032.5,"yPos":2280},"ID":288,"TMPFontGUID":null,"Text":"I''m
+    sorry  you had to see that Zack. I had to... ","parentUIDs":[283,283],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":289,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1033.5,"yPos":2409},"ID":289,"TMPFontGUID":null,"Text":"Don''t
+    apologize to me. That child left upset. The villagers noticed how you acted.","parentUIDs":[288,288],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":290,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1031.5,"yPos":2540},"ID":290,"TMPFontGUID":null,"Text":"You
+    look around and you notice the villagers are staring at you.","parentUIDs":[289,289],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":291,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1031.5,"yPos":2685},"ID":291,"TMPFontGUID":null,"Text":"There
     is no reason to talk to the children like that. Please behave yourself.  Let''s
-    continue our patrol.","parentUIDs":[290,290],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":292,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1080.5,"yPos":2826},"ID":292,"TMPFontGUID":null,"Text":"You
+    continue our patrol.","parentUIDs":[290,290],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":292,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":477.5,"yPos":2683},"ID":292,"TMPFontGUID":null,"Text":"You
     have lost reputation points","parentUIDs":[291,287,287,291],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: Agree
@@ -27851,7 +27689,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727015374}
-  m_LocalRotation: {x: -0.01624544, y: -0.9806678, z: 0.17143863, w: -0.09292758}
+  m_LocalRotation: {x: -0.01624545, y: -0.9806678, z: 0.17143866, w: -0.09292761}
   m_LocalPosition: {x: 0, y: 0, z: 826.4655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -29481,7 +29319,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840705923}
-  m_LocalRotation: {x: -0.01624544, y: -0.9806678, z: 0.17143863, w: -0.09292758}
+  m_LocalRotation: {x: -0.01624545, y: -0.9806678, z: 0.17143866, w: -0.09292761}
   m_LocalPosition: {x: 6.9836426, y: 0.9924753, z: 13.6414795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32824,7 +32662,7 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.01624544
+      value: -0.01624545
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
@@ -32834,12 +32672,12 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.17143863
+      value: 0.17143866
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.09292758
+      value: -0.09292761
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}

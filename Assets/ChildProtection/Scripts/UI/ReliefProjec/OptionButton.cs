@@ -9,7 +9,7 @@ public class OptionButton : MonoBehaviour
     TextMeshProUGUI m_ButtoText;
 
     [Header("Info")]
-    [SerializeField] string name;
+    public string choiceName;
     public int cost;
     [SerializeField] string description;
     [SerializeField] Sprite optionImage;
@@ -41,12 +41,12 @@ public class OptionButton : MonoBehaviour
 
     private void Start()
     {
-        m_ButtoText.text = name;
+        m_ButtoText.text = choiceName;
     }
 
     public void UpdateInfoOnClick()
     {
-        nameText.text = name;
+        nameText.text = choiceName;
         costText.text = cost.ToString();
         descriptionText.text = description;
         uiImage.sprite = optionImage;
