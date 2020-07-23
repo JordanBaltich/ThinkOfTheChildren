@@ -17,7 +17,7 @@ public class TestScrpit : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.K))
         {
             reaction.React();
-            Debug.Log(ReportScript.journalCount);
+            Debug.Log(ReportScript.reportCount);
             //interact.Interact();
         }
 

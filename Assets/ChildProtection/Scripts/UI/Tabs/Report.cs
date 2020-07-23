@@ -12,7 +12,7 @@ public class Report : MonoBehaviour
     public float scrollSpeed = 2;
     public const int numInfoSlots = 4;                      // The number of items that can be carried.  This is a constant so that the number of Images and Items are always the same.
 
-    public int journalCount;
+    public int reportCount;
     public ReactionCollection reaction;
 
     private void Start()
@@ -58,7 +58,7 @@ public class Report : MonoBehaviour
             {
                 // ... set it to the picked up info and set the text component to display the info text string.
                 keyInfos[i] = infoToAdd;
-                journalCount++;
+                reportCount++;
                 keyInfoDisplays[i].WriteNote(keyInfos[i]);
                 keyInfoDisplays[i].enabled = true;
                 //reportGameObject.SetActive(true);
@@ -89,7 +89,7 @@ public class Report : MonoBehaviour
 
     public void JournalReaction()
     {
-        if (journalCount == 3)
+        if (reportCount == 3)
         {
             Debug.Log("new journal reaction");
             reaction.React();
