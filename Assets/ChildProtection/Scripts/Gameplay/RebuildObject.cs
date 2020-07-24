@@ -75,6 +75,7 @@ public class RebuildObject : MonoBehaviour
             if (tracker.rebuildProjects.Count == 0)
             {
                 tracker.AddProjectToTracker(reliefProjectName, isFixed);
+                return;
             }
             else
             {

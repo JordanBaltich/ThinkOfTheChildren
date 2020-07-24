@@ -30,10 +30,18 @@ public class EnterBuilding : MonoBehaviour
 
     public void ConverStart()
     {
-        if (m_camera.gameObject.activeInHierarchy && m_camera.enabled == true)
+        if (m_camera == null)
         {
-            m_camera.enabled = false;
+
         }
+        else
+        {
+            if (m_camera.gameObject.activeInHierarchy && m_camera.enabled == true)
+            {
+                m_camera.enabled = false;
+            }
+        }
+       
     }
 
     public void ConverEnd()

@@ -21,12 +21,18 @@ public class MapButton : MonoBehaviour
     public void EnableButton()
     {
         gameObject.SetActive(true);
+
+        pm = GameObject.FindObjectOfType<PlayerMovement>();
     }
 
     public void WaitForABit()
     {
-        pm.DisableMoving();
-        StartCoroutine("WaitingForABit");
+        if (pm != null)
+        {
+            pm.DisableMoving();
+            StartCoroutine("WaitingForABit");
+        }
+       
     }
 
     IEnumerator WaitingForABit()

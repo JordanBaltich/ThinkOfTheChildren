@@ -100,7 +100,18 @@ public class MapCameraController : MonoBehaviour
 
     void CentreToPlayer()
     {
-        // centre camera to player's current position
-        transform.position = new Vector3(playerIconPosition.position.x, transform.position.y, playerIconPosition.position.z);
+        if (playerIconPosition == null)
+        {
+            if (GameObject.FindObjectOfType<PlayerMovement>() != null)
+            {
+                playerIconPosition = GameObject.FindObjectOfType<PlayerMovement>().transform;
+            }
+        }
+        else
+        {
+            // centre camera to player's current position
+            transform.position = new Vector3(playerIconPosition.position.x, transform.position.y, playerIconPosition.position.z);
+        }
+       
     }
 }
