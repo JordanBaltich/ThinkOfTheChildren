@@ -64,7 +64,11 @@ public class StateCamera : MonoBehaviour
     {
         if (m_animator == null)
             m_animator = GetComponent<Animator>();
-        m_animator.SetTrigger("FocusOnAdult");
+        
+        if (m_animator.gameObject.activeSelf)
+        {
+            m_animator.SetTrigger("FocusOnAdult");
+        }
     }
 
     public void SwitchToCivilian()
