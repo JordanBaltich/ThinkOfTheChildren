@@ -32,7 +32,7 @@ public class PartnerInteraction : MonoBehaviour
     {
         if (displayInfo)
         {
-            displayImage.color = Color.black;
+            displayImage.color = Color.white;
         } else
         {
             displayImage.color = Color.clear;
