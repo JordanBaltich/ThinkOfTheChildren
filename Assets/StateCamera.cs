@@ -10,6 +10,7 @@ public class StateCamera : MonoBehaviour
 {
     Animator m_animator;
     CinemachineStateDrivenCamera m_StateDriver;
+    int cameraNum;
     CinemachineVirtualCameraBase[] m_Cameras;
 
     public static StateCamera Instance { get; private set; }
@@ -42,26 +43,38 @@ public class StateCamera : MonoBehaviour
 
     private void SwitchInToConversation()
     {
-        //m_animator.SetTrigger("FocusOnChild");
+        //m_animator.SetTrigger("FocusOnChild" + cameraNum.ToString());
     }
 
     public void SwitchToPlayer()
     {
+        if(m_animator==null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnPlayer");
     }
 
     public void SwitchToChild(int childNum)
     {
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnChild" + childNum.ToString());
     }
 
     public void SwitchToAdult()
     {
-        m_animator.SetTrigger("FocusOnAdult");
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
+        
+        if (m_animator.gameObject.activeSelf)
+        {
+            m_animator.SetTrigger("FocusOnAdult");
+        }
     }
 
     public void SwitchToCivilian()
     {
+        if (m_animator == null)
+            m_animator = GetComponent<Animator>();
         m_animator.SetTrigger("FocusOnCivilian");
     }
 
