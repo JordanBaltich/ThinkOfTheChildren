@@ -2189,7 +2189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3711809778098252561
 Transform:
@@ -3911,6 +3911,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6144587779208333305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3717124300279425062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 59.975494, y: 2.1999056, z: 20}
+  m_Center: {x: 0.020988267, y: -0.9581415, z: -1.7095272e-16}
 --- !u!208 &6558581615615140351
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3927,19 +3940,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.4, z: 0}
   m_TimeToStationary: 0.5
---- !u!65 &6144587779208333305
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3717124300279425062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 59.975494, y: 2.1999056, z: 20}
-  m_Center: {x: 0.020988267, y: -0.9581415, z: -1.7095272e-16}
 --- !u!1 &3994191084528507172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7725,6 +7725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ModularRoof
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186328262379980563, guid: 1955df4dcf5791b4995e718d72331e6b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1955df4dcf5791b4995e718d72331e6b, type: 3}
