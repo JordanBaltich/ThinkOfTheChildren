@@ -718,7 +718,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15115752}
-  m_LocalRotation: {x: 0.062274404, y: -0.2828522, z: 0.018406626, w: 0.95696276}
+  m_LocalRotation: {x: 0.0622744, y: -0.2828522, z: 0.018406628, w: 0.95696276}
   m_LocalPosition: {x: -9.33, y: 7.4, z: -20.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -869,7 +869,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-33260
+  m_Name: pb_Mesh-70390
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2553,7 +2553,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34590
+  m_Name: pb_Mesh-72216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2963,7 +2963,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-21504
+  m_Name: pb_Mesh-58674
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4930,6 +4930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1289112568, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
+      propertyPath: currentPoints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1000014019507428, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5169,7 +5173,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-35846
+  m_Name: pb_Mesh-73498
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7076,6 +7080,166 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317064204}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &317958881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317958882}
+  - component: {fileID: 317958883}
+  m_Layer: 0
+  m_Name: RafaelReliefProjectDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &317958882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317958881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1737693929}
+  m_Father: {fileID: 3422550553409171960}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &317958883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317958881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CurrentIDCounter: 8
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":436,"yPos":153},"ID":1,"TMPFontGUID":null,"Text":"Leave","parentUIDs":[0,0],"SpeechUID":6},{"EditorInfo":{"isRoot":false,"xPos":735,"yPos":153},"ID":2,"TMPFontGUID":null,"Text":"Hand
+    In Report","parentUIDs":[0,0],"SpeechUID":5},{"EditorInfo":{"isRoot":false,"xPos":1035,"yPos":154},"ID":3,"TMPFontGUID":null,"Text":"Relief
+    Projects","parentUIDs":[0,0],"SpeechUID":4}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":735,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"How
+    can I help you?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[1,2,3],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1036,"yPos":302},"ID":4,"TMPFontGUID":null,"Text":"I''d
+    like to see what Relief Projects are available.","parentUIDs":[3,3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":7,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":735,"yPos":302},"ID":5,"TMPFontGUID":null,"Text":"I''d
+    like to hand in my report so far.","parentUIDs":[2,2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":435,"yPos":302},"ID":6,"TMPFontGUID":null,"Text":"I''ll
+    come back later.","parentUIDs":[1,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1035,"yPos":500},"ID":7,"TMPFontGUID":null,"Text":"Here
+    you go.","parentUIDs":[4,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
+  saveVersion: 103
+  DefaultName:
+  DefaultSprite: {fileID: 0}
+  DefaultNPCCameraTarget: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 1737693934}
+  - {fileID: 1737693933}
+  - {fileID: 1737693932}
+  - {fileID: 1737693931}
+  - {fileID: 1737693930}
+  - {fileID: 1737693937}
+  - {fileID: 1737693936}
+  - {fileID: 1737693935}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1001 &325427364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1095903348}
+    m_Modifications:
+    - target: {fileID: 4348558756000838658, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassTerrain (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.0000515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09441f153ce26d042a16662898e55397, type: 3}
+--- !u!4 &325427365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+    type: 3}
+  m_PrefabInstance: {fileID: 325427364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &325610524
 GameObject:
   m_ObjectHideFlags: 0
@@ -9891,7 +10055,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-36954
+  m_Name: pb_Mesh-74606
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19432,7 +19596,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29284
+  m_Name: pb_Mesh-66444
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20541,7 +20705,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-30490
+  m_Name: pb_Mesh-67580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22587,7 +22751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dc6b17b276d6948903ade30dec71eb, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  sceneName: TheVillage03
+  sceneName: TheVillage03.2
   startingPointInLoadedScene: VillageStart
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!1001 &1116233418
@@ -24813,7 +24977,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-35848
+  m_Name: pb_Mesh-73504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25238,7 +25402,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-36956
+  m_Name: pb_Mesh-74612
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27799,7 +27963,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29282
+  m_Name: pb_Mesh-66434
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30732,7 +30896,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28130
+  m_Name: pb_Mesh-65220
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30889,6 +31053,218 @@ Mesh:
     offset: 0
     size: 0
     path:
+--- !u!1 &1536425885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536425890}
+  - component: {fileID: 1536425889}
+  - component: {fileID: 1536425888}
+  - component: {fileID: 1536425887}
+  - component: {fileID: 1536425886}
+  m_Layer: 0
+  m_Name: ReliefProjectDummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1536425886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536425885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1672919802}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument:
+            m_BoolArgument: 1
+          m_CallState: 2
+--- !u!65 &1536425887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536425885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1536425888
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536425885}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 99053abe308fe465da3b6af24a71ea4f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1536425889
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536425885}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1536425890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536425885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.57, y: 1, z: 8.68}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 61
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1550679328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1095903348}
+    m_Modifications:
+    - target: {fileID: 4348558756000838658, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassTerrain (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.9999485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09441f153ce26d042a16662898e55397, type: 3}
+--- !u!4 &1550679329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4348558756000838782, guid: 09441f153ce26d042a16662898e55397,
+    type: 3}
+  m_PrefabInstance: {fileID: 1550679328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1552666624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31236,7 +31612,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-25952
+  m_Name: pb_Mesh-63146
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33224,6 +33600,626 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1672333823}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1672919801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 995284058703126991, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058703126991, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058703126991, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058703126991, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058703126991, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058815665308, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058815665308, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058815665308, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058815665308, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284058815665308, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059122585920, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059122585920, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059122585920, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059122585920, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059122585920, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059716173907, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059716173907, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059716173907, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059716173907, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995284059716173907, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225719805017085705, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225719805017085705, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225719805017085705, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225719805017085705, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444487738784, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444487738784, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444487738784, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444487738784, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444487738784, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508635, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Name
+      value: ReliefProjectWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508635, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508644, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444505508647, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444538675452, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444538675452, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444538675452, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444538675452, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444538675452, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444543689448, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.009765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444723134333, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444723134333, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444723134333, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444723134333, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444723134333, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444916069220, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444916069220, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444916069220, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444916069220, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766444916069220, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446081456222, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446081456222, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446081456222, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446081456222, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446081456222, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446169858682, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446169858682, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446169858682, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446169858682, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446169858682, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446193839123, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 212.49072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446278528471, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446278528471, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446278528471, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446278528471, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446304733251, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446304733251, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446304733251, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446304733251, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446304733251, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446335320362, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446335320362, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446335320362, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739766446335320362, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305512075736, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305512075736, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305512075736, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305512075736, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305582300049, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305582300049, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305582300049, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305582300049, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493305582300049, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306022021194, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: choiceName
+      value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306022021199, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306022021199, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306022021199, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306022021199, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306222264838, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306222264838, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306222264838, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306222264838, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306222264838, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306609251297, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306609251297, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306609251297, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306609251297, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306609251297, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306675345832, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306675345832, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306675345832, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443493306675345832, guid: 90da2c968abb9cf41aca2f503f98572d,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90da2c968abb9cf41aca2f503f98572d, type: 3}
+--- !u!1 &1672919802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739766444505508635, guid: 90da2c968abb9cf41aca2f503f98572d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1672919801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1676043081
 GameObject:
   m_ObjectHideFlags: 0
@@ -33764,7 +34760,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38164
+  m_Name: pb_Mesh-75740
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34416,6 +35412,218 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1735266544}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1737693928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737693929}
+  - component: {fileID: 1737693934}
+  - component: {fileID: 1737693933}
+  - component: {fileID: 1737693932}
+  - component: {fileID: 1737693931}
+  - component: {fileID: 1737693930}
+  - component: {fileID: 1737693937}
+  - component: {fileID: 1737693936}
+  - component: {fileID: 1737693935}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737693929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2290745, y: -0.03, z: -5.9201355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 317958882}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737693930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 7
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1672919802}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 1
+        m_CallState: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 6
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 5
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName:
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName:
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 0
+        m_CallState: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 4
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 0
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 3
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 2
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1737693937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737693928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NodeID: 1
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &1744723013
 GameObject:
   m_ObjectHideFlags: 0
@@ -35787,7 +36995,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38166
+  m_Name: pb_Mesh-75746
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35950,7 +37158,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24106
+  m_Name: pb_Mesh-61284
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40685,7 +41893,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   delay: 0
-  conversation: {fileID: 915749118653513285}
+  conversation: {fileID: 317958883}
   cutsceneCamera: {fileID: 0}
 --- !u!1 &2072328263
 GameObject:
@@ -42863,7 +44071,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640858597252182487}
-  m_LocalRotation: {x: 0.05082686, y: 0.3089377, z: -0.016536081, w: 0.94957924}
+  m_LocalRotation: {x: 0.050826855, y: 0.3089377, z: -0.016536094, w: 0.94957924}
   m_LocalPosition: {x: -319.80182, y: -139.65028, z: 19.164204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -43362,136 +44570,136 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   CurrentIDCounter: 121
-  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":712.5,"yPos":-583},"ID":6,"TMPFontGUID":null,"Text":"I''d
-    like to make a report","parentUIDs":[0,0],"SpeechUID":7},{"EditorInfo":{"isRoot":false,"xPos":897.5,"yPos":-291},"ID":8,"TMPFontGUID":null,"Text":"Armed
-    Child Soldier","parentUIDs":[7,7],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":25.5,"yPos":-476},"ID":9,"TMPFontGUID":null,"Text":"Child
-    Labourer","parentUIDs":[7,7],"SpeechUID":11},{"EditorInfo":{"isRoot":false,"xPos":2402.5,"yPos":-453},"ID":10,"TMPFontGUID":null,"Text":"Child
-    playing in Landmine field","parentUIDs":[7,7],"SpeechUID":87},{"EditorInfo":{"isRoot":false,"xPos":-464.5,"yPos":-204},"ID":13,"TMPFontGUID":null,"Text":"Ignored","parentUIDs":[12,12],"SpeechUID":17},{"EditorInfo":{"isRoot":false,"xPos":-191.5,"yPos":-6},"ID":14,"TMPFontGUID":null,"Text":"Disagreed
-    & Explained ","parentUIDs":[12,12],"SpeechUID":25},{"EditorInfo":{"isRoot":false,"xPos":179.5,"yPos":-2},"ID":15,"TMPFontGUID":null,"Text":"Didn''t
-    explain & Ignored","parentUIDs":[12,12],"SpeechUID":30},{"EditorInfo":{"isRoot":false,"xPos":379.5,"yPos":-192},"ID":16,"TMPFontGUID":null,"Text":"Agreed","parentUIDs":[12,12],"SpeechUID":35},{"EditorInfo":{"isRoot":false,"xPos":646.5,"yPos":-75},"ID":41,"TMPFontGUID":null,"Text":"Gave
-    Money","parentUIDs":[40,40],"SpeechUID":45},{"EditorInfo":{"isRoot":false,"xPos":990.5,"yPos":153},"ID":42,"TMPFontGUID":null,"Text":"Kept
-    asking questions","parentUIDs":[40,40],"SpeechUID":56},{"EditorInfo":{"isRoot":false,"xPos":1252.5,"yPos":70},"ID":43,"TMPFontGUID":null,"Text":"Comforted
-    them","parentUIDs":[40,40],"SpeechUID":61},{"EditorInfo":{"isRoot":false,"xPos":1472.5,"yPos":-83},"ID":44,"TMPFontGUID":null,"Text":"Disagreed
-    and argued with Zack","parentUIDs":[40,40],"SpeechUID":67},{"EditorInfo":{"isRoot":false,"xPos":1922.5,"yPos":-129},"ID":89,"TMPFontGUID":null,"Text":"Argued","parentUIDs":[88,88],"SpeechUID":93},{"EditorInfo":{"isRoot":false,"xPos":2230.5,"yPos":22},"ID":90,"TMPFontGUID":null,"Text":"Told
-    him to go home","parentUIDs":[88,88],"SpeechUID":102},{"EditorInfo":{"isRoot":false,"xPos":2578.5,"yPos":13},"ID":91,"TMPFontGUID":null,"Text":"Helped
-    him out","parentUIDs":[88,88],"SpeechUID":109},{"EditorInfo":{"isRoot":false,"xPos":2937.5,"yPos":-141},"ID":92,"TMPFontGUID":null,"Text":"Disagreed
-    and argued with Zack","parentUIDs":[88,88],"SpeechUID":113}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":692.5,"yPos":-760},"ID":0,"TMPFontGUID":null,"Text":"How
-    can I help you officer?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[6],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":701.5,"yPos":-476},"ID":7,"TMPFontGUID":null,"Text":"What
-    are you reporting?","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[8,9,10],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":-372},"ID":11,"TMPFontGUID":null,"Text":"We
-    had a child ask to wash our Vehicles","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":12,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":-210},"ID":12,"TMPFontGUID":null,"Text":"Okay.
-    What did you do?","parentUIDs":[11,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[13,14,15,16],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-469.5,"yPos":-85},"ID":17,"TMPFontGUID":null,"Text":"I
-    completely ignored the child.","parentUIDs":[13,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-484.5,"yPos":61},"ID":18,"TMPFontGUID":null,"Text":"Oh...then
-    what happened?","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-484.5,"yPos":212},"ID":19,"TMPFontGUID":null,"Text":"She
-    left. It was pretty easy to take care of..","parentUIDs":[18,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":20,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-485.5,"yPos":348},"ID":20,"TMPFontGUID":null,"Text":"But
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":755,"yPos":199},"ID":6,"TMPFontGUID":null,"Text":"I''d
+    like to make a report","parentUIDs":[0,0],"SpeechUID":7},{"EditorInfo":{"isRoot":false,"xPos":940,"yPos":491},"ID":8,"TMPFontGUID":null,"Text":"Armed
+    Child Soldier","parentUIDs":[7,7],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":68,"yPos":306},"ID":9,"TMPFontGUID":null,"Text":"Child
+    Labourer","parentUIDs":[7,7],"SpeechUID":11},{"EditorInfo":{"isRoot":false,"xPos":2445,"yPos":329},"ID":10,"TMPFontGUID":null,"Text":"Child
+    playing in Landmine field","parentUIDs":[7,7],"SpeechUID":87},{"EditorInfo":{"isRoot":false,"xPos":-422,"yPos":578},"ID":13,"TMPFontGUID":null,"Text":"Ignored","parentUIDs":[12,12],"SpeechUID":17},{"EditorInfo":{"isRoot":false,"xPos":-149,"yPos":776},"ID":14,"TMPFontGUID":null,"Text":"Disagreed
+    & Explained ","parentUIDs":[12,12],"SpeechUID":25},{"EditorInfo":{"isRoot":false,"xPos":222,"yPos":780},"ID":15,"TMPFontGUID":null,"Text":"Didn''t
+    explain & Ignored","parentUIDs":[12,12],"SpeechUID":30},{"EditorInfo":{"isRoot":false,"xPos":422,"yPos":590},"ID":16,"TMPFontGUID":null,"Text":"Agreed","parentUIDs":[12,12],"SpeechUID":35},{"EditorInfo":{"isRoot":false,"xPos":689,"yPos":707},"ID":41,"TMPFontGUID":null,"Text":"Gave
+    Money","parentUIDs":[40,40],"SpeechUID":45},{"EditorInfo":{"isRoot":false,"xPos":1033,"yPos":935},"ID":42,"TMPFontGUID":null,"Text":"Kept
+    asking questions","parentUIDs":[40,40],"SpeechUID":56},{"EditorInfo":{"isRoot":false,"xPos":1295,"yPos":852},"ID":43,"TMPFontGUID":null,"Text":"Comforted
+    them","parentUIDs":[40,40],"SpeechUID":61},{"EditorInfo":{"isRoot":false,"xPos":1515,"yPos":699},"ID":44,"TMPFontGUID":null,"Text":"Disagreed
+    and argued with Zack","parentUIDs":[40,40],"SpeechUID":67},{"EditorInfo":{"isRoot":false,"xPos":1965,"yPos":653},"ID":89,"TMPFontGUID":null,"Text":"Argued","parentUIDs":[88,88],"SpeechUID":93},{"EditorInfo":{"isRoot":false,"xPos":2273,"yPos":804},"ID":90,"TMPFontGUID":null,"Text":"Told
+    him to go home","parentUIDs":[88,88],"SpeechUID":102},{"EditorInfo":{"isRoot":false,"xPos":2621,"yPos":795},"ID":91,"TMPFontGUID":null,"Text":"Helped
+    him out","parentUIDs":[88,88],"SpeechUID":109},{"EditorInfo":{"isRoot":false,"xPos":2980,"yPos":641},"ID":92,"TMPFontGUID":null,"Text":"Disagreed
+    and argued with Zack","parentUIDs":[88,88],"SpeechUID":113}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":735,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"How
+    can I help you officer?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[6],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":744,"yPos":306},"ID":7,"TMPFontGUID":null,"Text":"What
+    are you reporting?","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[8,9,10],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":72,"yPos":410},"ID":11,"TMPFontGUID":null,"Text":"We
+    had a child ask to wash our Vehicles","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":12,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":72,"yPos":572},"ID":12,"TMPFontGUID":null,"Text":"Okay.
+    What did you do?","parentUIDs":[11,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[13,14,15,16],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-427,"yPos":697},"ID":17,"TMPFontGUID":null,"Text":"I
+    completely ignored the child.","parentUIDs":[13,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-442,"yPos":843},"ID":18,"TMPFontGUID":null,"Text":"Oh...then
+    what happened?","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-442,"yPos":994},"ID":19,"TMPFontGUID":null,"Text":"She
+    left. It was pretty easy to take care of..","parentUIDs":[18,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":20,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-443,"yPos":1130},"ID":20,"TMPFontGUID":null,"Text":"But
     you need to explain to her why she cannot work. The DPKO-DFS-DPA  Policy states
-    that child labour is strictly prohibited","parentUIDs":[19,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":21,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-494.5,"yPos":477},"ID":21,"TMPFontGUID":null,"Text":"She
-    is a child and shouldn''t be working.","parentUIDs":[20,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":22,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-497.5,"yPos":608},"ID":22,"TMPFontGUID":null,"Text":"If
-    you just ignore her, how will she knows its bad?","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-495.5,"yPos":735},"ID":23,"TMPFontGUID":null,"Text":"Next
-    time, talk to them, be friendly and approachable.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-484.5,"yPos":861},"ID":24,"TMPFontGUID":null,"Text":"We
-    need the children of Bongo to trust us. We''re here to help them","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":82,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-197.5,"yPos":85},"ID":25,"TMPFontGUID":null,"Text":"I
-    said no and explained to her why I could not allow her to wash our vehicles.","parentUIDs":[14,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":26,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-197.5,"yPos":224},"ID":26,"TMPFontGUID":null,"Text":"Well
-    done! Glad to hear it!","parentUIDs":[25,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":27,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-187.5,"yPos":361},"ID":27,"TMPFontGUID":null,"Text":"Now
+    that child labour is strictly prohibited","parentUIDs":[19,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":21,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-452,"yPos":1259},"ID":21,"TMPFontGUID":null,"Text":"She
+    is a child and shouldn''t be working.","parentUIDs":[20,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":22,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-455,"yPos":1390},"ID":22,"TMPFontGUID":null,"Text":"If
+    you just ignore her, how will she knows its bad?","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-453,"yPos":1517},"ID":23,"TMPFontGUID":null,"Text":"Next
+    time, talk to them, be friendly and approachable.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-442,"yPos":1643},"ID":24,"TMPFontGUID":null,"Text":"We
+    need the children of Bongo to trust us. We''re here to help them","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":82,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-155,"yPos":867},"ID":25,"TMPFontGUID":null,"Text":"I
+    said no and explained to her why I could not allow her to wash our vehicles.","parentUIDs":[14,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":26,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-155,"yPos":1006},"ID":26,"TMPFontGUID":null,"Text":"Well
+    done! Glad to hear it!","parentUIDs":[25,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":27,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-145,"yPos":1143},"ID":27,"TMPFontGUID":null,"Text":"Now
     she understands that being a child labourer is prohibited under the DPKO-DFS-DPA
-    Policy.","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-174.5,"yPos":488},"ID":28,"TMPFontGUID":null,"Text":"Explaining
-    it to her also made you an approachable Peacekeeper...","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":29,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-172.5,"yPos":614},"ID":29,"TMPFontGUID":null,"Text":"You''re
-    on the right track to get the children of Bongo to trust us.","parentUIDs":[28,28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":176.5,"yPos":87},"ID":30,"TMPFontGUID":null,"Text":"I
-    ignored her and told her I was busy. I''m not wasting my time on kids.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":31,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":177.5,"yPos":199},"ID":31,"TMPFontGUID":null,"Text":"That''s
+    Policy.","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-132,"yPos":1270},"ID":28,"TMPFontGUID":null,"Text":"Explaining
+    it to her also made you an approachable Peacekeeper...","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":29,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-130,"yPos":1396},"ID":29,"TMPFontGUID":null,"Text":"You''re
+    on the right track to get the children of Bongo to trust us.","parentUIDs":[28,28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":219,"yPos":869},"ID":30,"TMPFontGUID":null,"Text":"I
+    ignored her and told her I was busy. I''m not wasting my time on kids.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":31,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":220,"yPos":981},"ID":31,"TMPFontGUID":null,"Text":"That''s
     not right. You shouldn''t have said that you''re \"wasting your time\" by explaining
-    to her what was wrong with being a child labourer.  ","parentUIDs":[30,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":176.5,"yPos":327},"ID":32,"TMPFontGUID":null,"Text":"She
+    to her what was wrong with being a child labourer.  ","parentUIDs":[30,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":219,"yPos":1109},"ID":32,"TMPFontGUID":null,"Text":"She
     would have learned something and stop asking for work. The DPKO-DFS-DPA  Policy
-    states that child labour is strictly prohibited.","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":173.5,"yPos":443},"ID":33,"TMPFontGUID":null,"Text":"Further
+    states that child labour is strictly prohibited.","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":216,"yPos":1225},"ID":33,"TMPFontGUID":null,"Text":"Further
     more, we need to be nice and approachable. Not ignoring others or being rude.
-    ","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":34,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":162.5,"yPos":554},"ID":34,"TMPFontGUID":null,"Text":"Just
-    listen and talk to the villagers next time.","parentUIDs":[33,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":399.5,"yPos":-113},"ID":35,"TMPFontGUID":null,"Text":"I
-    agreed to her request and she cleaned our vehicles.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":419.5,"yPos":-4},"ID":36,"TMPFontGUID":null,"Text":"That''s
+    ","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":34,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":205,"yPos":1336},"ID":34,"TMPFontGUID":null,"Text":"Just
+    listen and talk to the villagers next time.","parentUIDs":[33,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":442,"yPos":669},"ID":35,"TMPFontGUID":null,"Text":"I
+    agreed to her request and she cleaned our vehicles.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":462,"yPos":778},"ID":36,"TMPFontGUID":null,"Text":"That''s
     considered child labour. Let me remind you that DPKO-DFS-DPA  Policy states that
-    child labour is strictly prohibited !","parentUIDs":[35,35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":37,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":436.5,"yPos":111},"ID":37,"TMPFontGUID":null,"Text":"We
-    can get into major trouble for this...","parentUIDs":[36,36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":38,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":443.5,"yPos":250},"ID":38,"TMPFontGUID":null,"Text":"Don''t
-    ever do that again or else you''re fired! Is that understood?","parentUIDs":[37,37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":86,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":901.5,"yPos":-211},"ID":39,"TMPFontGUID":null,"Text":"We
-    had an armed child jump in front of our vehicle and beg for money. ","parentUIDs":[8,8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":40,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":900.5,"yPos":-99},"ID":40,"TMPFontGUID":null,"Text":"
-    Okay. What did you do?","parentUIDs":[39,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[41,42,43,44],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":662.5,"yPos":44},"ID":45,"TMPFontGUID":null,"Text":"He
-    did not leave us alone. So I just gave him what and wanted.","parentUIDs":[41,41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":46,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":668.5,"yPos":163},"ID":46,"TMPFontGUID":null,"Text":"So
-    let me get this straight....","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":47,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":675.5,"yPos":281},"ID":47,"TMPFontGUID":null,"Text":"
-    This random child, holstering a fire arm, jumps in front of the vehicle.","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":48,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":682.5,"yPos":401},"ID":48,"TMPFontGUID":null,"Text":"Instead
-    of asking him why he was here, you simply gave him whatever he wanted. \r\n","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":688.5,"yPos":523},"ID":49,"TMPFontGUID":null,"Text":"Then,
-    he walked away, still holding a fire arm. ","parentUIDs":[48,48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":693.5,"yPos":640},"ID":50,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":685.5,"yPos":757},"ID":51,"TMPFontGUID":null,"Text":"That
-    was a child soldier and you nothing to help him.","parentUIDs":[50,50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":52,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":693.5,"yPos":897},"ID":52,"TMPFontGUID":null,"Text":"Now,
-    he is wandering around the village still holding a fire arm.","parentUIDs":[51,51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":694.5,"yPos":1031},"ID":53,"TMPFontGUID":null,"Text":"He
-    is most likely forced to be a soldier and you didn''t do anything about it.","parentUIDs":[52,52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":691.5,"yPos":1165},"ID":54,"TMPFontGUID":null,"Text":"Next
-    time you see a child soldier, ask questions or risk losing your job.Understood?","parentUIDs":[53,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":55,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":695.5,"yPos":1327},"ID":55,"TMPFontGUID":null,"Text":"Yes
-    sir. ","parentUIDs":[54,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":993.5,"yPos":276},"ID":56,"TMPFontGUID":null,"Text":"I
-    asked him questions but he started to sob and ran away.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":57,"TimeUntilAdvance":0,"Volume":0.581},{"EditorInfo":{"isRoot":false,"xPos":999.5,"yPos":417},"ID":57,"TMPFontGUID":null,"Text":"And
-    you didn''t follow him or anything?","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":58,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":991.5,"yPos":556},"ID":58,"TMPFontGUID":null,"Text":"He
-    went into the jungle and I was on night patrol. I couldn''t help him....","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":59,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1012.5,"yPos":681},"ID":59,"TMPFontGUID":null,"Text":"Alright
-    I understand.","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":60,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1012.5,"yPos":788},"ID":60,"TMPFontGUID":null,"Text":"It''s
-    best not to get lost in the jungle trying to find him. ","parentUIDs":[59,59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":76,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1279.5,"yPos":170},"ID":61,"TMPFontGUID":null,"Text":"I
-    managed to ask him questions and he started sobbing.","parentUIDs":[43,43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":62,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1285.5,"yPos":315},"ID":62,"TMPFontGUID":null,"Text":"I
-    comforted him and told me he was being forced to ask for money.","parentUIDs":[61,61],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":63,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1303.5,"yPos":472},"ID":63,"TMPFontGUID":null,"Text":"I
-    told him that the U.C police will protect him under the IHRL. ","parentUIDs":[62,62],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1319.5,"yPos":609},"ID":64,"TMPFontGUID":null,"Text":"He
-    is located at this house, waiting for some help.  ","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":65,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1326.5,"yPos":729},"ID":65,"TMPFontGUID":null,"Text":"Alright
-    we will send some help for the child.","parentUIDs":[64,64],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":66,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1332.5,"yPos":889},"ID":66,"TMPFontGUID":null,"Text":"Good
-    job helping out! ","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":75,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1536.5,"yPos":52},"ID":67,"TMPFontGUID":null,"Text":"I
-    scared him away since he wouldn''t move.","parentUIDs":[44,44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":68,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1551.5,"yPos":187},"ID":68,"TMPFontGUID":null,"Text":"Zack
-    didn''t like the approach I took and had an argument with him..","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1603.5,"yPos":337},"ID":69,"TMPFontGUID":null,"Text":"I
-    understand. You created more fear with that child for no reason. ","parentUIDs":[68,68],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1629.5,"yPos":472},"ID":70,"TMPFontGUID":null,"Text":"Our
-    job is to help the children that live in the Village, not to  scare them.","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1671.5,"yPos":589},"ID":71,"TMPFontGUID":null,"Text":"I
-    never want to hear that you scared someone to  be in control. ","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":72,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1680.5,"yPos":692},"ID":72,"TMPFontGUID":null,"Text":"Its
-    not our job! We are Peace Keepers!","parentUIDs":[71,71],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1691.5,"yPos":818},"ID":73,"TMPFontGUID":null,"Text":"Keep
+    child labour is strictly prohibited !","parentUIDs":[35,35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":37,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":479,"yPos":893},"ID":37,"TMPFontGUID":null,"Text":"We
+    can get into major trouble for this...","parentUIDs":[36,36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":38,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":486,"yPos":1032},"ID":38,"TMPFontGUID":null,"Text":"Don''t
+    ever do that again or else you''re fired! Is that understood?","parentUIDs":[37,37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":86,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":944,"yPos":571},"ID":39,"TMPFontGUID":null,"Text":"We
+    had an armed child jump in front of our vehicle and beg for money. ","parentUIDs":[8,8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":40,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":943,"yPos":683},"ID":40,"TMPFontGUID":null,"Text":"
+    Okay. What did you do?","parentUIDs":[39,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[41,42,43,44],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":705,"yPos":826},"ID":45,"TMPFontGUID":null,"Text":"He
+    did not leave us alone. So I just gave him what and wanted.","parentUIDs":[41,41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":46,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":711,"yPos":945},"ID":46,"TMPFontGUID":null,"Text":"So
+    let me get this straight....","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":47,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":718,"yPos":1063},"ID":47,"TMPFontGUID":null,"Text":"
+    This random child, holstering a fire arm, jumps in front of the vehicle.","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":48,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":725,"yPos":1183},"ID":48,"TMPFontGUID":null,"Text":"Instead
+    of asking him why he was here, you simply gave him whatever he wanted. \r\n","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":731,"yPos":1305},"ID":49,"TMPFontGUID":null,"Text":"Then,
+    he walked away, still holding a fire arm. ","parentUIDs":[48,48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":736,"yPos":1422},"ID":50,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":728,"yPos":1539},"ID":51,"TMPFontGUID":null,"Text":"That
+    was a child soldier and you nothing to help him.","parentUIDs":[50,50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":52,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":736,"yPos":1679},"ID":52,"TMPFontGUID":null,"Text":"Now,
+    he is wandering around the village still holding a fire arm.","parentUIDs":[51,51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":737,"yPos":1813},"ID":53,"TMPFontGUID":null,"Text":"He
+    is most likely forced to be a soldier and you didn''t do anything about it.","parentUIDs":[52,52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":734,"yPos":1947},"ID":54,"TMPFontGUID":null,"Text":"Next
+    time you see a child soldier, ask questions or risk losing your job.Understood?","parentUIDs":[53,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":55,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":738,"yPos":2109},"ID":55,"TMPFontGUID":null,"Text":"Yes
+    sir. ","parentUIDs":[54,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1036,"yPos":1058},"ID":56,"TMPFontGUID":null,"Text":"I
+    asked him questions but he started to sob and ran away.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":57,"TimeUntilAdvance":0,"Volume":0.581},{"EditorInfo":{"isRoot":false,"xPos":1042,"yPos":1199},"ID":57,"TMPFontGUID":null,"Text":"And
+    you didn''t follow him or anything?","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":58,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1034,"yPos":1338},"ID":58,"TMPFontGUID":null,"Text":"He
+    went into the jungle and I was on night patrol. I couldn''t help him....","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":59,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1055,"yPos":1463},"ID":59,"TMPFontGUID":null,"Text":"Alright
+    I understand.","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":60,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1055,"yPos":1570},"ID":60,"TMPFontGUID":null,"Text":"It''s
+    best not to get lost in the jungle trying to find him. ","parentUIDs":[59,59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":76,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1322,"yPos":952},"ID":61,"TMPFontGUID":null,"Text":"I
+    managed to ask him questions and he started sobbing.","parentUIDs":[43,43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":62,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1328,"yPos":1097},"ID":62,"TMPFontGUID":null,"Text":"I
+    comforted him and told me he was being forced to ask for money.","parentUIDs":[61,61],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":63,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1346,"yPos":1254},"ID":63,"TMPFontGUID":null,"Text":"I
+    told him that the U.C police will protect him under the IHRL. ","parentUIDs":[62,62],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1362,"yPos":1391},"ID":64,"TMPFontGUID":null,"Text":"He
+    is located at this house, waiting for some help.  ","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":65,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1369,"yPos":1511},"ID":65,"TMPFontGUID":null,"Text":"Alright
+    we will send some help for the child.","parentUIDs":[64,64],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":66,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1375,"yPos":1671},"ID":66,"TMPFontGUID":null,"Text":"Good
+    job helping out! ","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":75,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1579,"yPos":834},"ID":67,"TMPFontGUID":null,"Text":"I
+    scared him away since he wouldn''t move.","parentUIDs":[44,44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":68,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1594,"yPos":969},"ID":68,"TMPFontGUID":null,"Text":"Zack
+    didn''t like the approach I took and had an argument with him..","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1646,"yPos":1119},"ID":69,"TMPFontGUID":null,"Text":"I
+    understand. You created more fear with that child for no reason. ","parentUIDs":[68,68],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1672,"yPos":1254},"ID":70,"TMPFontGUID":null,"Text":"Our
+    job is to help the children that live in the Village, not to  scare them.","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1714,"yPos":1371},"ID":71,"TMPFontGUID":null,"Text":"I
+    never want to hear that you scared someone to  be in control. ","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":72,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1723,"yPos":1474},"ID":72,"TMPFontGUID":null,"Text":"Its
+    not our job! We are Peace Keepers!","parentUIDs":[71,71],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1734,"yPos":1600},"ID":73,"TMPFontGUID":null,"Text":"Keep
     that in mind when your out there. Otherwise your job here will be terminated.
-    Is that understood?","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":74,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1693.5,"yPos":1035},"ID":74,"TMPFontGUID":null,"Text":"Yes
-    sir. ","parentUIDs":[73,73],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1340.5,"yPos":1026},"ID":75,"TMPFontGUID":null,"Text":"Thank
-    you sir! ","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":78,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1010.5,"yPos":924},"ID":76,"TMPFontGUID":null,"Text":"
+    Is that understood?","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":74,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1736,"yPos":1817},"ID":74,"TMPFontGUID":null,"Text":"Yes
+    sir. ","parentUIDs":[73,73],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1383,"yPos":1808},"ID":75,"TMPFontGUID":null,"Text":"Thank
+    you sir! ","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":78,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1053,"yPos":1706},"ID":76,"TMPFontGUID":null,"Text":"
     You and Zack go back to station and patrol the area. Report back to me if any
-    incidents arise","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":77,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1023.5,"yPos":1065},"ID":77,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[76,76],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1361.5,"yPos":1139},"ID":78,"TMPFontGUID":null,"Text":"I
+    incidents arise","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":77,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1066,"yPos":1847},"ID":77,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[76,76],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1404,"yPos":1921},"ID":78,"TMPFontGUID":null,"Text":"I
     need to get back to work. Continue to do what you can to help the children. Report
-    back to me if any incidents arise.","parentUIDs":[75,75],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":79,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1381.5,"yPos":1260},"ID":79,"TMPFontGUID":null,"Text":"Yes
-    sir. ","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-170.5,"yPos":725},"ID":80,"TMPFontGUID":null,"Text":"I
+    back to me if any incidents arise.","parentUIDs":[75,75],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":79,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1424,"yPos":2042},"ID":79,"TMPFontGUID":null,"Text":"Yes
+    sir. ","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-128,"yPos":1507},"ID":80,"TMPFontGUID":null,"Text":"I
     need to get back to work. Continue to do what you can to help the children. Report
-    back to me if any incidents arise.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":81,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-171.5,"yPos":838},"ID":81,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[80,80],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-469.5,"yPos":986},"ID":82,"TMPFontGUID":null,"Text":"I
+    back to me if any incidents arise.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":81,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-129,"yPos":1620},"ID":81,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[80,80],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-427,"yPos":1768},"ID":82,"TMPFontGUID":null,"Text":"I
     need to get back to work. Continue to do what you can to help the children. Report
-    back to me if any incidents arise.","parentUIDs":[24,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":83,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-465.5,"yPos":1130},"ID":83,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":169.5,"yPos":662},"ID":84,"TMPFontGUID":null,"Text":"I
+    back to me if any incidents arise.","parentUIDs":[24,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":83,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-423,"yPos":1912},"ID":83,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":212,"yPos":1444},"ID":84,"TMPFontGUID":null,"Text":"I
     need to get back to work. Continue to do what you can to help the children. Report
-    back to me if any incidents arise.","parentUIDs":[34,34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":169.5,"yPos":783},"ID":85,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[84,84],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":445.5,"yPos":396},"ID":86,"TMPFontGUID":null,"Text":"Yes
-    sir","parentUIDs":[38,38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2415.5,"yPos":-331},"ID":87,"TMPFontGUID":null,"Text":"I
-    encountered a child going into a land mine field to obtain water.","parentUIDs":[10,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":88,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2419.5,"yPos":-157},"ID":88,"TMPFontGUID":null,"Text":"
-    Thats not good. How did you handle it?\r\n","parentUIDs":[87,87],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[89,90,91,92],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1933.5,"yPos":-33},"ID":93,"TMPFontGUID":null,"Text":"
-    I had an argument with the child since he was not listening to me.","parentUIDs":[89,89],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":95,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1941.5,"yPos":116},"ID":95,"TMPFontGUID":null,"Text":"He
-    did not go into the landmine field, so he is safe.","parentUIDs":[93,93],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":96,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1947.5,"yPos":283},"ID":96,"TMPFontGUID":null,"Text":"Zack
-    told me that a lot of the villagers saw you act in a non-professional way.","parentUIDs":[95,95],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":97,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1960.5,"yPos":447},"ID":97,"TMPFontGUID":null,"Text":"
-    He said you made us look bad to in front of everyone.","parentUIDs":[96,96],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":98,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1977.5,"yPos":620},"ID":98,"TMPFontGUID":null,"Text":"But
-    sir, I made sure that the child didn''t go into the land mine field.","parentUIDs":[97,97],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":99,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1988.5,"yPos":795},"ID":99,"TMPFontGUID":null,"Text":"Yes,
-    but the villagers will avoid us since you acted out.","parentUIDs":[98,98],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":100,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2004.5,"yPos":949},"ID":100,"TMPFontGUID":null,"Text":"You''re
-    a Peace Keeper. Start acting in a professional manner. Is that understood?","parentUIDs":[99,99],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":101,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2008.5,"yPos":1087},"ID":101,"TMPFontGUID":null,"Text":"Understood,
-    sir.","parentUIDs":[100,100],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2245.5,"yPos":131},"ID":102,"TMPFontGUID":null,"Text":"I
-    informed him about the land mine field. ","parentUIDs":[90,90],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":103,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2252.5,"yPos":250},"ID":103,"TMPFontGUID":null,"Text":"I
-    convinced him to go home for his safety. He didn''t enter the field.","parentUIDs":[102,102],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":104,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2253.5,"yPos":369},"ID":104,"TMPFontGUID":null,"Text":"Well,
-    you did your job.","parentUIDs":[103,103],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":105,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2254.5,"yPos":491},"ID":105,"TMPFontGUID":null,"Text":"But
-    I was told that he was trying to get water. Is that true?","parentUIDs":[104,104],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":106,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2258.5,"yPos":613},"ID":106,"TMPFontGUID":null,"Text":"Yes
-    sir.","parentUIDs":[105,105],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":107,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2266.5,"yPos":726},"ID":107,"TMPFontGUID":null,"Text":"Next
+    back to me if any incidents arise.","parentUIDs":[34,34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":212,"yPos":1565},"ID":85,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[84,84],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":488,"yPos":1178},"ID":86,"TMPFontGUID":null,"Text":"Yes
+    sir","parentUIDs":[38,38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2458,"yPos":451},"ID":87,"TMPFontGUID":null,"Text":"I
+    encountered a child going into a land mine field to obtain water.","parentUIDs":[10,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":88,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2462,"yPos":625},"ID":88,"TMPFontGUID":null,"Text":"
+    Thats not good. How did you handle it?\r\n","parentUIDs":[87,87],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[89,90,91,92],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1976,"yPos":749},"ID":93,"TMPFontGUID":null,"Text":"
+    I had an argument with the child since he was not listening to me.","parentUIDs":[89,89],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":95,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1984,"yPos":898},"ID":95,"TMPFontGUID":null,"Text":"He
+    did not go into the landmine field, so he is safe.","parentUIDs":[93,93],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":96,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1990,"yPos":1065},"ID":96,"TMPFontGUID":null,"Text":"Zack
+    told me that a lot of the villagers saw you act in a non-professional way.","parentUIDs":[95,95],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":97,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2003,"yPos":1229},"ID":97,"TMPFontGUID":null,"Text":"
+    He said you made us look bad to in front of everyone.","parentUIDs":[96,96],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":98,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2020,"yPos":1402},"ID":98,"TMPFontGUID":null,"Text":"But
+    sir, I made sure that the child didn''t go into the land mine field.","parentUIDs":[97,97],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":99,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2031,"yPos":1577},"ID":99,"TMPFontGUID":null,"Text":"Yes,
+    but the villagers will avoid us since you acted out.","parentUIDs":[98,98],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":100,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2047,"yPos":1731},"ID":100,"TMPFontGUID":null,"Text":"You''re
+    a Peace Keeper. Start acting in a professional manner. Is that understood?","parentUIDs":[99,99],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":101,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2051,"yPos":1869},"ID":101,"TMPFontGUID":null,"Text":"Understood,
+    sir.","parentUIDs":[100,100],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2288,"yPos":913},"ID":102,"TMPFontGUID":null,"Text":"I
+    informed him about the land mine field. ","parentUIDs":[90,90],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":103,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2295,"yPos":1032},"ID":103,"TMPFontGUID":null,"Text":"I
+    convinced him to go home for his safety. He didn''t enter the field.","parentUIDs":[102,102],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":104,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2296,"yPos":1151},"ID":104,"TMPFontGUID":null,"Text":"Well,
+    you did your job.","parentUIDs":[103,103],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":105,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2297,"yPos":1273},"ID":105,"TMPFontGUID":null,"Text":"But
+    I was told that he was trying to get water. Is that true?","parentUIDs":[104,104],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":106,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2301,"yPos":1395},"ID":106,"TMPFontGUID":null,"Text":"Yes
+    sir.","parentUIDs":[105,105],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":107,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2309,"yPos":1508},"ID":107,"TMPFontGUID":null,"Text":"Next
     time, let the children know about our humanitarian aid officers. They will aid
-    the children in obtaining water.","parentUIDs":[106,106],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":108,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2271.5,"yPos":847},"ID":108,"TMPFontGUID":null,"Text":"Roger
-    that sir!","parentUIDs":[107,107],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2557.5,"yPos":125},"ID":109,"TMPFontGUID":null,"Text":"I
+    the children in obtaining water.","parentUIDs":[106,106],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":108,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2314,"yPos":1629},"ID":108,"TMPFontGUID":null,"Text":"Roger
+    that sir!","parentUIDs":[107,107],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2600,"yPos":907},"ID":109,"TMPFontGUID":null,"Text":"I
     listened to him and told him I''ll report to the humanitarian aid officer to
-    help him out.","parentUIDs":[91,91],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":110,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2555.5,"yPos":272},"ID":110,"TMPFontGUID":null,"Text":"Good
+    help him out.","parentUIDs":[91,91],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":110,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2598,"yPos":1054},"ID":110,"TMPFontGUID":null,"Text":"Good
     job! Some of the villagers noticed your actions and are more willing to accept
-    our aid. ","parentUIDs":[109,109],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":111,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2555.5,"yPos":424},"ID":111,"TMPFontGUID":null,"Text":"Keep
+    our aid. ","parentUIDs":[109,109],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":111,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2598,"yPos":1206},"ID":111,"TMPFontGUID":null,"Text":"Keep
     up the good work! I need to get back to work. Report back to me if new incidents
-    arise. ","parentUIDs":[110,110],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":112,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2561.5,"yPos":567},"ID":112,"TMPFontGUID":null,"Text":"Thank
-    you sir!","parentUIDs":[111,111],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2974.5,"yPos":-26},"ID":113,"TMPFontGUID":null,"Text":"I
+    arise. ","parentUIDs":[110,110],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":112,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2604,"yPos":1349},"ID":112,"TMPFontGUID":null,"Text":"Thank
+    you sir!","parentUIDs":[111,111],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3017,"yPos":756},"ID":113,"TMPFontGUID":null,"Text":"I
     was firm with the child and told him not to go into the field. Zack argued with
-    me.","parentUIDs":[92,92],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":114,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2988.5,"yPos":117},"ID":114,"TMPFontGUID":null,"Text":"I
-    heard the report differently.","parentUIDs":[113,113],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":115,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":2998.5,"yPos":279},"ID":115,"TMPFontGUID":null,"Text":"Zack
+    me.","parentUIDs":[92,92],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":114,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3031,"yPos":899},"ID":114,"TMPFontGUID":null,"Text":"I
+    heard the report differently.","parentUIDs":[113,113],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":115,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3041,"yPos":1061},"ID":115,"TMPFontGUID":null,"Text":"Zack
     told me you snapped at the child, embarrassed us and did nothing to help the
-    child. ","parentUIDs":[114,114],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":116,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3011.5,"yPos":415},"ID":116,"TMPFontGUID":null,"Text":"All
-    he needed was water. Which we can supply ","parentUIDs":[115,115],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":117,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3014.5,"yPos":534},"ID":117,"TMPFontGUID":null,"Text":"Stop
-    making us look bad out there!","parentUIDs":[116,116],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":118,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3017.5,"yPos":670},"ID":118,"TMPFontGUID":null,"Text":"I
+    child. ","parentUIDs":[114,114],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":116,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3054,"yPos":1197},"ID":116,"TMPFontGUID":null,"Text":"All
+    he needed was water. Which we can supply ","parentUIDs":[115,115],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":117,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3057,"yPos":1316},"ID":117,"TMPFontGUID":null,"Text":"Stop
+    making us look bad out there!","parentUIDs":[116,116],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":118,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3060,"yPos":1452},"ID":118,"TMPFontGUID":null,"Text":"I
     need to get back to work. Report back to me if there are new incidents. Do not
-    screw up again, or your employment is terminated. Is that understood?","parentUIDs":[117,117],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":120,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3037.5,"yPos":823},"ID":120,"TMPFontGUID":null,"Text":"Yes
+    screw up again, or your employment is terminated. Is that understood?","parentUIDs":[117,117],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":120,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":3080,"yPos":1605},"ID":120,"TMPFontGUID":null,"Text":"Yes
     sir.","parentUIDs":[118,118],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: Child Labourer
@@ -46197,122 +47405,122 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   CurrentIDCounter: 86
-  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":450,"yPos":-1145},"ID":1,"TMPFontGUID":null,"Text":"Who
-    are you?","parentUIDs":[0,0],"SpeechUID":3},{"EditorInfo":{"isRoot":false,"xPos":32,"yPos":-1012},"ID":4,"TMPFontGUID":null,"Text":"Do
-    I report to you?","parentUIDs":[3,3],"SpeechUID":7},{"EditorInfo":{"isRoot":false,"xPos":441,"yPos":-871},"ID":5,"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[3,3],"SpeechUID":27},{"EditorInfo":{"isRoot":false,"xPos":814,"yPos":-1006},"ID":6,"TMPFontGUID":null,"Text":"Will
-    I work alone? ","parentUIDs":[3,3],"SpeechUID":41},{"EditorInfo":{"isRoot":false,"xPos":-419,"yPos":-308},"ID":11,"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[10,10],"SpeechUID":13},{"EditorInfo":{"isRoot":false,"xPos":18,"yPos":-310},"ID":12,"TMPFontGUID":null,"Text":"Will
-    I work alone?","parentUIDs":[10,10],"SpeechUID":14},{"EditorInfo":{"isRoot":false,"xPos":-424,"yPos":290},"ID":21,"TMPFontGUID":null,"Text":"Will
-    I work alone?","parentUIDs":[18,18],"SpeechUID":22},{"EditorInfo":{"isRoot":false,"xPos":19,"yPos":290},"ID":26,"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[20,20],"SpeechUID":31},{"EditorInfo":{"isRoot":false,"xPos":453,"yPos":1094},"ID":37,"TMPFontGUID":null,"Text":"No
-    sir!","parentUIDs":[36,36],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":284,"yPos":-178},"ID":45,"TMPFontGUID":null,"Text":"Do
-    I report to you?","parentUIDs":[30,30],"SpeechUID":47},{"EditorInfo":{"isRoot":false,"xPos":592,"yPos":-179},"ID":46,"TMPFontGUID":null,"Text":"Will
-    I work alone?","parentUIDs":[30,30],"SpeechUID":48},{"EditorInfo":{"isRoot":false,"xPos":291,"yPos":356},"ID":55,"TMPFontGUID":null,"Text":"Will
-    I work alone?","parentUIDs":[53,53],"SpeechUID":56},{"EditorInfo":{"isRoot":false,"xPos":609,"yPos":376},"ID":60,"TMPFontGUID":null,"Text":"Do
-    I report to you?","parentUIDs":[54,54],"SpeechUID":61},{"EditorInfo":{"isRoot":false,"xPos":840,"yPos":-377},"ID":65,"TMPFontGUID":null,"Text":"Do
-    I report to you?","parentUIDs":[44,44],"SpeechUID":67},{"EditorInfo":{"isRoot":false,"xPos":1093,"yPos":-516},"ID":66,"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[44,44],"SpeechUID":72},{"EditorInfo":{"isRoot":false,"xPos":890,"yPos":249},"ID":76,"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[71,71],"SpeechUID":78},{"EditorInfo":{"isRoot":false,"xPos":1175,"yPos":182},"ID":77,"TMPFontGUID":null,"Text":"Do
-    I report to you?","parentUIDs":[75,75],"SpeechUID":82}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":457,"yPos":-1297},"ID":0,"TMPFontGUID":null,"Text":"Hello!
-    Welcome to the Central Hub","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[1],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":444,"yPos":-1024},"ID":3,"TMPFontGUID":null,"Text":"I''m
-    Rafael Marcille, the Superior Officer for this establishment.","parentUIDs":[1,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[4,5,6],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-170,"yPos":-899},"ID":7,"TMPFontGUID":null,"Text":"Yes
-    that''s correct....","parentUIDs":[4,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":8,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-178,"yPos":-749},"ID":8,"TMPFontGUID":null,"Text":"When
-    you complete a task report it back to me immediately. ","parentUIDs":[7,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":9,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-182,"yPos":-594},"ID":9,"TMPFontGUID":null,"Text":"There''s
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":728,"yPos":174},"ID":1,"TMPFontGUID":null,"Text":"Who
+    are you?","parentUIDs":[0,0],"SpeechUID":3},{"EditorInfo":{"isRoot":false,"xPos":310,"yPos":307},"ID":4,"TMPFontGUID":null,"Text":"Do
+    I report to you?","parentUIDs":[3,3],"SpeechUID":7},{"EditorInfo":{"isRoot":false,"xPos":719,"yPos":448},"ID":5,"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[3,3],"SpeechUID":27},{"EditorInfo":{"isRoot":false,"xPos":1092,"yPos":313},"ID":6,"TMPFontGUID":null,"Text":"Will
+    I work alone? ","parentUIDs":[3,3],"SpeechUID":41},{"EditorInfo":{"isRoot":false,"xPos":-141,"yPos":1011},"ID":11,"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[10,10],"SpeechUID":13},{"EditorInfo":{"isRoot":false,"xPos":296,"yPos":1009},"ID":12,"TMPFontGUID":null,"Text":"Will
+    I work alone?","parentUIDs":[10,10],"SpeechUID":14},{"EditorInfo":{"isRoot":false,"xPos":-146,"yPos":1609},"ID":21,"TMPFontGUID":null,"Text":"Will
+    I work alone?","parentUIDs":[18,18],"SpeechUID":22},{"EditorInfo":{"isRoot":false,"xPos":297,"yPos":1609},"ID":26,"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[20,20],"SpeechUID":31},{"EditorInfo":{"isRoot":false,"xPos":731,"yPos":2413},"ID":37,"TMPFontGUID":null,"Text":"No
+    sir!","parentUIDs":[36,36],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":562,"yPos":1141},"ID":45,"TMPFontGUID":null,"Text":"Do
+    I report to you?","parentUIDs":[30,30],"SpeechUID":47},{"EditorInfo":{"isRoot":false,"xPos":870,"yPos":1140},"ID":46,"TMPFontGUID":null,"Text":"Will
+    I work alone?","parentUIDs":[30,30],"SpeechUID":48},{"EditorInfo":{"isRoot":false,"xPos":569,"yPos":1675},"ID":55,"TMPFontGUID":null,"Text":"Will
+    I work alone?","parentUIDs":[53,53],"SpeechUID":56},{"EditorInfo":{"isRoot":false,"xPos":887,"yPos":1695},"ID":60,"TMPFontGUID":null,"Text":"Do
+    I report to you?","parentUIDs":[54,54],"SpeechUID":61},{"EditorInfo":{"isRoot":false,"xPos":1118,"yPos":942},"ID":65,"TMPFontGUID":null,"Text":"Do
+    I report to you?","parentUIDs":[44,44],"SpeechUID":67},{"EditorInfo":{"isRoot":false,"xPos":1371,"yPos":803},"ID":66,"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[44,44],"SpeechUID":72},{"EditorInfo":{"isRoot":false,"xPos":1168,"yPos":1568},"ID":76,"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[71,71],"SpeechUID":78},{"EditorInfo":{"isRoot":false,"xPos":1453,"yPos":1501},"ID":77,"TMPFontGUID":null,"Text":"Do
+    I report to you?","parentUIDs":[75,75],"SpeechUID":82}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":735,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"Hello!
+    Welcome to the Central Hub","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[1],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":722,"yPos":295},"ID":3,"TMPFontGUID":null,"Text":"I''m
+    Rafael Marcille, the Superior Officer for this establishment.","parentUIDs":[1,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[4,5,6],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":108,"yPos":420},"ID":7,"TMPFontGUID":null,"Text":"Yes
+    that''s correct....","parentUIDs":[4,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":8,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":100,"yPos":570},"ID":8,"TMPFontGUID":null,"Text":"When
+    you complete a task report it back to me immediately. ","parentUIDs":[7,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":9,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":96,"yPos":725},"ID":9,"TMPFontGUID":null,"Text":"There''s
     a lot that needs to be done in this country. I''m depending on you to help out
-    the children that live here.","parentUIDs":[8,8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":10,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-180,"yPos":-447},"ID":10,"TMPFontGUID":null,"Text":"Make
+    the children that live here.","parentUIDs":[8,8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":10,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":98,"yPos":872},"ID":10,"TMPFontGUID":null,"Text":"Make
     sure you make the right choices. We need the children and civilians to trust
-    us","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[11,12],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-420,"yPos":-184},"ID":13,"TMPFontGUID":null,"Text":"You
+    us","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[11,12],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-142,"yPos":1135},"ID":13,"TMPFontGUID":null,"Text":"You
     are in Bongo, a developing country that has been devastated by war and extreme
-    climate change...","parentUIDs":[11,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":15,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17,"yPos":-202},"ID":14,"TMPFontGUID":null,"Text":"Peacekeepers
+    climate change...","parentUIDs":[11,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":15,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":295,"yPos":1117},"ID":14,"TMPFontGUID":null,"Text":"Peacekeepers
     travel in a group. Peacekeepers make decisions collectively that impact the local
-    children.","parentUIDs":[12,12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":16,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-424,"yPos":-72},"ID":15,"TMPFontGUID":null,"Text":"There
+    children.","parentUIDs":[12,12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":16,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-146,"yPos":1247},"ID":15,"TMPFontGUID":null,"Text":"There
     are a lot of problems out here that involve children. Some examples include child
-    labourers, child trafficking and much more","parentUIDs":[13,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":17,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":20,"yPos":-87},"ID":16,"TMPFontGUID":null,"Text":"When
+    labourers, child trafficking and much more","parentUIDs":[13,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":17,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":298,"yPos":1232},"ID":16,"TMPFontGUID":null,"Text":"When
     the peacekeepers have a report they come back to Central Hub and report back
-    to me.","parentUIDs":[14,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-426,"yPos":37},"ID":17,"TMPFontGUID":null,"Text":"These
+    to me.","parentUIDs":[14,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-148,"yPos":1356},"ID":17,"TMPFontGUID":null,"Text":"These
     issues do not present themselves that easily.. You will need to patrol and assess
-    the situations you encounter diligently.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-426,"yPos":150},"ID":18,"TMPFontGUID":null,"Text":"It''s
-    your job to help out the Children that live here.","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[21],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":17,"yPos":32},"ID":19,"TMPFontGUID":null,"Text":"You
-    will be accompanied by Zack Carter.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":20,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":18,"yPos":145},"ID":20,"TMPFontGUID":null,"Text":"He
-    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[19,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[26],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-427,"yPos":385},"ID":22,"TMPFontGUID":null,"Text":"Peacekeepers
+    the situations you encounter diligently.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-148,"yPos":1469},"ID":18,"TMPFontGUID":null,"Text":"It''s
+    your job to help out the Children that live here.","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[21],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":295,"yPos":1351},"ID":19,"TMPFontGUID":null,"Text":"You
+    will be accompanied by Zack Carter.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":20,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":296,"yPos":1464},"ID":20,"TMPFontGUID":null,"Text":"He
+    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[19,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[26],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-149,"yPos":1704},"ID":22,"TMPFontGUID":null,"Text":"Peacekeepers
     travel in a group. Peacekeepers make decisions collectively that impact the local
-    children.","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-424,"yPos":506},"ID":23,"TMPFontGUID":null,"Text":"When
+    children.","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-146,"yPos":1825},"ID":23,"TMPFontGUID":null,"Text":"When
     the peacekeepers have a report they come back to Central Hub and report back
-    to me.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-425,"yPos":619},"ID":24,"TMPFontGUID":null,"Text":"You
-    will be accompanied by Zack Carter.","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":25,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-421,"yPos":733},"ID":25,"TMPFontGUID":null,"Text":"He
-    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[24,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":440,"yPos":-735},"ID":27,"TMPFontGUID":null,"Text":"You
+    to me.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-147,"yPos":1938},"ID":24,"TMPFontGUID":null,"Text":"You
+    will be accompanied by Zack Carter.","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":25,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-143,"yPos":2052},"ID":25,"TMPFontGUID":null,"Text":"He
+    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[24,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":718,"yPos":584},"ID":27,"TMPFontGUID":null,"Text":"You
     are in Bongo, A developing country that has been devastated by war and extreme
-    climate change...","parentUIDs":[26,5,5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":442,"yPos":-597},"ID":28,"TMPFontGUID":null,"Text":"There
+    climate change...","parentUIDs":[26,5,5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":720,"yPos":722},"ID":28,"TMPFontGUID":null,"Text":"There
     are a lot of problems out here that involve children. Some examples include child
-    laborers, child trafficking and much more.","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":29,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":440,"yPos":-452},"ID":29,"TMPFontGUID":null,"Text":"These
+    laborers, child trafficking and much more.","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":29,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":718,"yPos":867},"ID":29,"TMPFontGUID":null,"Text":"These
     issues do not present themselves that easily.. You will need to patrol and assess
-    the situations you encounter diligently.","parentUIDs":[28,28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":30,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":440,"yPos":-335},"ID":30,"TMPFontGUID":null,"Text":"It''s
-    your job to help out the Children that live here.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[45,46],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":29,"yPos":373},"ID":31,"TMPFontGUID":null,"Text":"You
+    the situations you encounter diligently.","parentUIDs":[28,28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":30,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":718,"yPos":984},"ID":30,"TMPFontGUID":null,"Text":"It''s
+    your job to help out the Children that live here.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[45,46],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":307,"yPos":1692},"ID":31,"TMPFontGUID":null,"Text":"You
     are in Bongo, A developing country that has been devastated by war and extreme
-    climate change...","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":24,"yPos":488},"ID":32,"TMPFontGUID":null,"Text":"There
+    climate change...","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":302,"yPos":1807},"ID":32,"TMPFontGUID":null,"Text":"There
     are a lot of problems out here that involve children. Some examples include child
-    laborers, child trafficking and much more","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":30,"yPos":600},"ID":33,"TMPFontGUID":null,"Text":"These
+    laborers, child trafficking and much more","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":308,"yPos":1919},"ID":33,"TMPFontGUID":null,"Text":"These
     issues do not present themselves that easily.. You will need to patrol and assess
-    the situations you encounter diligently.","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":35,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":24,"yPos":728},"ID":35,"TMPFontGUID":null,"Text":"It''s
-    your job to help out the Children that live here.","parentUIDs":[33,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":446,"yPos":966},"ID":36,"TMPFontGUID":null,"Text":"Do
-    you have any questions or concerns for me?","parentUIDs":[35,25,59,64,81,85,25,35,59,64,81,85],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[37],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":460,"yPos":1183},"ID":39,"TMPFontGUID":null,"Text":"No
-    sir!, Zack and I will be on our way. Thank you.","parentUIDs":[37,37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":40,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":463,"yPos":1320},"ID":40,"TMPFontGUID":null,"Text":"You''re
-    welcome. Come see me when you have some incidents to report.","parentUIDs":[39,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":819,"yPos":-902},"ID":41,"TMPFontGUID":null,"Text":"Peacekeepers
+    the situations you encounter diligently.","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":35,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":302,"yPos":2047},"ID":35,"TMPFontGUID":null,"Text":"It''s
+    your job to help out the Children that live here.","parentUIDs":[33,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":724,"yPos":2285},"ID":36,"TMPFontGUID":null,"Text":"Do
+    you have any questions or concerns for me?","parentUIDs":[35,25,59,64,81,85,25,35,59,64,81,85],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[37],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":738,"yPos":2502},"ID":39,"TMPFontGUID":null,"Text":"No
+    sir!, Zack and I will be on our way. Thank you.","parentUIDs":[37,37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":40,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":741,"yPos":2639},"ID":40,"TMPFontGUID":null,"Text":"You''re
+    welcome. Come see me when you have some incidents to report.","parentUIDs":[39,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1097,"yPos":417},"ID":41,"TMPFontGUID":null,"Text":"Peacekeepers
     travel in a group. Peacekeepers make decisions collectively that impact the local
-    children.","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":42,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":823,"yPos":-781},"ID":42,"TMPFontGUID":null,"Text":"When
+    children.","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":42,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1101,"yPos":538},"ID":42,"TMPFontGUID":null,"Text":"When
     the peacekeepers have a report they come back to Central Hub and report back
-    to me.","parentUIDs":[41,41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":43,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":831,"yPos":-657},"ID":43,"TMPFontGUID":null,"Text":"You
-    will be accompanied by Zack Carter.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":44,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":834,"yPos":-529},"ID":44,"TMPFontGUID":null,"Text":"He
-    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[43,43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[65,66],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":287,"yPos":-96},"ID":47,"TMPFontGUID":null,"Text":"Yes
-    that''s correct...","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":598,"yPos":-101},"ID":48,"TMPFontGUID":null,"Text":"Peacekeepers
+    to me.","parentUIDs":[41,41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":43,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1109,"yPos":662},"ID":43,"TMPFontGUID":null,"Text":"You
+    will be accompanied by Zack Carter.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":44,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1112,"yPos":790},"ID":44,"TMPFontGUID":null,"Text":"He
+    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[43,43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[65,66],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":565,"yPos":1223},"ID":47,"TMPFontGUID":null,"Text":"Yes
+    that''s correct...","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":876,"yPos":1218},"ID":48,"TMPFontGUID":null,"Text":"Peacekeepers
     travel in a group. Peacekeepers make decisions collectively that impact the local
-    children.","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":295,"yPos":22},"ID":49,"TMPFontGUID":null,"Text":"When
-    you complete a task report it back to me immediately.","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":599,"yPos":21},"ID":50,"TMPFontGUID":null,"Text":"When
+    children.","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":573,"yPos":1341},"ID":49,"TMPFontGUID":null,"Text":"When
+    you complete a task report it back to me immediately.","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":877,"yPos":1340},"ID":50,"TMPFontGUID":null,"Text":"When
     the peacekeepers have a report they come back to Central Hub and report back
-    to me.","parentUIDs":[48,48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":52,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":289,"yPos":139},"ID":51,"TMPFontGUID":null,"Text":"There''s
+    to me.","parentUIDs":[48,48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":52,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":567,"yPos":1458},"ID":51,"TMPFontGUID":null,"Text":"There''s
     a lot that needs to be done in this country. I''m depending on you to help out
-    the children that live here.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":603,"yPos":139},"ID":52,"TMPFontGUID":null,"Text":"You
-    will be accompanied by Zack Carter.","parentUIDs":[50,50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":294,"yPos":254},"ID":53,"TMPFontGUID":null,"Text":"Make
+    the children that live here.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":881,"yPos":1458},"ID":52,"TMPFontGUID":null,"Text":"You
+    will be accompanied by Zack Carter.","parentUIDs":[50,50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":572,"yPos":1573},"ID":53,"TMPFontGUID":null,"Text":"Make
     sure you make the right choices. we need the children and civilians to trust
-    us.","parentUIDs":[51,51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[55],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":601,"yPos":259},"ID":54,"TMPFontGUID":null,"Text":"He
-    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[52,52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[60],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":296,"yPos":448},"ID":56,"TMPFontGUID":null,"Text":"Peacekeepers
+    us.","parentUIDs":[51,51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[55],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":879,"yPos":1578},"ID":54,"TMPFontGUID":null,"Text":"He
+    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[52,52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[60],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":574,"yPos":1767},"ID":56,"TMPFontGUID":null,"Text":"Peacekeepers
     travel in a group. Peacekeepers make decisions collectively that impact the local
-    children.","parentUIDs":[55,55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":57,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":305,"yPos":563},"ID":57,"TMPFontGUID":null,"Text":"When
+    children.","parentUIDs":[55,55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":57,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":583,"yPos":1882},"ID":57,"TMPFontGUID":null,"Text":"When
     the peacekeepers have a report they come back to Central Hub and report back
-    to me.","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":58,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":317,"yPos":678},"ID":58,"TMPFontGUID":null,"Text":"You
-    will be accompanied by Zack Carter.","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":59,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":322,"yPos":778},"ID":59,"TMPFontGUID":null,"Text":"He
-    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":611,"yPos":468},"ID":61,"TMPFontGUID":null,"Text":"Yes
-    that''s correct...","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":62,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":609,"yPos":573},"ID":62,"TMPFontGUID":null,"Text":"When
-    you complete a task report it back to me immediately.","parentUIDs":[61,61],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":63,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":613,"yPos":677},"ID":63,"TMPFontGUID":null,"Text":"There''s
+    to me.","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":58,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":595,"yPos":1997},"ID":58,"TMPFontGUID":null,"Text":"You
+    will be accompanied by Zack Carter.","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":59,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":600,"yPos":2097},"ID":59,"TMPFontGUID":null,"Text":"He
+    is an excellent peace keeper. He has been with us for 6 months now.","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":889,"yPos":1787},"ID":61,"TMPFontGUID":null,"Text":"Yes
+    that''s correct...","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":62,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":887,"yPos":1892},"ID":62,"TMPFontGUID":null,"Text":"When
+    you complete a task report it back to me immediately.","parentUIDs":[61,61],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":63,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":891,"yPos":1996},"ID":63,"TMPFontGUID":null,"Text":"There''s
     a lot that needs to be done in this country. I''m depending of you to help out
-    the children that live here.","parentUIDs":[62,62],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":633,"yPos":786},"ID":64,"TMPFontGUID":null,"Text":"Make
+    the children that live here.","parentUIDs":[62,62],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":911,"yPos":2105},"ID":64,"TMPFontGUID":null,"Text":"Make
     sure you make the right choices. we need the children and civilians to trust
-    us.","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":864,"yPos":-277},"ID":67,"TMPFontGUID":null,"Text":"Yes
-    that''s correct...","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":863,"yPos":-140},"ID":69,"TMPFontGUID":null,"Text":"When
-    you complete a task report it back to me immediately.","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":880,"yPos":-3},"ID":70,"TMPFontGUID":null,"Text":"There''s
+    us.","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1142,"yPos":1042},"ID":67,"TMPFontGUID":null,"Text":"Yes
+    that''s correct...","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1141,"yPos":1179},"ID":69,"TMPFontGUID":null,"Text":"When
+    you complete a task report it back to me immediately.","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1158,"yPos":1316},"ID":70,"TMPFontGUID":null,"Text":"There''s
     a lot that needs to be done in this country. I''m depending on you to help out
-    the children that live here.","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":876,"yPos":136},"ID":71,"TMPFontGUID":null,"Text":"Make
+    the children that live here.","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1154,"yPos":1455},"ID":71,"TMPFontGUID":null,"Text":"Make
     sure you make the right choices. we need the children and civilians to trust
-    us.","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[76],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1104,"yPos":-395},"ID":72,"TMPFontGUID":null,"Text":"You
+    us.","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[76],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1382,"yPos":924},"ID":72,"TMPFontGUID":null,"Text":"You
     are in Bongo, A developing country that has been devastated by war and extreme
-    climate change...","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1120,"yPos":-258},"ID":73,"TMPFontGUID":null,"Text":"There
+    climate change...","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1398,"yPos":1061},"ID":73,"TMPFontGUID":null,"Text":"There
     are a lot of problems out here that involve children. Some examples include child
-    laborers, child trafficking and much more.","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":74,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1131,"yPos":-112},"ID":74,"TMPFontGUID":null,"Text":"These
+    laborers, child trafficking and much more.","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":74,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1409,"yPos":1207},"ID":74,"TMPFontGUID":null,"Text":"These
     issues do not present themselves that easily.. You will need to patrol and assess
-    the situations you encounter diligently.","parentUIDs":[73,73],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":75,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1154,"yPos":33},"ID":75,"TMPFontGUID":null,"Text":"It''s
-    your job to help out the Children that live here.","parentUIDs":[74,74],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[77],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":892,"yPos":353},"ID":78,"TMPFontGUID":null,"Text":"You
+    the situations you encounter diligently.","parentUIDs":[73,73],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":75,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1432,"yPos":1352},"ID":75,"TMPFontGUID":null,"Text":"It''s
+    your job to help out the Children that live here.","parentUIDs":[74,74],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[77],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1179,"yPos":1668},"ID":78,"TMPFontGUID":null,"Text":"You
     are in Bongo, A developing country that has been devastated by war and extreme
-    climate change...","parentUIDs":[76,76],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":79,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":897,"yPos":477},"ID":79,"TMPFontGUID":null,"Text":"There
+    climate change...","parentUIDs":[76,76],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":79,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1175,"yPos":1796},"ID":79,"TMPFontGUID":null,"Text":"There
     are a lot of problems out here that involve children.Some examples include child
-    laborers, child trafficking and much more.","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":905,"yPos":603},"ID":80,"TMPFontGUID":null,"Text":"These
+    laborers, child trafficking and much more.","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1178,"yPos":1920},"ID":80,"TMPFontGUID":null,"Text":"These
     issues do not present themselves that easily.. You will need to patrol and assess
-    the situations you encounter diligently.","parentUIDs":[79,79],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":81,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":898,"yPos":735},"ID":81,"TMPFontGUID":null,"Text":"It''s
-    your job to help out the Children that live here.","parentUIDs":[80,80],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1172,"yPos":277},"ID":82,"TMPFontGUID":null,"Text":"Yes
-    that''s correct...","parentUIDs":[77,77],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":83,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1178,"yPos":422},"ID":83,"TMPFontGUID":null,"Text":"When
-    you complete a task report it back to me immediately.","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1180,"yPos":560},"ID":84,"TMPFontGUID":null,"Text":"There''s
+    the situations you encounter diligently.","parentUIDs":[79,79],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":81,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1176,"yPos":2054},"ID":81,"TMPFontGUID":null,"Text":"It''s
+    your job to help out the Children that live here.","parentUIDs":[80,80],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1450,"yPos":1596},"ID":82,"TMPFontGUID":null,"Text":"Yes
+    that''s correct...","parentUIDs":[77,77],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":83,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1456,"yPos":1741},"ID":83,"TMPFontGUID":null,"Text":"When
+    you complete a task report it back to me immediately.","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1458,"yPos":1879},"ID":84,"TMPFontGUID":null,"Text":"There''s
     a lot that needs to be done in this country. I''m depending of you to help out
-    the children that live here.","parentUIDs":[83,83],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1181,"yPos":688},"ID":85,"TMPFontGUID":null,"Text":"Make
+    the children that live here.","parentUIDs":[83,83],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1459,"yPos":2007},"ID":85,"TMPFontGUID":null,"Text":"Make
     sure you make the right choices. we need the children and civilians to trust
     us.","parentUIDs":[84,84],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Rafael","OptionUIDs":[],"SpeechUID":36,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
@@ -48225,6 +49433,7 @@ Transform:
   - {fileID: 915749119191693227}
   - {fileID: 915749118653513282}
   - {fileID: 915749118729217415}
+  - {fileID: 317958882}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

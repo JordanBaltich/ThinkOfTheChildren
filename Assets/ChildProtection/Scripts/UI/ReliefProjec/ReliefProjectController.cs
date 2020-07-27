@@ -40,15 +40,26 @@ public class ReliefProjectController : MonoBehaviour
 
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        for (int i = 0; i < stats.Count; i++)
-        {
-            print(stats[i].name);
-        }
+
+        OnlyShowFoundProjects();
+    }
+
+    void OnlyShowFoundProjects()
+    {
+        ReliefProjectTracker tracker = GameObject.FindObjectOfType<ReliefProjectTracker>();
+
         for (int i = 0; i < choices.Count; i++)
         {
-            print(choices[i].name);
+            choices[i].GetComponent<Button>().interactable = false;
+            for (int ii = 0; ii < tracker.rebuildProjects.Count; ii++)
+            {
+                if (choices[i].GetComponent<OptionButton>().choiceName == tracker.rebuildProjects[ii])
+                {
+                    choices[i].GetComponent<Button>().interactable = true;
+                }
+            }
         }
     }
 

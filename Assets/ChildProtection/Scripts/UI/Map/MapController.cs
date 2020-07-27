@@ -7,7 +7,7 @@ public class MapController : MonoBehaviour
 {
     [SerializeField] float scaleSpeed, maxScale, minScale, mouseDragSpeed;
     RectTransform myRectTransform;
-    [SerializeField] RectTransform playerIconPosition;
+    [SerializeField] Transform playerIconPosition;
     private void Awake()
     {
         myRectTransform = GetComponent<RectTransform>();
@@ -18,11 +18,22 @@ public class MapController : MonoBehaviour
     void Start()
     {
         myRectTransform.localScale = Vector3.one * minScale;
+
+        if (GameObject.FindObjectOfType<PlayerMovement>() != null)
+        {
+            playerIconPosition = GameObject.FindObjectOfType<PlayerMovement>().transform;
+
+        }
     }
 
     private void OnEnable()
     {
-        myRectTransform.localPosition = playerIconPosition.localPosition;
+        if (GameObject.FindObjectOfType<PlayerMovement>() != null)
+        {
+            playerIconPosition = GameObject.FindObjectOfType<PlayerMovement>().transform;
+            myRectTransform.localPosition = playerIconPosition.localPosition;
+        }
+       
     }
 
     // Update is called once per frame
