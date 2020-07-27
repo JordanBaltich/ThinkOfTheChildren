@@ -19,7 +19,7 @@ public class RebuildObject : MonoBehaviour
 
     private void Start()
     {
-        CheckIfRebuilt();
+        //CheckIfRebuilt();
     }
 
     public void CheckForNeededPoints(PointsSystem pointsSystem)
