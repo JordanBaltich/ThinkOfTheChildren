@@ -1169,7 +1169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1734255090}
-  - {fileID: 915766357}
 --- !u!4 &209526165
 Transform:
   m_ObjectHideFlags: 0
@@ -2822,8 +2821,7 @@ MonoBehaviour:
   m_AnimatedTarget: {fileID: 0}
   m_LayerIndex: 0
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1572571892}
+  m_ChildCameras: []
   m_Instructions: []
   m_DefaultBlend:
     m_Style: 1
@@ -3534,21 +3532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc8ea4fdca9bd434f8166961698a32d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &915766357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae24a0a8189984488883f6d4a5b1efe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  conversation: {fileID: 1370722308}
-  cutsceneCamera: {fileID: 0}
 --- !u!1 &936219166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 512136624197092499, guid: a50ee2f74be80d74f94dca68bb79aff3,
@@ -3908,7 +3891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dc6b17b276d6948903ade30dec71eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TheVillage03.2
+  sceneName: TheVillage03.1
   startingPointInLoadedScene: VillageStart
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!1001 &1173824179
@@ -5020,9 +5003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":352,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"Learn
+  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":36,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"Learn
     the importance of child protection by assuming the role of a peacekeeper in a
-    conflict zone. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":351,"yPos":158},"ID":1,"TMPFontGUID":null,"Text":"Click
+    conflict zone. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":35,"yPos":158},"ID":1,"TMPFontGUID":null,"Text":"Click
     anywhere to explore the area!","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: 
@@ -9126,7 +9109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640858597252182487}
-  m_LocalRotation: {x: 0.023438448, y: 0.9651578, z: 0.09290468, w: -0.24349508}
+  m_LocalRotation: {x: 0.025498256, y: 0.95950544, z: 0.09236059, w: -0.2648938}
   m_LocalPosition: {x: -318.17, y: -140.21829, z: 23.78058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
