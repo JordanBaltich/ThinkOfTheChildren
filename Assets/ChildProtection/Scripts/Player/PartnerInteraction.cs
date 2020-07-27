@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PartnerInteraction : MonoBehaviour
 {
 
-    public Text displayText;
+    public Image displayImage;
     public bool displayInfo;
     public Transform lookAtCamera;
     public Camera playerCamera;
@@ -15,7 +15,7 @@ public class PartnerInteraction : MonoBehaviour
     void Update()
     {
         DisplayText();
-        displayText.transform.LookAt(lookAtCamera);
+        displayImage.transform.LookAt(lookAtCamera);
     }
 
     private void OnMouseOver()
@@ -32,10 +32,10 @@ public class PartnerInteraction : MonoBehaviour
     {
         if (displayInfo)
         {
-            displayText.color = Color.black;
+            displayImage.color = Color.white;
         } else
         {
-            displayText.color = Color.clear;
+            displayImage.color = Color.clear;
         }
     }
 

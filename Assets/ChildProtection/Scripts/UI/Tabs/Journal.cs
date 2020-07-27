@@ -22,8 +22,8 @@ public class Journal : MonoBehaviour
 
     public void ToggleJournal()
     {
-        journalGameObject.SetActive(!journalGameObject.activeInHierarchy);
-        journalIsDisplayed = journalGameObject.activeInHierarchy;
+        //journalGameObject.SetActive(!journalGameObject.activeInHierarchy);
+        //journalIsDisplayed = journalGameObject.activeInHierarchy;
     }
 
 
@@ -47,7 +47,7 @@ public class Journal : MonoBehaviour
                 keyInfos[i] = infoToAdd;
                 keyInfoDisplays[i].WriteNote(keyInfos[i]);
                 keyInfoDisplays[i].enabled = true;
-                journalGameObject.SetActive(true);
+                //journalGameObject.SetActive(true);
                 journalIsDisplayed = true;
                 return;
             }
