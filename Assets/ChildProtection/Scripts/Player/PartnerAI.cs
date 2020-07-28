@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
+using Debug = UnityEngine.Debug;
 
 public class PartnerAI : MonoBehaviour
 {
@@ -16,6 +18,11 @@ public class PartnerAI : MonoBehaviour
     {
         m_Agent = GetComponent<NavMeshAgent>();
         m_Animator = GetComponent<Animator>();
+        if (GameObject.FindObjectOfType<PlayerMovement>() == null)
+        {
+            Debug.Log("Player is missing.");
+            return;
+        }
         player = GameObject.FindObjectOfType<PlayerMovement>().transform;
     }
 
