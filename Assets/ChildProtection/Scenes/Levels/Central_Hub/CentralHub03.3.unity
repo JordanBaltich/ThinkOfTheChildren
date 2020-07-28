@@ -5929,11 +5929,6 @@ PrefabInstance:
       propertyPath: destinationTracker
       value: 
       objectReference: {fileID: 1246533064}
-    - target: {fileID: 137000011337651692, guid: ab5f05eb414b65f4f9c285f785c1dfad,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 033ca0ae509167d4c8baeca3f3c41d6a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
 --- !u!4 &239866085 stripped
@@ -15547,7 +15542,8 @@ MonoBehaviour:
   m_AnimatedTarget: {fileID: 0}
   m_LayerIndex: 0
   m_ShowDebugText: 0
-  m_ChildCameras: []
+  m_ChildCameras:
+  - {fileID: 1572571892}
   m_Instructions: []
   m_DefaultBlend:
     m_Style: 1
@@ -43911,7 +43907,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640858596912514576}
-  m_LocalRotation: {x: -0.10691024, y: 0.6799299, z: 0.101192296, w: 0.71834934}
+  m_LocalRotation: {x: -0.10691024, y: 0.67992985, z: 0.10119228, w: 0.7183494}
   m_LocalPosition: {x: -359.05338, y: -141.30829, z: 33.329514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -43961,7 +43957,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640858597252182487}
-  m_LocalRotation: {x: 0.025495995, y: 0.95951194, z: 0.092361204, w: -0.26487035}
+  m_LocalRotation: {x: 0.025498252, y: 0.95950544, z: 0.09236057, w: -0.26489383}
   m_LocalPosition: {x: -318.17, y: -140.21829, z: 23.78058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
