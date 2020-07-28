@@ -17,10 +17,6 @@ public class RebuildObject : MonoBehaviour
         DestroyTheObject();
     }
 
-    private void Start()
-    {
-        CheckIfRebuilt();
-    }
 
     public void CheckForNeededPoints(PointsSystem pointsSystem)
     {
