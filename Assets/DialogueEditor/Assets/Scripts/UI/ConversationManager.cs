@@ -97,15 +97,17 @@ namespace DialogueEditor
             }
             Instance = this;
 
-            m_uiOptions = new List<UIConversationButton>();
+            m_uiOptions = new List<UIConversationButton>();        
         }
 
         private void Start()
         {
+            dummyCon = GetComponentInChildren<NPCConversation>();
+
             NpcIcon.sprite = BlankSprite;
             DialogueText.text = "";
             TurnOffUI();
-            StartConversation(dummyCon);
+            //StartConversation(dummyCon);
             EndConversation();
         }
 
