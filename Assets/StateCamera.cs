@@ -38,7 +38,10 @@ public class StateCamera : MonoBehaviour
 
     private void SwitchOutOfConversation()
     {
-        m_animator.SetTrigger("EndConversation");
+        if (m_animator != null)
+        {
+            m_animator.SetTrigger("EndConversation");
+        }
     }
 
     private void SwitchInToConversation()

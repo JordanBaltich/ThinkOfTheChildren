@@ -30,11 +30,7 @@ public class EnterBuilding : MonoBehaviour
 
     public void ConverStart()
     {
-        if (m_camera == null)
-        {
-
-        }
-        else
+        if (m_camera != null)
         {
             if (m_camera.gameObject.activeInHierarchy && m_camera.enabled == true)
             {
@@ -46,10 +42,14 @@ public class EnterBuilding : MonoBehaviour
 
     public void ConverEnd()
     {
-        if (m_camera.gameObject.activeInHierarchy && m_camera.enabled==false)
+        if (m_camera != null)
         {
-            m_camera.enabled = true;
+            if (m_camera.gameObject.activeInHierarchy && m_camera.enabled == false)
+            {
+                m_camera.enabled = true;
+            }
         }
+            
     }
 
     public void DoorWasClicked()
