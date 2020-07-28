@@ -1454,6 +1454,7 @@ GameObject:
   - component: {fileID: 3328643065227215319}
   - component: {fileID: 7436810960248492570}
   - component: {fileID: 8296172669110898288}
+  - component: {fileID: 4927683980135307130}
   m_Layer: 0
   m_Name: Rafael
   m_TagString: Untagged
@@ -1525,11 +1526,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6705958995294738642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e94aa4c07b6429447bb30c0a0b434c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4927683980135307130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705958995294738642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea8cecc164bb4c4887be55252b69319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDisFromPlayer: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &6916463442375390057
 GameObject:
   m_ObjectHideFlags: 0

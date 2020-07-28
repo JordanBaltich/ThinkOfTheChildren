@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
     private int clickCount;
     private float clickTime;
+    [HideInInspector]
+    public bool isRunning;
 
 
     // The maximum distance from the nav mesh a click can be to be accepted.
@@ -164,6 +166,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Although the player will continue to move, it will be controlled manually so stop the nav mesh agent.
         agent.isStopped = true;
+        isRunning = false;
 
         // Find the distance to the destination as a percentage of the stopping distance.
         float proportionalDistance = 1f - distanceToDestination / agent.stoppingDistance;
@@ -203,8 +206,9 @@ public class PlayerMovement : MonoBehaviour
         {
             clickCount = 0;
             clickTime = 0;
-            //Debug.Log("double click");
+            //Debug.Log("double click");            
             animator.SetTrigger("Run");
+            isRunning = true;
         }
         else if (clickCount > 2 || Time.time - clickTime > 1)
             clickCount = 0;
