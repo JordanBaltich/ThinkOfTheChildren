@@ -20,8 +20,8 @@ public class ConversationReaction : DelayedReaction
 
     protected override void ImmediateReaction()
     {
-        ConversationManager.OnConversationStarted += ChangeToEventCamera;
-        ConversationManager.OnConversationEnded += ChangeToMainCamera;
+        //ConversationManager.OnConversationStarted += ChangeToEventCamera;
+        //ConversationManager.OnConversationEnded += ChangeToMainCamera;
         conversationManager.StartConversation(conversation);        
     }
 
@@ -34,8 +34,8 @@ public class ConversationReaction : DelayedReaction
     private void ChangeToMainCamera()
     {
         //cutsceneCamera.enabled = false;
-        ConversationManager.OnConversationStarted -= ChangeToEventCamera;
-        ConversationManager.OnConversationEnded -= ChangeToMainCamera;
+        //ConversationManager.OnConversationStarted -= ChangeToEventCamera;
+        //ConversationManager.OnConversationEnded -= ChangeToMainCamera;
     }
 
 }
