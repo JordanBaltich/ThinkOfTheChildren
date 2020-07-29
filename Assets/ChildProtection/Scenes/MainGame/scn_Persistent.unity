@@ -189,6 +189,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 185045361978039795, guid: 06939b80aede9b14caea6103b9fe6065,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06939b80aede9b14caea6103b9fe6065, type: 3}
 --- !u!1 &136206343 stripped
@@ -1726,6 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84349cf7a1295544985a1afb24e1d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyInfos: []
   totalPoints: 0
   currentPoints: 0
   spentPoints: 0
