@@ -14,9 +14,23 @@ public class RebuildObject : MonoBehaviour
 
     private void Awake()
     {
-        DestroyTheObject();
+       
     }
 
+    private void Start()
+    {
+        if (GameObject.FindObjectOfType<ReliefProjectTracker>() != null)
+        {
+            if (GameObject.FindObjectOfType<ReliefProjectTracker>().rebuildProjects.Count == 0)
+            {
+                DestroyTheObject();
+            }
+            else
+            {
+                CheckIfRebuilt();
+            }
+        }
+    }
 
     public void CheckForNeededPoints(PointsSystem pointsSystem)
     {
