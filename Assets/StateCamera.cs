@@ -82,8 +82,13 @@ public class StateCamera : MonoBehaviour
     {
         if (m_animator == null)
             m_animator = GetComponent<Animator>();
-        ResetTriggers();
-        m_animator.SetTrigger("FocusOnCivilian");
+
+        if (m_animator.gameObject.activeSelf)
+        {
+            ResetTriggers();
+            m_animator.SetTrigger("FocusOnCivilian");
+        }
+            
     }
 
     public void SetChildCamera(GameObject target)
