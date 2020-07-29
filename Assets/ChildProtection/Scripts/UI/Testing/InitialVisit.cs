@@ -5,10 +5,15 @@ using UnityEngine;
 public class InitialVisit : MonoBehaviour
 {
     public ReactionCollection reaction;
+    public static InitialVisit Instance;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        if (Instance != null) { Destroy(gameObject); return; } // stops dups running
+        DontDestroyOnLoad(gameObject); // keep me forever
+        Instance = this; // set the reference to it
+
         StartCoroutine(WaitToStartTutorial());
     }
 

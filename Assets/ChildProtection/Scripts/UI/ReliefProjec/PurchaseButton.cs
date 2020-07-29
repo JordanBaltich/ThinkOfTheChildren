@@ -23,10 +23,6 @@ public class PurchaseButton : MonoBehaviour
         m_Button.interactable = false;
     }
 
-    private void Update()
-    {
-
-    }
 
     public void ClearSeletion()
     {

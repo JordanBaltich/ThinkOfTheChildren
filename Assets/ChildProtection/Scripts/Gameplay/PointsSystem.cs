@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class PointsSystem : MonoBehaviour
 {
+    public List<KeyInfo> keyInfos;
     public int totalPoints, currentPoints, spentPoints;
+
+    private void Start()
+    {
+        totalPoints = currentPoints;
+    }
 
     public void AddPoints(int addedPoints)
     {
