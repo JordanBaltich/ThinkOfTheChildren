@@ -7,6 +7,7 @@ public class InitialHubVisit : MonoBehaviour
     public ReactionCollection reaction;
     public static InitialHubVisit Instance;
 
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,5 +23,7 @@ public class InitialHubVisit : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
         reaction.React();
+
+
     }
 }
