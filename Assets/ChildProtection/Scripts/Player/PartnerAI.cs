@@ -89,7 +89,7 @@ public class PartnerAI : MonoBehaviour
 
     public void SetDestination()
     {
-        destinationPosition = Vector3.Lerp(player.transform.position,transform.position,0.5f);
+        destinationPosition = Vector3.Lerp(player.transform.position-offset,player.destinationPosition,0.1f);
 
         // Set the destination of the nav mesh agent to the found destination position and start the nav mesh agent going.
         m_Agent.SetDestination(destinationPosition);

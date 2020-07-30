@@ -40,7 +40,6 @@ public class StateCamera : MonoBehaviour
     {
         if (m_animator != null)
         {
-            ResetTriggers();
             m_animator.SetTrigger("EndConversation");
         }
     }
@@ -54,7 +53,6 @@ public class StateCamera : MonoBehaviour
     {
         if(m_animator==null)
             m_animator = GetComponent<Animator>();
-        ResetTriggers();
         m_animator.SetTrigger("FocusOnPlayer");
     }
 
@@ -62,7 +60,6 @@ public class StateCamera : MonoBehaviour
     {
         if (m_animator == null)
             m_animator = GetComponent<Animator>();
-        ResetTriggers();
         m_animator.SetTrigger("FocusOnChild" + childNum.ToString());
     }
 
@@ -73,7 +70,6 @@ public class StateCamera : MonoBehaviour
         
         if (m_animator.gameObject.activeSelf)
         {
-            ResetTriggers();
             m_animator.SetTrigger("FocusOnAdult");
         }
     }
@@ -82,13 +78,7 @@ public class StateCamera : MonoBehaviour
     {
         if (m_animator == null)
             m_animator = GetComponent<Animator>();
-
-        if (m_animator.gameObject.activeSelf)
-        {
-            ResetTriggers();
-            m_animator.SetTrigger("FocusOnCivilian");
-        }
-            
+        m_animator.SetTrigger("FocusOnCivilian");
     }
 
     public void SetChildCamera(GameObject target)
@@ -109,18 +99,6 @@ public class StateCamera : MonoBehaviour
         m_Cameras[4].Follow = target.transform;
     }
 
-    void ResetTriggers()
-    {
-        if (m_animator != null)
-        {
-            m_animator.ResetTrigger("EndConversation");
-            m_animator.ResetTrigger("FocusOnChild1");
-            m_animator.ResetTrigger("FocusOnChild2");
-            m_animator.ResetTrigger("FocusOnChild3");
-            m_animator.ResetTrigger("FocusOnAdult");
-            m_animator.ResetTrigger("FocusOnCivilian");
-            m_animator.ResetTrigger("FocusOnPlayer");
-        }
-    }
+
 
 }
