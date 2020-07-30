@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class MapCameraController : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MapCameraController : MonoBehaviour
 
     private void OnEnable()
     {
+        GameObject.FindObjectOfType<PostProcessVolume>().weight = 0;
         CentreToPlayer();
 
         // stop time and play music clip
@@ -29,6 +31,7 @@ public class MapCameraController : MonoBehaviour
 
     private void OnDisable()
     {
+        GameObject.FindObjectOfType<PostProcessVolume>().weight = 1;
         // restart time and stop music
         StopTime(false);
         if (AudioManager.Instance != null)

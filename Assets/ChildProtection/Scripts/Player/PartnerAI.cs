@@ -60,6 +60,7 @@ public class PartnerAI : MonoBehaviour
 
         // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
         m_Animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+        m_Animator.speed = 1 + (GetDistanceFromPlayer() / 25);
 
         }
         else
