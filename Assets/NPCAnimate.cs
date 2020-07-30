@@ -13,6 +13,7 @@ public class NPCAnimate : MonoBehaviour
     NavMeshAgent m_Agent;
     Animator m_Animator;
     public string defaultAnimation;
+    private readonly int hashSpeedPara = Animator.StringToHash("Speed");
 
     private void Awake()
     {
@@ -34,7 +35,19 @@ public class NPCAnimate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_Animator.SetFloat("Speed", m_Agent.velocity.magnitude);
+        if (m_Agent.enabled)
+        {
+            float speed = m_Agent.desiredVelocity.magnitude*2;
+
+            m_Animator.SetFloat(hashSpeedPara, speed, 0.1f, Time.deltaTime);
+        }
+            
     }
+
+    //private void OnAnimatorMove()
+    //{
+    //        // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
+    //        m_Agent.velocity = m_Animator.deltaPosition / Time.deltaTime;
+    //}
 
 }

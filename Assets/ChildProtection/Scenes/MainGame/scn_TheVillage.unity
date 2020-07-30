@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  agent: {fileID: 497250378}
+  agent: {fileID: 1179724843}
   targetLocation: {fileID: 875048210}
   speed: 2
 --- !u!1 &24879338
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  gameObject: {fileID: 651818683}
+  gameObject: {fileID: 0}
   activeState: 1
 --- !u!1001 &61602990
 PrefabInstance:
@@ -1371,6 +1371,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1179724844}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sad
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -1400,6 +1411,17 @@ MonoBehaviour:
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1179724844}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Excited
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -1823,13 +1845,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 911008979}
         m_MethodName: SwitchToChild
-        m_Mode: 1
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1179724844}
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Angry
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -2232,6 +2265,17 @@ MonoBehaviour:
       - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
         m_MethodName: SwitchToAdult
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1968457151}
+        m_MethodName: React
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2844,7 +2888,7 @@ Transform:
   m_LocalScale: {x: 1.0962, y: 1.3544382, z: 1.0962}
   m_Children: []
   m_Father: {fileID: 1457658574}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &163868980
 MonoBehaviour:
@@ -3677,7 +3721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
-  gameObject: {fileID: 651818683}
+  gameObject: {fileID: 0}
   activeState: 0
 --- !u!1001 &333197595
 PrefabInstance:
@@ -3978,7 +4022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 1.6199762, y: 0.6604961, z: 0.7608211}
+  m_FollowOffset: {x: 0.89426816, y: 1.507525, z: 2.1504085}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -4005,8 +4049,8 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0.5
   m_VerticalDamping: 0.5
-  m_ScreenX: 0.5802083
-  m_ScreenY: 0.45370364
+  m_ScreenX: 0.34680986
+  m_ScreenY: 0.44458914
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_SoftZoneWidth: 0.8
@@ -7927,7 +7971,6 @@ Transform:
   - {fileID: 497250379}
   - {fileID: 1058540930}
   - {fileID: 875048211}
-  - {fileID: 1968457150}
   - {fileID: 522045691}
   m_Father: {fileID: 1871095083}
   m_RootOrder: 0
@@ -7960,7 +8003,7 @@ Transform:
   m_LocalScale: {x: 1.2724912, y: 1.2724913, z: 1.2724912}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 266.723, z: 0}
 --- !u!1 &530727388
 GameObject:
@@ -8292,8 +8335,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 939509439}
-  m_Follow: {fileID: 939509439}
+  m_LookAt: {fileID: 1179724842}
+  m_Follow: {fileID: 1179724841}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 5
@@ -8316,8 +8359,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602789330}
-  m_LocalRotation: {x: -0.041773755, y: 0.95790774, z: -0.18781699, w: -0.2130553}
-  m_LocalPosition: {x: 3.4390259, y: -1.0409999, z: -2.8899536}
+  m_LocalRotation: {x: -0.023953436, y: 0.95999575, z: -0.08671923, w: -0.2651684}
+  m_LocalPosition: {x: 3.380005, y: -1.3, z: -2.1400146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 353509671}
@@ -8369,7 +8412,7 @@ PrefabInstance:
     - target: {fileID: 470208882307845333, guid: 4897967d5241dd04c8b6b48dbece3741,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 470208882307845333, guid: 4897967d5241dd04c8b6b48dbece3741,
         type: 3}
@@ -8620,103 +8663,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620978744}
   m_CullTransparentMesh: 0
---- !u!1 &651818683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 651818684}
-  - component: {fileID: 651818686}
-  - component: {fileID: 651818685}
-  m_Layer: 0
-  m_Name: PKCP-icons_dialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &651818684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651818683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.33, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1262472647}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &651818685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651818683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3400bd72fad3049c9bf510dd0764c4d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  easeType: 5
-  loopType: 2
-  speed: 3
---- !u!212 &651818686
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651818683}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d526cbcbb94c74e2bb6102b7a03593e4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.45, y: 2.44}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &655486068
 GameObject:
   m_ObjectHideFlags: 0
@@ -8819,7 +8765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 7949203378050301959}
+  interactionLocation: {fileID: 0}
   conditionCollections: []
   defaultReactionCollection: {fileID: 655486071}
 --- !u!1 &668470536
@@ -8994,6 +8940,21 @@ MonoBehaviour:
   sceneName: scn_CentralHub
   startingPointInLoadedScene: HubStart
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
+--- !u!114 &704213808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 163868978}
+  activeState: 0
 --- !u!1 &715616857
 GameObject:
   m_ObjectHideFlags: 0
@@ -9652,6 +9613,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &763123238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+    type: 3}
+  m_PrefabInstance: {fileID: 1147687144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &780729323
 GameObject:
   m_ObjectHideFlags: 0
@@ -10084,100 +10051,6 @@ MonoBehaviour:
   delay: 3
   gameObject: {fileID: 1255451882}
   activeState: 0
---- !u!1 &856828536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 856828537}
-  - component: {fileID: 856828540}
-  - component: {fileID: 856828539}
-  - component: {fileID: 856828538}
-  m_Layer: 0
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &856828537
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856828536}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.58, z: 0}
-  m_LocalScale: {x: 0.50485605, y: 0.5174774, z: 0.50485605}
-  m_Children: []
-  m_Father: {fileID: 1262472647}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &856828538
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856828536}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &856828539
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856828536}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 65eb6d8bd532ff24790e8810799fd82f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &856828540
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856828536}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &864374991
 GameObject:
   m_ObjectHideFlags: 3
@@ -10297,7 +10170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875048210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.9, y: 0.2920253, z: 18.4}
+  m_LocalPosition: {x: -16.79, y: 0.2920253, z: 20}
   m_LocalScale: {x: 0.6974525, y: 0.86175543, z: 0.6974525}
   m_Children: []
   m_Father: {fileID: 516781521}
@@ -10676,99 +10549,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   keyInfo: {fileID: 11400000, guid: 65b4fed1ada8444afb88b89911c5c820, type: 2}
---- !u!1 &939509438
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 939509439}
-  - component: {fileID: 939509442}
-  - component: {fileID: 939509441}
-  - component: {fileID: 939509440}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &939509439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939509438}
-  m_LocalRotation: {x: -0, y: -0.29104054, z: -0, w: 0.95671076}
-  m_LocalPosition: {x: 0, y: 1.3246999, z: 0}
-  m_LocalScale: {x: 0.63107, y: 0.63107, z: 0.63107}
-  m_Children: []
-  m_Father: {fileID: 1262472647}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -33.841003, z: 0}
---- !u!135 &939509440
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939509438}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &939509441
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939509438}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 65eb6d8bd532ff24790e8810799fd82f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &939509442
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939509438}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &978100685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11259,6 +11039,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.5882353
       objectReference: {fileID: 0}
+    - target: {fileID: 470527744101035298, guid: e5db552dd54d91048808346b3465bfde,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 118
+      objectReference: {fileID: 0}
     - target: {fileID: 1156265772436180163, guid: e5db552dd54d91048808346b3465bfde,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -11358,6 +11143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheVillageMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145537563901856870, guid: e5db552dd54d91048808346b3465bfde,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 118
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1156265772436180160, guid: e5db552dd54d91048808346b3465bfde, type: 3}
@@ -12020,13 +11810,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093682270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.006499658, y: -0.006499658, z: -0.006499658}
+  m_LocalScale: {x: -0.0064996574, y: -0.006499658, z: -0.0064996574}
   m_Children:
   - {fileID: 296907325}
-  m_Father: {fileID: 7949203378050301959}
-  m_RootOrder: 5
+  m_Father: {fileID: 763123238}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12328,6 +12118,168 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1146641975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1147687144
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2053767980}
+    m_Modifications:
+    - target: {fileID: 6705958995294738642, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_Name
+      value: Zach
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 605.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22000027
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 813.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8416842
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5399701
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 245.36299
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731277539862522561, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f26fcbefb3159e40a41406b7ca1a267, type: 3}
+--- !u!1001 &1179724840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1457658574}
+    m_Modifications:
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08691406
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4600005
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.307129
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810457869214328661, guid: cbc86a6873ccd274f894e45f7dc13e63,
+        type: 3}
+      propertyPath: m_Name
+      value: MakeleleModel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbc86a6873ccd274f894e45f7dc13e63, type: 3}
+--- !u!4 &1179724841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 196521101831591238, guid: cbc86a6873ccd274f894e45f7dc13e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179724840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1179724842 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7979560000043512753, guid: cbc86a6873ccd274f894e45f7dc13e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179724840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1179724843 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 5170301869411653807, guid: cbc86a6873ccd274f894e45f7dc13e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179724840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1179724844 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7795780600767379516, guid: cbc86a6873ccd274f894e45f7dc13e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179724840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1197183023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12492,77 +12444,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255451882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children:
   - {fileID: 655486069}
   - {fileID: 1659002690}
   - {fileID: 715616858}
-  m_Father: {fileID: 7949203378050301959}
-  m_RootOrder: 4
+  m_Father: {fileID: 763123238}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 3.65}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1262472646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1262472647}
-  - component: {fileID: 1262472648}
-  m_Layer: 0
-  m_Name: MakeleleModel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1262472647
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262472646}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.024047852, y: -2.33, z: 6.039917}
-  m_LocalScale: {x: 1.57172, y: 1.57172, z: 1.57172}
-  m_Children:
-  - {fileID: 856828537}
-  - {fileID: 939509439}
-  - {fileID: 651818684}
-  m_Father: {fileID: 1457658574}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &1262472648
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262472646}
-  m_Enabled: 0
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1278126938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13101,7 +12997,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342914881}
-  m_LocalRotation: {x: 0.01112016, y: -0.98847276, z: 0.12007468, w: 0.091542825}
+  m_LocalRotation: {x: 0.011120164, y: -0.98847276, z: 0.12007469, w: 0.091542855}
   m_LocalPosition: {x: 6.9801025, y: 1.1924753, z: 9.136353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13297,7 +13193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2053767980}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1367918760
 MonoBehaviour:
@@ -13607,13 +13503,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404754281}
-  m_LocalRotation: {x: -0, y: -0.8416842, z: -0, w: 0.5399701}
-  m_LocalPosition: {x: -3.7041016, y: -2.3000007, z: 15.339844}
+  m_LocalRotation: {x: -0, y: -0.998905, z: -0, w: 0.04678599}
+  m_LocalPosition: {x: -0.32995605, y: -2.3000007, z: 9.97998}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1457658574}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 245.36299, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 185.36299, z: 0}
 --- !u!1 &1409258340
 GameObject:
   m_ObjectHideFlags: 0
@@ -13644,47 +13540,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 53
-  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":451.5,"yPos":216},"ID":2,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[1,1],"SpeechUID":3},{"EditorInfo":{"isRoot":false,"xPos":448.5,"yPos":432},"ID":4,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[3,12,14,3,14],"SpeechUID":5},{"EditorInfo":{"isRoot":false,"xPos":99.5,"yPos":323},"ID":10,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[1,1],"SpeechUID":12},{"EditorInfo":{"isRoot":false,"xPos":89,"yPos":643},"ID":15,"TMPFontGUID":null,"Text":"Explain","parentUIDs":[14,14],"SpeechUID":16},{"EditorInfo":{"isRoot":false,"xPos":-156,"yPos":550},"ID":21,"TMPFontGUID":null,"Text":"Don''t
-    Explain","parentUIDs":[14,14],"SpeechUID":22},{"EditorInfo":{"isRoot":false,"xPos":-782,"yPos":219},"ID":26,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[1,1],"SpeechUID":27},{"EditorInfo":{"isRoot":false,"xPos":-532,"yPos":445},"ID":29,"TMPFontGUID":null,"Text":"Come
-    back another time","parentUIDs":[28,28],"SpeechUID":30},{"EditorInfo":{"isRoot":false,"xPos":-388,"yPos":1041},"ID":34,"TMPFontGUID":null,"Text":"You
-    didn''t see anything","parentUIDs":[33,36,33,36],"SpeechUID":37},{"EditorInfo":{"isRoot":false,"xPos":-748,"yPos":915},"ID":35,"TMPFontGUID":null,"Text":"But
-    our vehicles are getting dirty","parentUIDs":[33,33],"SpeechUID":36},{"EditorInfo":{"isRoot":false,"xPos":-390,"yPos":1241},"ID":38,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[37,37],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":-747,"yPos":1142},"ID":42,"TMPFontGUID":null,"Text":"Agree
-    with Zack","parentUIDs":[36,37,36,37],"SpeechUID":43},{"EditorInfo":{"isRoot":false,"xPos":-1045,"yPos":454},"ID":45,"TMPFontGUID":null,"Text":"Agree
-    to do it now","parentUIDs":[28,28],"SpeechUID":46}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":82,"yPos":89},"ID":0,"TMPFontGUID":null,"Text":"*A
-    child named Makelele approaches Peacekeeper and asks the following.*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":76.5,"yPos":207},"ID":1,"TMPFontGUID":null,"Text":"\"Hi
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":430.5,"yPos":149},"ID":2,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[1,1],"SpeechUID":3},{"EditorInfo":{"isRoot":false,"xPos":427.5,"yPos":365},"ID":4,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[3,12,14,3,14],"SpeechUID":5},{"EditorInfo":{"isRoot":false,"xPos":78.5,"yPos":256},"ID":10,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[1,1],"SpeechUID":12},{"EditorInfo":{"isRoot":false,"xPos":68,"yPos":576},"ID":15,"TMPFontGUID":null,"Text":"Explain","parentUIDs":[14,14],"SpeechUID":16},{"EditorInfo":{"isRoot":false,"xPos":-177,"yPos":483},"ID":21,"TMPFontGUID":null,"Text":"Don''t
+    Explain","parentUIDs":[14,14],"SpeechUID":22},{"EditorInfo":{"isRoot":false,"xPos":-803,"yPos":152},"ID":26,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[1,1],"SpeechUID":27},{"EditorInfo":{"isRoot":false,"xPos":-553,"yPos":378},"ID":29,"TMPFontGUID":null,"Text":"Come
+    back another time","parentUIDs":[28,28],"SpeechUID":30},{"EditorInfo":{"isRoot":false,"xPos":-409,"yPos":974},"ID":34,"TMPFontGUID":null,"Text":"You
+    didn''t see anything","parentUIDs":[33,36,33,36],"SpeechUID":37},{"EditorInfo":{"isRoot":false,"xPos":-769,"yPos":848},"ID":35,"TMPFontGUID":null,"Text":"But
+    our vehicles are getting dirty","parentUIDs":[33,33],"SpeechUID":36},{"EditorInfo":{"isRoot":false,"xPos":-411,"yPos":1174},"ID":38,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[37,37],"SpeechUID":39},{"EditorInfo":{"isRoot":false,"xPos":-768,"yPos":1075},"ID":42,"TMPFontGUID":null,"Text":"Agree
+    with Zack","parentUIDs":[36,37,36,37],"SpeechUID":43},{"EditorInfo":{"isRoot":false,"xPos":-1066,"yPos":387},"ID":45,"TMPFontGUID":null,"Text":"Agree
+    to do it now","parentUIDs":[28,28],"SpeechUID":46}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":61,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"*A
+    child named Makelele approaches Peacekeeper and asks the following.*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":55.5,"yPos":140},"ID":1,"TMPFontGUID":null,"Text":"\"Hi
     there,I would like to clean your military vehicles in exchange for money. Are
-    you interested?\"","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[2,10,26],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":447.5,"yPos":315},"ID":3,"TMPFontGUID":null,"Text":"Please?
-    I need money to get food for my family..","parentUIDs":[2,2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[4],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":440.5,"yPos":505},"ID":5,"TMPFontGUID":null,"Text":"*Makelele
-    walks away with her head in disappointment. *","parentUIDs":[4,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":6,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":448.5,"yPos":616},"ID":6,"TMPFontGUID":null,"Text":"*Zack
-    approaches you. *","parentUIDs":[5,5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":7,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":453.5,"yPos":726},"ID":7,"TMPFontGUID":null,"Text":"I''m
-    glad you didn''t accept his offer since that would of been considered child labour.","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":8,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":455.5,"yPos":841},"ID":8,"TMPFontGUID":null,"Text":"I
-    felt like you could''ve taken care of it in another way.","parentUIDs":[7,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":91,"yPos":407},"ID":12,"TMPFontGUID":null,"Text":"Sorry
-    kid, I''m not allowed to do that. It goes against ethics.","parentUIDs":[10,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":14,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":89,"yPos":534},"ID":14,"TMPFontGUID":null,"Text":"What
-    do you mean ethics?, I am young,strong and able to work!","parentUIDs":[12,12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[4,15,21],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":87,"yPos":726},"ID":16,"TMPFontGUID":null,"Text":"We
-    Peacekeepers are not allowed to give children money, nor have them work for us.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":17,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":86,"yPos":836},"ID":17,"TMPFontGUID":null,"Text":"Its
+    you interested?\"","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[2,10,26],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":426.5,"yPos":247},"ID":3,"TMPFontGUID":null,"Text":"Please?
+    I need money to get food for my family..","parentUIDs":[2,2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[4],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":419.5,"yPos":436},"ID":5,"TMPFontGUID":null,"Text":"*Makelele
+    walks away with her head in disappointment. *","parentUIDs":[4,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":6,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":427.5,"yPos":549},"ID":6,"TMPFontGUID":null,"Text":"*Zack
+    approaches you. *","parentUIDs":[5,5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":7,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":432.5,"yPos":659},"ID":7,"TMPFontGUID":null,"Text":"I''m
+    glad you didn''t accept his offer since that would of been considered child labour.","parentUIDs":[6,6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":8,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":434.5,"yPos":774},"ID":8,"TMPFontGUID":null,"Text":"I
+    felt like you could''ve taken care of it in another way.","parentUIDs":[7,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":70,"yPos":340},"ID":12,"TMPFontGUID":null,"Text":"Sorry
+    kid, I''m not allowed to do that. It goes against ethics.","parentUIDs":[10,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":14,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":68,"yPos":467},"ID":14,"TMPFontGUID":null,"Text":"What
+    do you mean ethics?, I am young,strong and able to work!","parentUIDs":[12,12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[4,15,21],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":66,"yPos":659},"ID":16,"TMPFontGUID":null,"Text":"We
+    Peacekeepers are not allowed to give children money, nor have them work for us.","parentUIDs":[15,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":17,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":65,"yPos":769},"ID":17,"TMPFontGUID":null,"Text":"Its
     considered child labour, and I can be fired if I have you working for me. Also,
-    children cannot be on a UC camp or facilities.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":86,"yPos":945},"ID":18,"TMPFontGUID":null,"Text":"I
-    understand now. Thank you for the explaination!","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":85,"yPos":1060},"ID":19,"TMPFontGUID":null,"Text":"*Makelele
-    happily exits the scene *","parentUIDs":[18,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-165,"yPos":638},"ID":22,"TMPFontGUID":null,"Text":"Sorry
-    kid, no time to explain. I''m busy right now.","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-155,"yPos":752},"ID":23,"TMPFontGUID":null,"Text":"I
-    don''t want to work for you anyways. I''ll ask someone else.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-142,"yPos":875},"ID":24,"TMPFontGUID":null,"Text":"*Makelele
-    angrily exits the scene *","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-786,"yPos":309},"ID":27,"TMPFontGUID":null,"Text":"Sure
-    thing kid, when are you free?","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-788,"yPos":431},"ID":28,"TMPFontGUID":null,"Text":"I
-    can do it right now!","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[29,45],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-531,"yPos":539},"ID":30,"TMPFontGUID":null,"Text":"I''m
+    children cannot be on a UC camp or facilities.","parentUIDs":[16,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":18,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":65,"yPos":878},"ID":18,"TMPFontGUID":null,"Text":"I
+    understand now. Thank you for the explaination!","parentUIDs":[17,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":19,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":64,"yPos":993},"ID":19,"TMPFontGUID":null,"Text":"*Makelele
+    happily exits the scene *","parentUIDs":[18,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-186,"yPos":571},"ID":22,"TMPFontGUID":null,"Text":"Sorry
+    kid, no time to explain. I''m busy right now.","parentUIDs":[21,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":23,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-176,"yPos":685},"ID":23,"TMPFontGUID":null,"Text":"I
+    don''t want to work for you anyways. I''ll ask someone else.","parentUIDs":[22,22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":24,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-163,"yPos":808},"ID":24,"TMPFontGUID":null,"Text":"*Makelele
+    angrily exits the scene *","parentUIDs":[23,23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-807,"yPos":242},"ID":27,"TMPFontGUID":null,"Text":"Sure
+    thing kid, when are you free?","parentUIDs":[26,26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":28,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-809,"yPos":364},"ID":28,"TMPFontGUID":null,"Text":"I
+    can do it right now!","parentUIDs":[27,27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[29,45],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-552,"yPos":472},"ID":30,"TMPFontGUID":null,"Text":"I''m
     actually busy with other things right now. Come back in a few hours and we''ll
-    talk it later.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":31,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-531,"yPos":662},"ID":31,"TMPFontGUID":null,"Text":"Okay,
-    no problem. Thank you!","parentUIDs":[30,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-481,"yPos":763},"ID":32,"TMPFontGUID":null,"Text":"*Makelele
-    exits the scene. Zack is irritated and approaches you.*","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-456,"yPos":904},"ID":33,"TMPFontGUID":null,"Text":"You
-    realize that if he cleans our vehicles it''s considered child labour right?","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[34,35],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-748,"yPos":1020},"ID":36,"TMPFontGUID":null,"Text":"Doesn''t
-    matter. You can get into trouble for this.","parentUIDs":[35,35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[34,42],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-389,"yPos":1126},"ID":37,"TMPFontGUID":null,"Text":"Don''t
+    talk it later.","parentUIDs":[29,29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":31,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-552,"yPos":595},"ID":31,"TMPFontGUID":null,"Text":"Okay,
+    no problem. Thank you!","parentUIDs":[30,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Makelele","OptionUIDs":[],"SpeechUID":32,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-502,"yPos":696},"ID":32,"TMPFontGUID":null,"Text":"*Makelele
+    exits the scene. Zack is irritated and approaches you.*","parentUIDs":[31,31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":33,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-477,"yPos":837},"ID":33,"TMPFontGUID":null,"Text":"You
+    realize that if he cleans our vehicles it''s considered child labour right?","parentUIDs":[32,32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[34,35],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-769,"yPos":953},"ID":36,"TMPFontGUID":null,"Text":"Doesn''t
+    matter. You can get into trouble for this.","parentUIDs":[35,35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[34,42],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-410,"yPos":1059},"ID":37,"TMPFontGUID":null,"Text":"Don''t
     lie to me, I saw what you did! When he comes back, tell him he is not allowed
-    to work for us.","parentUIDs":[34,34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[38,42],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-390,"yPos":1313},"ID":39,"TMPFontGUID":null,"Text":"He
-    is not allowed to work for us! thats final!","parentUIDs":[38,38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-747,"yPos":1224},"ID":43,"TMPFontGUID":null,"Text":"I''m
-    letting you off with a warning. Don''t let it happen again.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1046,"yPos":543},"ID":46,"TMPFontGUID":null,"Text":"Alright,
-    I''ll pay you after you''re finished.","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":47,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1048,"yPos":665},"ID":47,"TMPFontGUID":null,"Text":"*Zack
-    witnesses the interaction and approaches you*","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1048,"yPos":782},"ID":49,"TMPFontGUID":null,"Text":"Hey!
-    what are you doing?","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1047,"yPos":909},"ID":50,"TMPFontGUID":null,"Text":"Helping
-    out a child by giving him a job.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1049,"yPos":1031},"ID":51,"TMPFontGUID":null,"Text":"You''re
+    to work for us.","parentUIDs":[34,34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[38,42],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-411,"yPos":1246},"ID":39,"TMPFontGUID":null,"Text":"He
+    is not allowed to work for us! thats final!","parentUIDs":[38,38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-768,"yPos":1157},"ID":43,"TMPFontGUID":null,"Text":"I''m
+    letting you off with a warning. Don''t let it happen again.","parentUIDs":[42,42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1067,"yPos":476},"ID":46,"TMPFontGUID":null,"Text":"Alright,
+    I''ll pay you after you''re finished.","parentUIDs":[45,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":47,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1069,"yPos":598},"ID":47,"TMPFontGUID":null,"Text":"*Zack
+    witnesses the interaction and approaches you*","parentUIDs":[46,46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":49,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1069,"yPos":715},"ID":49,"TMPFontGUID":null,"Text":"Hey!
+    what are you doing?","parentUIDs":[47,47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":50,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1068,"yPos":842},"ID":50,"TMPFontGUID":null,"Text":"Helping
+    out a child by giving him a job.","parentUIDs":[49,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":51,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1070,"yPos":964},"ID":51,"TMPFontGUID":null,"Text":"You''re
     not allowed to do that! That is child labour! Don''t do it again.","parentUIDs":[50,50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: Ignore
@@ -13737,19 +13633,7 @@ MonoBehaviour:
   - {fileID: 81878858}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
-          type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1409258345
 Transform:
   m_ObjectHideFlags: 0
@@ -13763,7 +13647,7 @@ Transform:
   m_Children:
   - {fileID: 81878814}
   m_Father: {fileID: 1457658574}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1410394684
 PrefabInstance:
@@ -13962,9 +13846,10 @@ Transform:
   m_LocalPosition: {x: 607.40204, y: 0.93, z: 805.38007}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
+  - {fileID: 1968457150}
   - {fileID: 163868979}
   - {fileID: 1409258345}
-  - {fileID: 1262472647}
+  - {fileID: 1179724841}
   - {fileID: 1404754282}
   m_Father: {fileID: 1871095083}
   m_RootOrder: 1
@@ -15923,12 +15808,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875110358}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.553, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7949203378050301959}
-  m_RootOrder: 3
+  m_Father: {fileID: 763123238}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1875110360
 MonoBehaviour:
@@ -15942,7 +15827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee25c03068204a76ad7cd5d8449fac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: {fileID: 0}
+  displayImage: {fileID: 0}
   displayInfo: 0
   lookAtCamera: {fileID: 544394437}
   playerCamera: {fileID: 3035190537529486697}
@@ -16013,7 +15898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 7949203378050301959}
+  interactionLocation: {fileID: 0}
   conditionCollections: []
   defaultReactionCollection: {fileID: 1875110362}
 --- !u!1 &1883006856
@@ -16525,12 +16410,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968457149}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -792.7902, y: -2.0818188, z: -908.0526}
-  m_LocalScale: {x: 1.394905, y: 1.7235109, z: 1.394905}
+  m_LocalRotation: {x: 0.06987789, y: -0.9349264, z: 0.2771674, w: 0.21025692}
+  m_LocalPosition: {x: -36.88, y: -2.095, z: 8.46}
+  m_LocalScale: {x: 2.1924, y: 2.7088766, z: 2.1924}
   m_Children: []
-  m_Father: {fileID: 516781521}
-  m_RootOrder: 4
+  m_Father: {fileID: 1457658574}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1968457151
 MonoBehaviour:
@@ -16546,6 +16431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 18697559}
+  - {fileID: 704213808}
 --- !u!1 &1982982201
 GameObject:
   m_ObjectHideFlags: 0
@@ -17241,9 +17127,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1289112567}
-  - {fileID: 7949203378050301959}
-  - {fileID: 609435077}
   - {fileID: 1367918759}
+  - {fileID: 763123238}
+  - {fileID: 609435077}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17908,7 +17794,7 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.01112016
+      value: 0.011120164
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
@@ -17918,12 +17804,12 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.12007468
+      value: 0.12007469
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.091542825
+      value: 0.091542855
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
@@ -18305,196 +18191,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -167}
   m_SizeDelta: {x: 266, y: 267}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &7949203378050301958
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2053767980}
-    m_Modifications:
-    - target: {fileID: 2436689017415265448, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_Name
-      value: Partner
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 605.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.22000027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 813.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.8416842
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5399701
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 245.36299
-      objectReference: {fileID: 0}
-    - target: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250538553708673344, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -207.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3877463614974371101, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643631308902737395, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.246
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157647677841890468, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6424421242248773631, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8088591281391738176, guid: a5a58af72873c054eae08cee13d3b165,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a5a58af72873c054eae08cee13d3b165, type: 3}
---- !u!4 &7949203378050301959 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2440216234311936076, guid: a5a58af72873c054eae08cee13d3b165,
-    type: 3}
-  m_PrefabInstance: {fileID: 7949203378050301958}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8655530007344613025
 GameObject:
   m_ObjectHideFlags: 0
