@@ -14,6 +14,11 @@ public class InitialVisit : MonoBehaviour
         DontDestroyOnLoad(gameObject); // keep me forever
         Instance = this; // set the reference to it
 
+        
+    }
+
+    private void Start()
+    {
         StartCoroutine(WaitToStartTutorial());
     }
 
