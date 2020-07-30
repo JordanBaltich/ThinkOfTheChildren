@@ -15,7 +15,12 @@ public class FastTravel : MonoBehaviour
     private void Awake()
     {
         player = GameObject.FindObjectOfType<PlayerMovement>().gameObject;
-        speed = player.GetComponent<NavMeshAgent>().speed;
+        speed = player.GetComponent<NavMeshAgent>().speed;       
+    }
+
+    private void Start()
+    {
+        mapCamera = GameObject.Find("MapCamera");
     }
 
     public void TravelToDestination()
