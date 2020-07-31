@@ -3958,31 +3958,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 128423782}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &128423785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8933ba19677121b41b54477483a60531,
-    type: 3}
-  m_PrefabInstance: {fileID: 128423782}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &128423786
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128423785}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: be2d56b8f1c31ce409eacc661e7143df, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &134724830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16779,7 +16754,8 @@ MonoBehaviour:
   m_AnimatedTarget: {fileID: 0}
   m_LayerIndex: 0
   m_ShowDebugText: 0
-  m_ChildCameras: []
+  m_ChildCameras:
+  - {fileID: 1572571892}
   m_Instructions: []
   m_DefaultBlend:
     m_Style: 1
