@@ -5,7 +5,7 @@
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_SpecTex("Specular (B&W)", 2D) = "white" {}
 		_Ramp("Toon Ramp", 2D) = "white" {}
-		_BumpMap("Bumpmap", 2D) = "bump" {}
+		_BumpMap("Normal Map", 2D) = "bump" {}
 		_Border("Border size", Range(0.0,0.1)) = 0.01
 		_BorderColor("Border Color", Color) = (0,0,0,1)
 		[Toggle(SPECULAR_ENABLE)] _SpecularEnable("Enable Specular", Int) = 0
