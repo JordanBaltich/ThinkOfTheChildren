@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Car_1_Vehicle_interior
-  m_Shader: {fileID: 4800000, guid: 63c2c69d4aa01af4085f3b148a5b5c84, type: 3}
-  m_ShaderKeywords: OUTLINE_FRONT _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: 2930ca9f8eb827341ae28d14d3266c83, type: 3}
+  m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2001
+  m_CustomRenderQueue: 2002
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ramp:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 79be2c25a12e980469d7d935c889c16a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -79,7 +79,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineFront: 1
+    - _OutlineFront: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularEnable: 0
