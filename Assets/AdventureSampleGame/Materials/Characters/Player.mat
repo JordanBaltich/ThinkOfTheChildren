@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Player
   m_Shader: {fileID: 4800000, guid: 63c2c69d4aa01af4085f3b148a5b5c84, type: 3}
-  m_ShaderKeywords: OUTLINE_FRONT _EMISSION
+  m_ShaderKeywords: OUTLINE_FRONT SPECULAR_ENABLE _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -84,9 +84,9 @@ Material:
     - _RampSmooth: 0.2
     - _RampThreshold: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SpecularEnable: 0
+    - _SpecularEnable: 1
     - _SpecularHighlights: 1
-    - _SpecularPower: 0.01
+    - _SpecularPower: 0.999
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
