@@ -8,19 +8,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Car_1_Body
-  m_Shader: {fileID: 4800000, guid: 63c2c69d4aa01af4085f3b148a5b5c84, type: 3}
-  m_ShaderKeywords: OUTLINE_FRONT
+  m_Shader: {fileID: 4800000, guid: 2930ca9f8eb827341ae28d14d3266c83, type: 3}
+  m_ShaderKeywords: SPECULAR_ENABLE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2001
+  m_CustomRenderQueue: 2002
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5338200d5303883479547517b5066a29, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3d34eb1bc60a1174db16927b8013a784, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3e2f993f7bdc3d54b8156a8cb8d6e62a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ramp:
-        m_Texture: {fileID: 2800000, guid: 0f66c07279c7f154598d4aec04bf1496, type: 3}
+        m_Texture: {fileID: 2800000, guid: 79be2c25a12e980469d7d935c889c16a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecTex:
@@ -75,12 +75,12 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineFront: 1
+    - _OutlineFront: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SpecularEnable: 0
+    - _SpecularEnable: 1
     - _SpecularHighlights: 1
-    - _SpecularPower: 0.01
+    - _SpecularPower: 0.7
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
