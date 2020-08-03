@@ -2680,6 +2680,7 @@ GameObject:
   - component: {fileID: 195000013459137288}
   - component: {fileID: 114000014294072012}
   - component: {fileID: 114000014274399210}
+  - component: {fileID: 7832419005216834535}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2771,6 +2772,8 @@ MonoBehaviour:
   ignoreSaveData: 0
   destinationPosition: {x: 0, y: 0, z: 0}
   isRunning: 0
+  stepSpeed: 0.5
+  runMultiplier: 0.5
 --- !u!114 &114000014274399210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2786,6 +2789,26 @@ MonoBehaviour:
   uniqueIdentifier: DisguiseOnFaceActivity
   saveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
   gameObjectToSave: {fileID: 1000011958607958}
+--- !u!114 &7832419005216834535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014019507428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cba99d0b9c085a469258764f03013c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  t: {fileID: 0}
+  posX: 0
+  posZ: 0
+  textureValues:
+  - 0
+  - 0
+  - 0
 --- !u!1 &1000014050281458
 GameObject:
   m_ObjectHideFlags: 0

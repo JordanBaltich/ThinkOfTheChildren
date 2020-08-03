@@ -45,6 +45,9 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public bool isRunning;
 
+    public float stepSpeed;
+    public float runMultiplier;
+    IEnumerator stepRoutine;
 
     // The maximum distance from the nav mesh a click can be to be accepted.
 
@@ -99,7 +102,32 @@ public class PlayerMovement : MonoBehaviour
             agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
 
+    IEnumerator FootSteps()
+    {
+        CheckTerrainTexture terrianCheck = GetComponent<CheckTerrainTexture>();
+        while (agent.velocity != Vector3.zero)
+        {
+            if (agent.velocity.magnitude < 5)
+            {
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayFootStepClips(terrianCheck, terrianCheck.CheckIfOnTerrain());
+                }
 
+                yield return new WaitForSeconds(stepSpeed);
+            }
+            else
+            {
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayFootStepClips(terrianCheck, terrianCheck.CheckIfOnTerrain());
+                }
+
+                yield return new WaitForSeconds(stepSpeed * runMultiplier);
+            }
+           
+        }
+    }
     private void Update()
     {
         if (agent.enabled)
@@ -129,6 +157,23 @@ public class PlayerMovement : MonoBehaviour
             agent.SetDestination(transform.position);
         }
 
+
+        if (agent.velocity == Vector3.zero)
+        {
+            if (stepRoutine != null)
+            {
+                StopCoroutine(stepRoutine);
+                stepRoutine = null;
+            }
+        }
+        else
+        {
+            if (stepRoutine == null)
+            {
+                stepRoutine = FootSteps();
+                StartCoroutine(stepRoutine);
+            }
+        }
     }
 
     // This is called when the nav mesh agent is very close to it's destination.

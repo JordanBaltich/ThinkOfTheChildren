@@ -11131,6 +11131,12 @@ MonoBehaviour:
   targetDestination: {fileID: 1604267612}
   mapCamera: {fileID: 0}
   FastTravelUI: {fileID: 2094155136}
+--- !u!218 &1012932917 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 658581002, guid: e5db552dd54d91048808346b3465bfde,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012932908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1042481275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12578,6 +12584,11 @@ PrefabInstance:
       propertyPath: destinationTracker
       value: 
       objectReference: {fileID: 609435076}
+    - target: {fileID: 7832419005216834535, guid: ab5f05eb414b65f4f9c285f785c1dfad,
+        type: 3}
+      propertyPath: t
+      value: 
+      objectReference: {fileID: 1012932917}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
 --- !u!4 &1289112566 stripped

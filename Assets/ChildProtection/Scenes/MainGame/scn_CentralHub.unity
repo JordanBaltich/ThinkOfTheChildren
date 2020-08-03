@@ -16754,8 +16754,7 @@ MonoBehaviour:
   m_AnimatedTarget: {fileID: 0}
   m_LayerIndex: 0
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1572571892}
+  m_ChildCameras: []
   m_Instructions: []
   m_DefaultBlend:
     m_Style: 1
@@ -17779,6 +17778,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758274, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3578675210206710143, guid: 140da85d2b6da2a499e6915115521e8e,
+        type: 2}
+    - target: {fileID: 3900108755062758274, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
         type: 3}
@@ -36688,6 +36698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1641016805}
   - component: {fileID: 1641016806}
+  - component: {fileID: 1641016807}
   m_Layer: 0
   m_Name: HubStart
   m_TagString: Untagged
@@ -36722,6 +36733,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingPointName: HubStart
+--- !u!114 &1641016807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641016804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338c3f17a30001d4a90f9a136d127f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambientIndex: 0
+  musicIndex: 1
 --- !u!1 &1643210936
 GameObject:
   m_ObjectHideFlags: 0

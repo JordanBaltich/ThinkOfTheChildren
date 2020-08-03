@@ -25,8 +25,13 @@ public class MapCameraController : MonoBehaviour
         // stop time and play music clip
         StopTime(true);
 
-        if(AudioManager.Instance != null)
+        if (AudioManager.Instance != null)
+        {
             AudioManager.Instance.PlayMusicClip(0);
+            AudioManager.Instance.StopAmbient();
+        }
+           
+        
     }
 
     private void OnDisable()
@@ -35,7 +40,11 @@ public class MapCameraController : MonoBehaviour
         // restart time and stop music
         StopTime(false);
         if (AudioManager.Instance != null)
+        {
             AudioManager.Instance.StopMusic();
+            AudioManager.Instance.PlayAmbientClip(GameObject.FindObjectOfType<SceneAudioInitializer>().ambientIndex);
+        }
+            
     }
 
     // Update is called once per frame

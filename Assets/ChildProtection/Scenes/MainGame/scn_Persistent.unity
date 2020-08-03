@@ -1433,6 +1433,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015278704}
   m_CullTransparentMesh: 0
+--- !u!1 &1347066787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1736686249695209814, guid: 19496b64506a3564ca197584aaceb33b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378172358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1378172358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1756,6 +1762,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1782113422, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782113422, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 136206343}
@@ -1767,6 +1777,18 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1782113422, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782113422, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782113422, guid: 0195c609b626b8e4fbeb7d123325d51c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1347066787}
     - target: {fileID: 6904224408383593866, guid: 0195c609b626b8e4fbeb7d123325d51c,
         type: 3}
       propertyPath: m_LocalPosition.x
