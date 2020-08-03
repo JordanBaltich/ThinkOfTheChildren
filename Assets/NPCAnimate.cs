@@ -23,12 +23,14 @@ public class NPCAnimate : MonoBehaviour
 
     private void Start()
     {
-        m_Animator.SetTrigger(defaultAnimation);
+        if (m_Animator != null)
+            m_Animator.SetTrigger(defaultAnimation);
         ConversationManager.OnConversationEnded += GoBackToDefault;
     }
 
     private void GoBackToDefault()
     {
+        if(m_Animator != null)
         m_Animator.SetTrigger(defaultAnimation);
     }
 
