@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [SerializeField] AudioSource voice, effects, music, ambient, UI, footSteps;
+    [SerializeField] AudioSource voice, effects, music, ambient, UI, footSteps, footSteps2;
     [SerializeField] AudioClip[] voiceClips, effectsClips, musicClips, ambientClips, UIClips, footStepClips;
 
     public float pitchRandomizer;
@@ -28,10 +28,18 @@ public class AudioManager : MonoBehaviour
     {
         if (CheckforValidIndex(index, voiceClips))
         {
-            voice.clip = voiceClips[index];
-            voice.Play();
+            if (!voice.isPlaying)
+            {
+                voice.clip = voiceClips[index];
+                voice.Play();
+            }
         }
-       
+
+    }
+
+    public void StopVoice()
+    {
+        voice.Stop();
     }
 
     public void PlayFXClip(int index)
@@ -41,7 +49,7 @@ public class AudioManager : MonoBehaviour
             effects.clip = effectsClips[index];
             effects.Play();
         }
-       
+
     }
 
     public void PlayMusicClip(int index)
@@ -51,7 +59,7 @@ public class AudioManager : MonoBehaviour
             music.clip = musicClips[index];
             music.Play();
         }
-       
+
     }
 
     public void StopMusic()
@@ -66,7 +74,7 @@ public class AudioManager : MonoBehaviour
             ambient.clip = ambientClips[index];
             ambient.Play();
         }
-        
+
     }
 
     public void StopAmbient()
@@ -78,10 +86,18 @@ public class AudioManager : MonoBehaviour
     {
         if (CheckforValidIndex(index, UIClips))
         {
-            UI.clip = UIClips[index];
-            UI.Play();
+            if (!UI.isPlaying)
+            {
+                UI.clip = UIClips[index];
+                UI.Play();
+            }
         }
 
+    }
+
+    public void StopUI()
+    {
+        UI.Stop();
     }
 
     bool CheckforValidIndex(int index, AudioClip[] givenClips)
@@ -100,7 +116,6 @@ public class AudioManager : MonoBehaviour
         footSteps.pitch = Random.Range(1 - pitchRandomizer, 1 + pitchRandomizer);
 
         textureCheck.GetTerrainTexture();
-
         if (isOnTerrain)
         {
             int currentTerrain = 0;
@@ -123,25 +138,55 @@ public class AudioManager : MonoBehaviour
                 }
             }
 
+
             if (currentTerrain == 0)
             {
+                if (footSteps.isPlaying)
+                {
+                    if (!footSteps2.isPlaying)
+                        footSteps2.PlayOneShot(footStepClips[(int)Random.Range(0, 6)]);
+                    else
+                        footSteps.PlayOneShot(footStepClips[(int)Random.Range(0, 6)]);
+                }
+                else
                 footSteps.PlayOneShot(footStepClips[(int)Random.Range(0, 6)]);
             }
             else if (currentTerrain == 1)
             {
+                if (footSteps.isPlaying)
+                {
+                    if (!footSteps2.isPlaying)
+                        footSteps2.PlayOneShot(footStepClips[(int)Random.Range(7, 10)]);
+                    else
+                        footSteps.PlayOneShot(footStepClips[(int)Random.Range(7, 10)]);
+                }
+                else
                 footSteps.PlayOneShot(footStepClips[(int)Random.Range(7, 10)]);
             }
             else if (currentTerrain == 2)
             {
+                if (footSteps.isPlaying)
+                {
+                    if (!footSteps2.isPlaying)
+                        footSteps2.PlayOneShot(footStepClips[(int)Random.Range(11, 16)]);
+                    else
+                        footSteps.PlayOneShot(footStepClips[(int)Random.Range(11, 16)]);
+                }
+                else
                 footSteps.PlayOneShot(footStepClips[(int)Random.Range(11, 16)]);
             }
         }
         else
         {
+            if (footSteps.isPlaying)
+            {
+                if (!footSteps2.isPlaying)
+                    footSteps2.PlayOneShot(footStepClips[(int)Random.Range(17, 23)]);
+                else
+                    footSteps.PlayOneShot(footStepClips[(int)Random.Range(17, 23)]);
+            }
             footSteps.PlayOneShot(footStepClips[(int)Random.Range(17, 23)]);
         }
 
-
-        print("soundPlayed");
     }
 }
