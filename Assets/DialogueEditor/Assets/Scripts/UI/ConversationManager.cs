@@ -17,6 +17,8 @@ namespace DialogueEditor
         public static ConversationStartEvent OnConversationStarted;
         public static ConversationEndEvent OnConversationEnded;
 
+        [SerializeField] int audioIndex = 3;
+
         private enum eState
         {
             TransitioningDialogueBoxOn,
@@ -97,7 +99,7 @@ namespace DialogueEditor
             }
             Instance = this;
 
-            m_uiOptions = new List<UIConversationButton>();        
+            m_uiOptions = new List<UIConversationButton>();
         }
 
         private void Start()
@@ -201,7 +203,7 @@ namespace DialogueEditor
                                 {
                                     EndConversation();
                                     return;
-                                }  
+                                }
                             }
 
                             if (m_selectedOption == null)
@@ -241,16 +243,26 @@ namespace DialogueEditor
                             return;
                         }
 
-                        SetColorAlpha(DialogueBackground, 1 -t);
+                        SetColorAlpha(DialogueBackground, 1 - t);
                         SetColorAlpha(NpcIcon, 1 - t);
                         SetColorAlpha(NameText, 1 - t);
                     }
                     break;
             }
+
+            if (m_state != eState.ScrollingText && m_state != eState.Off && m_state != eState.NONE)
+            {
+                AudioManager.Instance.StopUI();
+            }
         }
 
         private void UpdateScrollingText()
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayUIClip(audioIndex);
+            }
+
             const float charactersPerSecond = 1500;
             float timePerChar = (60.0f / charactersPerSecond);
             timePerChar *= ScrollSpeed;
@@ -325,7 +337,7 @@ namespace DialogueEditor
                         }
                     }
                     break;
-            }     
+            }
         }
 
 
