@@ -39,7 +39,7 @@ public class NPCAnimate : MonoBehaviour
     {
         if (m_Agent.enabled)
         {
-            float speed = m_Agent.desiredVelocity.magnitude*2;
+            float speed = m_Agent.desiredVelocity.magnitude;
 
             m_Animator.SetFloat(hashSpeedPara, speed, 0.1f, Time.deltaTime);
         }
