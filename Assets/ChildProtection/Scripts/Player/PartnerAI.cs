@@ -60,7 +60,7 @@ public class PartnerAI : MonoBehaviour
 
         // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
         m_Animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
-        m_Animator.speed = 1 + (GetDistanceFromPlayer() / 25);
+        //m_Animator.speed = 1 + (GetDistanceFromPlayer() / 25);
 
         }
         else
@@ -81,6 +81,7 @@ public class PartnerAI : MonoBehaviour
             SetDestination();
         }
 
+
         if (player.isRunning && isRunning == false)
         {
             m_Animator.SetTrigger("Run");
@@ -90,8 +91,8 @@ public class PartnerAI : MonoBehaviour
 
     public void SetDestination()
     {
-        destinationPosition = Vector3.Lerp(player.transform.position-offset,player.destinationPosition,0.1f);
-
+        //destinationPosition = Vector3.Lerp(player.transform.position-offset,player.destinationPosition,0.1f);
+        destinationPosition = player.transform.position;
         // Set the destination of the nav mesh agent to the found destination position and start the nav mesh agent going.
         m_Agent.SetDestination(destinationPosition);
 

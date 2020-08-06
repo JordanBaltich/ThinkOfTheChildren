@@ -45,15 +45,15 @@ public class NPCAnimate : MonoBehaviour
               m_Animator.SetFloat(hashSpeedPara, speed, 0.1f, Time.deltaTime);
 
         }
-            
-    }
-
-    private void OnAnimatorMove()
-    {
         if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Default"))
         {
             m_Animator.SetTrigger(defaultAnimation);
         }
+    }
+
+    private void OnAnimatorMove()
+    {
+
     }
 
 }
