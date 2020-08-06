@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DialogueEditor;
 
 public class PartnerInteraction : MonoBehaviour
 {
@@ -10,22 +11,41 @@ public class PartnerInteraction : MonoBehaviour
     public bool displayInfo;
     public Transform lookAtCamera;
     public Camera playerCamera;
+    public bool canMouseOver;
+
+    private void Start()
+    {
+        ConversationManager.OnConversationStarted += DisableMouseover;
+        ConversationManager.OnConversationEnded += EnableMouseover;
+    }
 
     // Update is called once per frame
     void Update()
     {
         DisplayText();
         displayImage.transform.LookAt(lookAtCamera);
+
     }
 
+    void DisableMouseover()
+    {
+        canMouseOver = false;
+    }
+
+    void EnableMouseover()
+    {
+        canMouseOver = true;
+    }
     private void OnMouseOver()
     {
-        displayInfo = true;
+        if(canMouseOver == true)
+            displayInfo = true;
     }
 
     private void OnMouseExit()
     {
-        displayInfo = false;
+        if (canMouseOver == true)
+            displayInfo = false;
     }
 
     void DisplayText()
