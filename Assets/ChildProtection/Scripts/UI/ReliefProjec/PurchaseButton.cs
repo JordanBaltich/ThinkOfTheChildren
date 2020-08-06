@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PurchaseButton : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PurchaseButton : MonoBehaviour
     [SerializeField]PointsSystem pointsSystem;
 
     [SerializeField] GameObject NotEnoughPointsPanel;
+    [SerializeField] TextMeshProUGUI currentPointsText;
 
     private void Awake()
     {
@@ -44,6 +46,7 @@ public class PurchaseButton : MonoBehaviour
             {
                 currentSelection.ConfirmPointsSpent();
                 pointsSystem.SpendPoints(currentSelection.cost);
+                currentPointsText.text = pointsSystem.currentPoints.ToString();
                 GameObject.FindObjectOfType<ReliefProjectTracker>().UpdateProjectState(currentSelection.choiceName, true);
                 m_Button.interactable = false;
                 currentSelection.GetComponent<Button>().interactable = false;

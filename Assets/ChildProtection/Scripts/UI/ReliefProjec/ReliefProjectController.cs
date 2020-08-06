@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ReliefProjectController : MonoBehaviour
 {
+    public TextMeshProUGUI currentPoints;
+    [SerializeField] PointsSystem pSystem;
+
     [Header("Choices")]
     public GameObject choicesHolder;
     [SerializeField] string choicesHolderName = "Choices";
@@ -42,7 +46,8 @@ public class ReliefProjectController : MonoBehaviour
 
     private void OnEnable()
     {
-
+        pSystem = GameObject.FindObjectOfType<PointsSystem>();
+        currentPoints.text = pSystem.currentPoints.ToString();
         OnlyShowFoundProjects();
     }
 
