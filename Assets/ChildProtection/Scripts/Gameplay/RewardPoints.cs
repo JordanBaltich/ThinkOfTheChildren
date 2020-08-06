@@ -43,5 +43,7 @@ public class RewardPoints : MonoBehaviour
                 }
             }
         }
+
+        pSystem.EndTheGame();
     }
 }
