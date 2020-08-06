@@ -39,17 +39,21 @@ public class NPCAnimate : MonoBehaviour
     {
         if (m_Agent.enabled)
         {
-            float speed = m_Agent.desiredVelocity.magnitude;
 
-            m_Animator.SetFloat(hashSpeedPara, speed, 0.1f, Time.deltaTime);
+              float speed = m_Agent.desiredVelocity.magnitude;
+
+              m_Animator.SetFloat(hashSpeedPara, speed, 0.1f, Time.deltaTime);
+
         }
             
     }
 
-    //private void OnAnimatorMove()
-    //{
-    //        // Set the velocity of the nav mesh agent (which is moving the player) based on the speed that the animator would move the player.
-    //        m_Agent.velocity = m_Animator.deltaPosition / Time.deltaTime;
-    //}
+    private void OnAnimatorMove()
+    {
+        if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Default"))
+        {
+            m_Animator.SetTrigger(defaultAnimation);
+        }
+    }
 
 }
