@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RewardPoints : MonoBehaviour
-{  
+{
+    [SerializeField] GameObject endGameObject;
+
     public void GivePointsBasedOnReport()
     {
         Report report = GameObject.FindObjectOfType<Report>();
@@ -44,6 +46,17 @@ public class RewardPoints : MonoBehaviour
             }
         }
 
-        pSystem.EndTheGame();
+        EndTheGame();
+    }
+
+    public void EndTheGame()
+    {
+        PointsSystem pSystem = GameObject.FindObjectOfType<PointsSystem>();
+        if (pSystem.keyInfos.Count == 3)
+        {
+            print(pSystem.keyInfos.Count);
+
+            endGameObject.SetActive(true);
+        }
     }
 }
