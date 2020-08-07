@@ -7569,7 +7569,6 @@ GameObject:
   - component: {fileID: 209526165}
   - component: {fileID: 209526164}
   - component: {fileID: 209526163}
-  - component: {fileID: 209526166}
   m_Layer: 0
   m_Name: InitialHubVisit
   m_TagString: Untagged
@@ -7621,22 +7620,6 @@ Transform:
   m_Father: {fileID: 1843668350}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &209526166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209526162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 209526165}
-  conditionCollections:
-  - {fileID: 345924644}
-  defaultReactionCollection: {fileID: 209526164}
 --- !u!1001 &210560680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11831,22 +11814,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 343052633}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &345924644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Tutorial finished
-  requiredConditions:
-  - {fileID: 2121380136}
-  reactionCollection: {fileID: 209526164}
 --- !u!1 &353660357
 GameObject:
   m_ObjectHideFlags: 0
@@ -40174,7 +40141,18 @@ MonoBehaviour:
   NodeID: 1
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 209526162}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -41921,9 +41899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":-6.5,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"Learn
+  json: '{"Options":[],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":267,"yPos":79},"ID":0,"TMPFontGUID":null,"Text":"Learn
     the importance of child protection by assuming the role of a peacekeeper in a
-    conflict zone. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-7.5,"yPos":158},"ID":1,"TMPFontGUID":null,"Text":"Click
+    conflict zone. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":266,"yPos":215},"ID":1,"TMPFontGUID":null,"Text":"Click
     anywhere to explore the area!","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tutorial","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: 
@@ -41935,7 +41913,18 @@ MonoBehaviour:
   - {fileID: 1314924026}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 209526162}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1370722309
 Transform:
   m_ObjectHideFlags: 0
@@ -65647,21 +65636,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2121266108}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2121380136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: MainTutorial
-  satisfied: 0
-  hash: -1490088237
 --- !u!1 &2125307561
 GameObject:
   m_ObjectHideFlags: 0

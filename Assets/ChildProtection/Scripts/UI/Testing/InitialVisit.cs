@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class InitialVisit : MonoBehaviour
 {
+
     public ReactionCollection reaction;
-    public static InitialVisit Instance;
+    //bool tutorialHasPlayed = false;
 
-    // Start is called before the first frame update
-    void Awake()
+    ReliefProjectTracker pTracker;
+
+    //// Start is called before the first frame update
+    //void Awake()
+    //{
+    //    if (Instance != null) { Destroy(gameObject); return; } // stops dups running
+    //    DontDestroyOnLoad(gameObject); // keep me forever
+    //    Instance = this; // set the reference to it 
+    //}
+
+    private void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); return; } // stops dups running
-        DontDestroyOnLoad(gameObject); // keep me forever
-        Instance = this; // set the reference to it
-
-        
+        pTracker = GameObject.FindObjectOfType<ReliefProjectTracker>();
     }
 
     private void Start()
     {
-        StartCoroutine(WaitToStartTutorial());
+
+        if (!pTracker.tutorialHasPlayed)
+        {
+            StartCoroutine(WaitToStartTutorial());
+            pTracker.tutorialHasPlayed = true;
+        }     
     }
 
     IEnumerator WaitToStartTutorial()

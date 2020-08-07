@@ -8,6 +8,8 @@ public class ReliefProjectTracker : MonoBehaviour
 
     public List<bool> projectStates;
 
+    public bool tutorialHasPlayed = false;
+
     public void AddProjectToTracker(string project, bool state)
     {
         rebuildProjects.Add(project);
