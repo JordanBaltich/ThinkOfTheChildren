@@ -202,6 +202,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6436679}
   m_CullTransparentMesh: 0
+--- !u!1 &9997751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9997753}
+  - component: {fileID: 9997752}
+  m_Layer: 0
+  m_Name: Runaway
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &9997752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9997751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 47888383}
+  - {fileID: 1631932245}
+  - {fileID: 2061919445}
+--- !u!4 &9997753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9997751}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.252258, y: -0.120001614, z: 9.55011}
+  m_LocalScale: {x: 0.78586, y: 0.78586, z: 0.78586}
+  m_Children: []
+  m_Father: {fileID: 6460383677138611192}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &10346519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -350,8 +397,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  agent: {fileID: 1179724843}
-  targetLocation: {fileID: 1968457149}
+  agent: {fileID: 1260454610}
+  targetLocation: {fileID: 875048210}
   speed: 2
 --- !u!1 &24879338
 GameObject:
@@ -468,6 +515,22 @@ MonoBehaviour:
   delay: 0
   gameObject: {fileID: 2144341917}
   activeState: 1
+--- !u!114 &47888383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0f5faf6729aae4db3d6b31dd365ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  agent: {fileID: 1328253437}
+  targetLocation: {fileID: 9997751}
+  speed: 2
 --- !u!1 &50802139
 GameObject:
   m_ObjectHideFlags: 3
@@ -3117,7 +3180,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131656434}
-  m_LocalRotation: {x: -0.017810203, y: 0.9627077, z: -0.0654682, w: -0.26189837}
+  m_LocalRotation: {x: -0.017810203, y: 0.96270764, z: -0.06546822, w: -0.26189834}
   m_LocalPosition: {x: 51.06714, y: 1.3724754, z: -78.53406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4256,7 +4319,6 @@ GameObject:
   - component: {fileID: 197405561}
   - component: {fileID: 197405564}
   - component: {fileID: 197405563}
-  - component: {fileID: 197405562}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -4278,28 +4340,6 @@ Transform:
   m_Father: {fileID: 420990310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &197405562
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197405560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: -0.24789155, y: 1.8265249, z: -2.7727203}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
 --- !u!114 &197405563
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5925,6 +5965,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+--- !u!1 &307066390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519588517259188763, guid: e04d5c44e8da0374fbb717e926c723a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 519628234029464540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &313780061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6285,7 +6331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &336675675
 Transform:
   m_ObjectHideFlags: 0
@@ -6440,6 +6486,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336675674}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &340916112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 718272299}
+  activeState: 0
 --- !u!1001 &350326039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7590,8 +7651,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420990309}
-  m_LocalRotation: {x: 0.0013729242, y: 0.9842393, z: -0.17667109, w: 0.0076485854}
-  m_LocalPosition: {x: 43.190308, y: -0.96399987, z: -97.19794}
+  m_LocalRotation: {x: 0.019004786, y: 0.98054945, z: -0.12239659, w: 0.15225206}
+  m_LocalPosition: {x: 42.406982, y: -1.141, z: -97.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 197405561}
@@ -7886,7 +7947,18 @@ MonoBehaviour:
   NodeID: 113
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZack1
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -7937,6 +8009,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 875048212}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -7975,16 +8058,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8006,16 +8089,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8075,16 +8158,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8174,19 +8257,7 @@ MonoBehaviour:
   NodeID: 104
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
-          type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -8205,7 +8276,18 @@ MonoBehaviour:
   NodeID: 103
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnChild2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -8263,16 +8345,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8332,16 +8414,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8362,7 +8444,18 @@ MonoBehaviour:
   NodeID: 97
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 875048212}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -8382,16 +8475,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8470,16 +8563,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8558,16 +8651,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8646,16 +8739,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8715,16 +8808,26 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
-          type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+      - m_Target: {fileID: 2088199549}
+        m_MethodName: React
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8746,16 +8849,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8853,16 +8956,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -8884,16 +8987,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Player
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -9175,7 +9278,18 @@ MonoBehaviour:
   NodeID: 65
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 875048212}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -9252,16 +9366,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -9402,6 +9516,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnChild2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -9451,7 +9576,18 @@ MonoBehaviour:
   NodeID: 53
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -9628,14 +9764,25 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZack1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 875048212}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9677,7 +9824,18 @@ MonoBehaviour:
   NodeID: 158
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Player
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -9766,16 +9924,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -9928,16 +10086,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10009,16 +10167,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10040,16 +10198,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10090,16 +10248,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10140,16 +10298,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10209,16 +10367,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10240,16 +10398,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10308,7 +10466,18 @@ MonoBehaviour:
   NodeID: 131
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZack1
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -10328,9 +10497,8 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
-          type: 3}
-        m_MethodName: SwitchToAdult
+      - m_Target: {fileID: 1857741091}
+        m_MethodName: React
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10358,7 +10526,18 @@ MonoBehaviour:
   NodeID: 129
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 875048212}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -10397,16 +10576,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnPlayer
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10523,16 +10702,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToPlayer
-        m_Mode: 1
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnZack1
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10554,16 +10733,16 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToChild
-        m_Mode: 3
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: FocusOnChild2
           m_BoolArgument: 0
         m_CallState: 2
   TMPFont: {fileID: 0}
@@ -10584,7 +10763,18 @@ MonoBehaviour:
   NodeID: 119
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2088199549}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -10603,7 +10793,18 @@ MonoBehaviour:
   NodeID: 118
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZack1
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -10623,10 +10824,10 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+      - m_Target: {fileID: 640858596782243511, guid: d78899d67ceff4f45aae33b7692a7bd3,
           type: 3}
-        m_MethodName: SwitchToAdult
-        m_Mode: 1
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10653,7 +10854,18 @@ MonoBehaviour:
   NodeID: 116
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -11522,6 +11734,7 @@ Transform:
   m_LocalPosition: {x: 587.47, y: -0.235, z: 719.25}
   m_LocalScale: {x: 0.78586, y: 0.78586, z: 0.78586}
   m_Children:
+  - {fileID: 1857741092}
   - {fileID: 718272300}
   - {fileID: 1058540930}
   - {fileID: 875048211}
@@ -11529,6 +11742,7 @@ Transform:
   - {fileID: 5006512736345743490}
   - {fileID: 1740257286}
   - {fileID: 2144341918}
+  - {fileID: 2088199548}
   m_Father: {fileID: 1871095083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11560,7 +11774,7 @@ Transform:
   m_LocalScale: {x: 1.2724912, y: 1.2724913, z: 1.2724912}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 266.723, z: 0}
 --- !u!1001 &522993769
 PrefabInstance:
@@ -11770,6 +11984,12 @@ Transform:
   m_Father: {fileID: 1012932921}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 81.408005, z: 0}
+--- !u!1 &534960988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 934b9b5503f5644ab82c04dfb58809ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 253781306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &539673119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11815,6 +12035,12 @@ Transform:
   m_Father: {fileID: 3035190537529486698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 13.612, y: 169.108, z: 2.593}
+--- !u!195 &545113304 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 7436810960248492570, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+    type: 3}
+  m_PrefabInstance: {fileID: 1147687144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &546161830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13496,7 +13722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: -0.0772904, y: 0.3278222, z: -2.630937}
+  m_FollowOffset: {x: -0.33106712, y: -0.0066919327, z: 1.3243827}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -13523,10 +13749,10 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0.5
   m_VerticalDamping: 0.5
-  m_ScreenX: 0.43020815
-  m_ScreenY: 0.4444444
-  m_DeadZoneWidth: 0.5
-  m_DeadZoneHeight: 0.5
+  m_ScreenX: 0.6118487
+  m_ScreenY: 0.42621517
+  m_DeadZoneWidth: 0.20234376
+  m_DeadZoneHeight: 0.3
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
@@ -13998,7 +14224,7 @@ Transform:
   m_LocalScale: {x: 0.6974525, y: 0.86175543, z: 0.6974525}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &718272301
 MonoBehaviour:
@@ -15059,7 +15285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796717997}
   m_LocalRotation: {x: 0.011783938, y: 0.9810958, z: -0.124156445, w: 0.1479779}
-  m_LocalPosition: {x: 42.384155, y: -1.8965247, z: -101.91504}
+  m_LocalPosition: {x: 41.34, y: -1, z: -98.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 50802140}
@@ -15847,7 +16073,7 @@ Transform:
   m_LocalScale: {x: 0.6974525, y: 0.86175543, z: 0.6974525}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &875048212
 MonoBehaviour:
@@ -15863,6 +16089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 18697559}
+  - {fileID: 2008577854}
+  - {fileID: 340916112}
 --- !u!1 &879461016
 GameObject:
   m_ObjectHideFlags: 0
@@ -16236,6 +16464,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 892496733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &901491162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0f5faf6729aae4db3d6b31dd365ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  agent: {fileID: 545113304}
+  targetLocation: {fileID: 1857741090}
+  speed: 3
 --- !u!1 &911008978
 GameObject:
   m_ObjectHideFlags: 0
@@ -16332,7 +16576,7 @@ MonoBehaviour:
     m_VirtualCamera: {fileID: 2002089053}
     m_ActivateAfter: 0
     m_MinDuration: 0
-  - m_FullHash: -110230735
+  - m_FullHash: 1882857774
     m_VirtualCamera: {fileID: 1929019025}
     m_ActivateAfter: 0
     m_MinDuration: 0
@@ -16352,6 +16596,10 @@ MonoBehaviour:
     m_VirtualCamera: {fileID: 131656435}
     m_ActivateAfter: 0
     m_MinDuration: 0
+  - m_FullHash: 707688813
+    m_VirtualCamera: {fileID: 1929019025}
+    m_ActivateAfter: 0
+    m_MinDuration: 0
   m_DefaultBlend:
     m_Style: 0
     m_Time: 0.5
@@ -16369,7 +16617,7 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: -1115556502
     m_ParentHash: 756556552
-  - m_Hash: -110230735
+  - m_Hash: 1882857774
     m_ParentHash: 756556552
   - m_Hash: 746805789
     m_ParentHash: 756556552
@@ -16380,6 +16628,8 @@ MonoBehaviour:
   - m_Hash: 1337318828
     m_ParentHash: 756556552
   - m_Hash: -978610277
+    m_ParentHash: 756556552
+  - m_Hash: 707688813
     m_ParentHash: 756556552
 --- !u!4 &911008982
 Transform:
@@ -16735,7 +16985,7 @@ Transform:
   - {fileID: 2090118427}
   - {fileID: 384782189}
   m_Father: {fileID: 6460383677138611192}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &980916260
 MonoBehaviour:
@@ -18636,112 +18886,112 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 170
-  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":-64.5,"yPos":481},"ID":56,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[55,148,55,148],"SpeechUID":116},{"EditorInfo":{"isRoot":false,"xPos":476.5,"yPos":376},"ID":57,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[55,55],"SpeechUID":147},{"EditorInfo":{"isRoot":false,"xPos":-327.5,"yPos":385},"ID":58,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[55,55],"SpeechUID":59},{"EditorInfo":{"isRoot":false,"xPos":-1374.5,"yPos":368},"ID":62,"TMPFontGUID":null,"Text":"Give
-    Money","parentUIDs":[61,151,61,151],"SpeechUID":63},{"EditorInfo":{"isRoot":false,"xPos":-1021.5,"yPos":497},"ID":78,"TMPFontGUID":null,"Text":"Ask
-    a question","parentUIDs":[61,61],"SpeechUID":79},{"EditorInfo":{"isRoot":false,"xPos":-1191.5,"yPos":720},"ID":81,"TMPFontGUID":null,"Text":"Give
-    money","parentUIDs":[80,80],"SpeechUID":63},{"EditorInfo":{"isRoot":false,"xPos":-1004.5,"yPos":856},"ID":82,"TMPFontGUID":null,"Text":"Continue
-    asking","parentUIDs":[80,80],"SpeechUID":83},{"EditorInfo":{"isRoot":false,"xPos":-535.5,"yPos":1292},"ID":88,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[87,123,87,123],"SpeechUID":89},{"EditorInfo":{"isRoot":false,"xPos":-524.5,"yPos":1631},"ID":91,"TMPFontGUID":null,"Text":"Ask
-    for more information","parentUIDs":[89,89],"SpeechUID":92},{"EditorInfo":{"isRoot":false,"xPos":-542.5,"yPos":2045},"ID":94,"TMPFontGUID":null,"Text":"Comfort
-    him","parentUIDs":[93,93],"SpeechUID":102},{"EditorInfo":{"isRoot":false,"xPos":-775.5,"yPos":1937},"ID":95,"TMPFontGUID":null,"Text":"Ask
-    more questions","parentUIDs":[93,93],"SpeechUID":96},{"EditorInfo":{"isRoot":false,"xPos":-59.5,"yPos":1536},"ID":124,"TMPFontGUID":null,"Text":"Ask
-    why.","parentUIDs":[123,123],"SpeechUID":125},{"EditorInfo":{"isRoot":false,"xPos":315.5,"yPos":1404},"ID":126,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[125,123,123,125],"SpeechUID":127},{"EditorInfo":{"isRoot":false,"xPos":872.5,"yPos":1913},"ID":132,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[131,131],"SpeechUID":161},{"EditorInfo":{"isRoot":false,"xPos":598.5,"yPos":1787},"ID":133,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[131,131],"SpeechUID":134},{"EditorInfo":{"isRoot":false,"xPos":-167.5,"yPos":2048},"ID":138,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[137,137],"SpeechUID":139},{"EditorInfo":{"isRoot":false,"xPos":85.5,"yPos":1923},"ID":142,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[137,137],"SpeechUID":143},{"EditorInfo":{"isRoot":false,"xPos":483.5,"yPos":737},"ID":149,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[148,148],"SpeechUID":150},{"EditorInfo":{"isRoot":false,"xPos":1313.5,"yPos":958},"ID":152,"TMPFontGUID":null,"Text":"Scare
-    him","parentUIDs":[151,151],"SpeechUID":153}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":-39.5,"yPos":22},"ID":0,"TMPFontGUID":null,"Text":"*A
-    child holstering a firearm runs in front of the Peacekeepers patrolling*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-51.5,"yPos":134},"ID":53,"TMPFontGUID":null,"Text":"*You
-    and Zack stop dead in your tracks*","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-59.5,"yPos":248},"ID":54,"TMPFontGUID":null,"Text":"HEY!
-    What are you doing over there?! ","parentUIDs":[53,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":55,"TimeUntilAdvance":0,"Volume":0.101},{"EditorInfo":{"isRoot":false,"xPos":-62.5,"yPos":363},"ID":55,"TMPFontGUID":null,"Text":"Please
-    help me, my name is Lisanga and I need money for food.","parentUIDs":[54,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[56,57,58],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-574.5,"yPos":361},"ID":59,"TMPFontGUID":null,"Text":"*You
-    walk towards Lisanga*","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":60,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-808.5,"yPos":362},"ID":60,"TMPFontGUID":null,"Text":"How
-    much do you need?","parentUIDs":[59,59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":61,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1052.5,"yPos":364},"ID":61,"TMPFontGUID":null,"Text":"As
-    much as you can give me!","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[62,78],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1424.5,"yPos":486},"ID":63,"TMPFontGUID":null,"Text":"*You
-    dig into your pocket and give Lisanga the spare change you have*","parentUIDs":[62,81,62,81],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1423.5,"yPos":609},"ID":64,"TMPFontGUID":null,"Text":"Thank
-    you!","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":65,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1421.5,"yPos":733},"ID":65,"TMPFontGUID":null,"Text":"*Lisanga
-    leaves the area. Zack becomes agitated*","parentUIDs":[64,64],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":66,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1421.5,"yPos":850},"ID":66,"TMPFontGUID":null,"Text":"What
-    did you just do?","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":67,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1422.5,"yPos":968},"ID":67,"TMPFontGUID":null,"Text":"I
-    just gave him my pocket change.","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":68,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1419.5,"yPos":1082},"ID":68,"TMPFontGUID":null,"Text":"That
+  json: '{"Options":[{"EditorInfo":{"isRoot":false,"xPos":103.5,"yPos":-49},"ID":56,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[55,148,55,148],"SpeechUID":116},{"EditorInfo":{"isRoot":false,"xPos":644.5,"yPos":-154},"ID":57,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[55,55],"SpeechUID":147},{"EditorInfo":{"isRoot":false,"xPos":-159.5,"yPos":-145},"ID":58,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[55,55],"SpeechUID":59},{"EditorInfo":{"isRoot":false,"xPos":-1206.5,"yPos":-162},"ID":62,"TMPFontGUID":null,"Text":"Give
+    Money","parentUIDs":[61,151,61,151],"SpeechUID":63},{"EditorInfo":{"isRoot":false,"xPos":-853.5,"yPos":-33},"ID":78,"TMPFontGUID":null,"Text":"Ask
+    a question","parentUIDs":[61,61],"SpeechUID":79},{"EditorInfo":{"isRoot":false,"xPos":-1023.5,"yPos":190},"ID":81,"TMPFontGUID":null,"Text":"Give
+    money","parentUIDs":[80,80],"SpeechUID":63},{"EditorInfo":{"isRoot":false,"xPos":-836.5,"yPos":326},"ID":82,"TMPFontGUID":null,"Text":"Continue
+    asking","parentUIDs":[80,80],"SpeechUID":83},{"EditorInfo":{"isRoot":false,"xPos":-367.5,"yPos":762},"ID":88,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[87,123,87,123],"SpeechUID":89},{"EditorInfo":{"isRoot":false,"xPos":-356.5,"yPos":1101},"ID":91,"TMPFontGUID":null,"Text":"Ask
+    for more information","parentUIDs":[89,89],"SpeechUID":92},{"EditorInfo":{"isRoot":false,"xPos":-374.5,"yPos":1515},"ID":94,"TMPFontGUID":null,"Text":"Comfort
+    him","parentUIDs":[93,93],"SpeechUID":102},{"EditorInfo":{"isRoot":false,"xPos":-607.5,"yPos":1407},"ID":95,"TMPFontGUID":null,"Text":"Ask
+    more questions","parentUIDs":[93,93],"SpeechUID":96},{"EditorInfo":{"isRoot":false,"xPos":108.5,"yPos":1006},"ID":124,"TMPFontGUID":null,"Text":"Ask
+    why.","parentUIDs":[123,123],"SpeechUID":125},{"EditorInfo":{"isRoot":false,"xPos":483.5,"yPos":874},"ID":126,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[125,123,123,125],"SpeechUID":127},{"EditorInfo":{"isRoot":false,"xPos":1040.5,"yPos":1383},"ID":132,"TMPFontGUID":null,"Text":"Argue","parentUIDs":[131,131],"SpeechUID":161},{"EditorInfo":{"isRoot":false,"xPos":766.5,"yPos":1257},"ID":133,"TMPFontGUID":null,"Text":"Apologize","parentUIDs":[131,131],"SpeechUID":134},{"EditorInfo":{"isRoot":false,"xPos":0.5,"yPos":1518},"ID":138,"TMPFontGUID":null,"Text":"Agree","parentUIDs":[137,137],"SpeechUID":139},{"EditorInfo":{"isRoot":false,"xPos":253.5,"yPos":1393},"ID":142,"TMPFontGUID":null,"Text":"Disagree","parentUIDs":[137,137],"SpeechUID":143},{"EditorInfo":{"isRoot":false,"xPos":651.5,"yPos":207},"ID":149,"TMPFontGUID":null,"Text":"Ignore","parentUIDs":[148,148],"SpeechUID":150},{"EditorInfo":{"isRoot":false,"xPos":1481.5,"yPos":428},"ID":152,"TMPFontGUID":null,"Text":"Scare
+    him","parentUIDs":[151,151],"SpeechUID":153}],"SpeechNodes":[{"EditorInfo":{"isRoot":true,"xPos":128.5,"yPos":-510},"ID":0,"TMPFontGUID":null,"Text":"*A
+    child holstering a firearm runs in front of the Peacekeepers patrolling*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":53,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":116.5,"yPos":-398},"ID":53,"TMPFontGUID":null,"Text":"*You
+    and Zack stop dead in your tracks*","parentUIDs":[0,0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":54,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":108.5,"yPos":-283},"ID":54,"TMPFontGUID":null,"Text":"HEY!
+    What are you doing over there?! ","parentUIDs":[53,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":55,"TimeUntilAdvance":0,"Volume":0.101},{"EditorInfo":{"isRoot":false,"xPos":105.5,"yPos":-168},"ID":55,"TMPFontGUID":null,"Text":"Please
+    help me, my name is Lisanga and I need money for food.","parentUIDs":[54,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[56,57,58],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-406.5,"yPos":-170},"ID":59,"TMPFontGUID":null,"Text":"*You
+    walk towards Lisanga*","parentUIDs":[58,58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":60,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-640.5,"yPos":-168},"ID":60,"TMPFontGUID":null,"Text":"How
+    much do you need?","parentUIDs":[59,59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":61,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-884.5,"yPos":-166},"ID":61,"TMPFontGUID":null,"Text":"As
+    much as you can give me!","parentUIDs":[60,60],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[62,78],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1255.5,"yPos":-44},"ID":63,"TMPFontGUID":null,"Text":"*You
+    dig into your pocket and give Lisanga the spare change you have*","parentUIDs":[62,81,62,81],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":64,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1255.5,"yPos":79},"ID":64,"TMPFontGUID":null,"Text":"Thank
+    you!","parentUIDs":[63,63],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":65,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1253.5,"yPos":201},"ID":65,"TMPFontGUID":null,"Text":"*Lisanga
+    leaves the area. Zack becomes agitated*","parentUIDs":[64,64],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":66,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1253.5,"yPos":320},"ID":66,"TMPFontGUID":null,"Text":"What
+    did you just do?","parentUIDs":[65,65],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":67,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1253.5,"yPos":438},"ID":67,"TMPFontGUID":null,"Text":"I
+    just gave him my pocket change.","parentUIDs":[66,66],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":68,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1250.5,"yPos":546},"ID":68,"TMPFontGUID":null,"Text":"That
     child was carrying a weapon! They also jumped in front of us and begged for money.
-    Don''t you find that to be sketchy?","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1415.5,"yPos":1199},"ID":69,"TMPFontGUID":null,"Text":"That
-    does sound sketchy.","parentUIDs":[68,68],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1417.5,"yPos":1322},"ID":70,"TMPFontGUID":null,"Text":"*Zack
-    begins to panic and kicks the ground*","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1419.5,"yPos":1449},"ID":71,"TMPFontGUID":null,"Text":"I
-    can''t believe what you just did.. We failed our tasks as Peace Keepers.","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":72,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1415.5,"yPos":1561},"ID":72,"TMPFontGUID":null,"Text":"We
+    Don''t you find that to be sketchy?","parentUIDs":[67,67],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":69,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1247.5,"yPos":669},"ID":69,"TMPFontGUID":null,"Text":"That
+    does sound sketchy.","parentUIDs":[68,68],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":70,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1249.5,"yPos":793},"ID":70,"TMPFontGUID":null,"Text":"*Zack
+    begins to panic and kicks the ground*","parentUIDs":[69,69],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":71,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1251.5,"yPos":919},"ID":71,"TMPFontGUID":null,"Text":"I
+    can''t believe what you just did.. We failed our tasks as Peace Keepers.","parentUIDs":[70,70],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":72,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1247.5,"yPos":1031},"ID":72,"TMPFontGUID":null,"Text":"We
     don''t know why he was out here late at night and carrying a firearm. We didn''t
-    question him at all.","parentUIDs":[71,71],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1414.5,"yPos":1690},"ID":73,"TMPFontGUID":null,"Text":"We
-    need to be careful next time!","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-967.5,"yPos":577},"ID":79,"TMPFontGUID":null,"Text":"Are
-    you staying with someone?","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-934.5,"yPos":714},"ID":80,"TMPFontGUID":null,"Text":"N-n-no,
-    Ma''am.","parentUIDs":[79,79],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[81,82],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1007.5,"yPos":946},"ID":83,"TMPFontGUID":null,"Text":"So
-    you''re living on your own?","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1007.5,"yPos":1075},"ID":84,"TMPFontGUID":null,"Text":"*The
-    child begins to sob*","parentUIDs":[83,83],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1010.5,"yPos":1191},"ID":85,"TMPFontGUID":null,"Text":"I
-    ran away from bad people, they want me to hurt others.","parentUIDs":[84,84],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":86,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1013.5,"yPos":1322},"ID":86,"TMPFontGUID":null,"Text":"*Zack
-    turns to you*","parentUIDs":[85,85],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":87,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1007.5,"yPos":1453},"ID":87,"TMPFontGUID":null,"Text":"Instead
+    question him at all.","parentUIDs":[71,71],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":73,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-1246.5,"yPos":1159},"ID":73,"TMPFontGUID":null,"Text":"We
+    need to be careful next time!","parentUIDs":[72,72],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-799.5,"yPos":47},"ID":79,"TMPFontGUID":null,"Text":"Are
+    you staying with someone?","parentUIDs":[78,78],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":80,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-766.5,"yPos":184},"ID":80,"TMPFontGUID":null,"Text":"N-n-no,
+    Ma''am.","parentUIDs":[79,79],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[81,82],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-839.5,"yPos":416},"ID":83,"TMPFontGUID":null,"Text":"So
+    you''re living on your own?","parentUIDs":[82,82],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":84,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-839.5,"yPos":545},"ID":84,"TMPFontGUID":null,"Text":"*The
+    child begins to sob*","parentUIDs":[83,83],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":85,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-842.5,"yPos":660},"ID":85,"TMPFontGUID":null,"Text":"I
+    ran away from bad people, they want me to hurt others.","parentUIDs":[84,84],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":86,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-845.5,"yPos":792},"ID":86,"TMPFontGUID":null,"Text":"*Zack
+    turns to you*","parentUIDs":[85,85],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":87,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-839.5,"yPos":922},"ID":87,"TMPFontGUID":null,"Text":"Instead
     of giving them money, we should gather more information from them and help them
-    in case they are in danger.","parentUIDs":[86,86],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[88],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-538.5,"yPos":1456},"ID":89,"TMPFontGUID":null,"Text":"Yeah
-    you''re right. Let''s do what we can as Peace Keepers and help them out.","parentUIDs":[88,88],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[91],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-528.5,"yPos":1743},"ID":92,"TMPFontGUID":null,"Text":"Are
-    you able to tell us the group you ran away from Lisanga.","parentUIDs":[91,91],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":93,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-538.5,"yPos":1925},"ID":93,"TMPFontGUID":null,"Text":"I-I
-    can''t, I''ll get in trouble and they''ll hurt me!","parentUIDs":[92,92],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[94,95],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-998.5,"yPos":1928},"ID":96,"TMPFontGUID":null,"Text":"Who''s
-    going to hurt you Lisanga ? We can''t help you if you don''t tell us.","parentUIDs":[95,95],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":97,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-998.5,"yPos":2056},"ID":97,"TMPFontGUID":null,"Text":"*Lisanga
-    sobs more and runs away*","parentUIDs":[96,96],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":98,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-997.5,"yPos":2183},"ID":98,"TMPFontGUID":null,"Text":"That
+    in case they are in danger.","parentUIDs":[86,86],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[88],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-370.5,"yPos":926},"ID":89,"TMPFontGUID":null,"Text":"Yeah
+    you''re right. Let''s do what we can as Peace Keepers and help them out.","parentUIDs":[88,88],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[91],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-360.5,"yPos":1212},"ID":92,"TMPFontGUID":null,"Text":"Are
+    you able to tell us the group you ran away from Lisanga.","parentUIDs":[91,91],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":93,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-370.5,"yPos":1394},"ID":93,"TMPFontGUID":null,"Text":"I-I
+    can''t, I''ll get in trouble and they''ll hurt me!","parentUIDs":[92,92],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[94,95],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-830.5,"yPos":1398},"ID":96,"TMPFontGUID":null,"Text":"Who''s
+    going to hurt you Lisanga ? We can''t help you if you don''t tell us.","parentUIDs":[95,95],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":97,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-830.5,"yPos":1526},"ID":97,"TMPFontGUID":null,"Text":"*Lisanga
+    sobs more and runs away*","parentUIDs":[96,96],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":98,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-829.5,"yPos":1653},"ID":98,"TMPFontGUID":null,"Text":"That
     was unexpected. We should''ve handled the situation better to gather information
-    from him and help them.","parentUIDs":[97,97],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-542.5,"yPos":2139},"ID":102,"TMPFontGUID":null,"Text":"It''s
-    okay, you''re not in trouble. We''re here to help. No one is going to hurt you.","parentUIDs":[94,94],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":103,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-543.5,"yPos":2251},"ID":103,"TMPFontGUID":null,"Text":"*Lisanga
-    continues to sob*","parentUIDs":[102,102],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":104,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-542.5,"yPos":2365},"ID":104,"TMPFontGUID":null,"Text":"I''m
-    only out here because I have nowhere to go.","parentUIDs":[103,103],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":105,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-543.5,"yPos":2480},"ID":105,"TMPFontGUID":null,"Text":"If
-    I go back empty handed, he will get mad at me!","parentUIDs":[104,104],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":106,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-542.5,"yPos":2612},"ID":106,"TMPFontGUID":null,"Text":"Let
-    us help you. The UC police can help you and find you a safe place to stay.","parentUIDs":[105,105],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":107,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-538.5,"yPos":2735},"ID":107,"TMPFontGUID":null,"Text":"*Lisanga
-    clams down*","parentUIDs":[106,106],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":108,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-536.5,"yPos":2856},"ID":108,"TMPFontGUID":null,"Text":"I...I
-    won''t be in trouble right?","parentUIDs":[107,107],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":109,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-537.5,"yPos":2982},"ID":109,"TMPFontGUID":null,"Text":"You
+    from him and help them.","parentUIDs":[97,97],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-374.5,"yPos":1609},"ID":102,"TMPFontGUID":null,"Text":"It''s
+    okay, you''re not in trouble. We''re here to help. No one is going to hurt you.","parentUIDs":[94,94],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":103,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-375.5,"yPos":1721},"ID":103,"TMPFontGUID":null,"Text":"*Lisanga
+    continues to sob*","parentUIDs":[102,102],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":104,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-374.5,"yPos":1834},"ID":104,"TMPFontGUID":null,"Text":"I''m
+    only out here because I have nowhere to go.","parentUIDs":[103,103],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":105,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-375.5,"yPos":1950},"ID":105,"TMPFontGUID":null,"Text":"If
+    I go back empty handed, he will get mad at me!","parentUIDs":[104,104],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":106,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-374.5,"yPos":2082},"ID":106,"TMPFontGUID":null,"Text":"Let
+    us help you. The UC police can help you and find you a safe place to stay.","parentUIDs":[105,105],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":107,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-370.5,"yPos":2205},"ID":107,"TMPFontGUID":null,"Text":"*Lisanga
+    clams down*","parentUIDs":[106,106],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":108,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-368.5,"yPos":2326},"ID":108,"TMPFontGUID":null,"Text":"I...I
+    won''t be in trouble right?","parentUIDs":[107,107],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":109,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-369.5,"yPos":2452},"ID":109,"TMPFontGUID":null,"Text":"You
     will be fine . They will take care of you and make sure your protected. Go home
-    for the night and you will be fine ok?","parentUIDs":[108,108],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":110,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-535.5,"yPos":3109},"ID":110,"TMPFontGUID":null,"Text":"*Lisanga
-    takes a deep breath of relief*","parentUIDs":[109,109],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":111,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-537.5,"yPos":3223},"ID":111,"TMPFontGUID":null,"Text":"Ok...Thank
-    you.","parentUIDs":[110,110],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":112,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-537.5,"yPos":3337},"ID":112,"TMPFontGUID":null,"Text":"*Zack
-    approaches Lisanga and walks him to the parked UN vehicle*","parentUIDs":[111,111],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":113,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-532.5,"yPos":3456},"ID":113,"TMPFontGUID":null,"Text":"Good
-    job! Let''s bring Lisanga back to headquarters and help him find a place to stay.","parentUIDs":[112,112],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-59.5,"yPos":559},"ID":116,"TMPFontGUID":null,"Text":"That''s
-    not going to happen.","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":117,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-62.5,"yPos":684},"ID":117,"TMPFontGUID":null,"Text":"*Both
-    you and Zack walk towards Lisanga*","parentUIDs":[116,116],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":118,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-60.5,"yPos":805},"ID":118,"TMPFontGUID":null,"Text":"What''s
-    wrong? Are you okay?","parentUIDs":[117,117],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":119,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-56.5,"yPos":922},"ID":119,"TMPFontGUID":null,"Text":"*As
-    Zack approaches you, Lisanga drops their firearm and starts to sob*","parentUIDs":[118,118],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":120,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-59.5,"yPos":1039},"ID":120,"TMPFontGUID":null,"Text":"I
-    need help, I ran away from bad people. They were forcing me to hurt others.","parentUIDs":[119,119],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":121,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-57.5,"yPos":1160},"ID":121,"TMPFontGUID":null,"Text":"It''s
-    alright Lisanga. stay there, we''ll come to you.","parentUIDs":[120,120],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":122,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-53.5,"yPos":1270},"ID":122,"TMPFontGUID":null,"Text":"*You
-    and Zack look at each other*","parentUIDs":[121,121],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":123,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-57.5,"yPos":1389},"ID":123,"TMPFontGUID":null,"Text":"This
-    child is clearly a child soldier and needs help.","parentUIDs":[122,122],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[88,124,126],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":310.5,"yPos":1523},"ID":125,"TMPFontGUID":null,"Text":"Think
+    for the night and you will be fine ok?","parentUIDs":[108,108],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":110,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-367.5,"yPos":2579},"ID":110,"TMPFontGUID":null,"Text":"*Lisanga
+    takes a deep breath of relief*","parentUIDs":[109,109],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":111,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-369.5,"yPos":2693},"ID":111,"TMPFontGUID":null,"Text":"Ok...Thank
+    you.","parentUIDs":[110,110],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":112,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-369.5,"yPos":2807},"ID":112,"TMPFontGUID":null,"Text":"*Zack
+    approaches Lisanga and walks him to the parked UN vehicle*","parentUIDs":[111,111],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":113,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-364.5,"yPos":2926},"ID":113,"TMPFontGUID":null,"Text":"Good
+    job! Let''s bring Lisanga back to headquarters and help him find a place to stay.","parentUIDs":[112,112],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":108.5,"yPos":28},"ID":116,"TMPFontGUID":null,"Text":"That''s
+    not going to happen.","parentUIDs":[56,56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":117,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":105.5,"yPos":153},"ID":117,"TMPFontGUID":null,"Text":"*Both
+    you and Zack walk towards Lisanga*","parentUIDs":[116,116],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":118,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":107.5,"yPos":274},"ID":118,"TMPFontGUID":null,"Text":"What''s
+    wrong? Are you okay?","parentUIDs":[117,117],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":119,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":111.5,"yPos":392},"ID":119,"TMPFontGUID":null,"Text":"*As
+    Zack approaches you, Lisanga drops their firearm and starts to sob*","parentUIDs":[118,118],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":120,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":108.5,"yPos":506},"ID":120,"TMPFontGUID":null,"Text":"I
+    need help, I ran away from bad people. They were forcing me to hurt others.","parentUIDs":[119,119],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":121,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":106.5,"yPos":629},"ID":121,"TMPFontGUID":null,"Text":"It''s
+    alright Lisanga. stay there, we''ll come to you.","parentUIDs":[120,120],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":122,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":114.5,"yPos":739},"ID":122,"TMPFontGUID":null,"Text":"*You
+    and Zack look at each other*","parentUIDs":[121,121],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":123,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":110.5,"yPos":859},"ID":123,"TMPFontGUID":null,"Text":"This
+    child is clearly a child soldier and needs help.","parentUIDs":[122,122],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[88,124,126],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":478.5,"yPos":993},"ID":125,"TMPFontGUID":null,"Text":"Think
     about it. A random child jumping in front of us during our patrol and armed with
-    a firearm. Those are indications that we need to intervene!","parentUIDs":[124,124],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[126],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":588.5,"yPos":1392},"ID":127,"TMPFontGUID":null,"Text":"
+    a firearm. Those are indications that we need to intervene!","parentUIDs":[124,124],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[126],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":756.5,"yPos":862},"ID":127,"TMPFontGUID":null,"Text":"
     I don''t have time for this. He is just a random kid begging for money. He is
-    wasting our time. I''m going to get rid of him.","parentUIDs":[126,126],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":128,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":592.5,"yPos":1514},"ID":128,"TMPFontGUID":null,"Text":"Hey
+    wasting our time. I''m going to get rid of him.","parentUIDs":[126,126],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":128,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":768.5,"yPos":990},"ID":128,"TMPFontGUID":null,"Text":"Hey
     kid! Get out of the way! A lot of dangerous things can happen at night! Kids
-    are known to go missing!","parentUIDs":[127,127],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":129,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":594.5,"yPos":1655},"ID":129,"TMPFontGUID":null,"Text":"*Lisanga
-    retraces his steps and runs away*","parentUIDs":[128,128],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":130,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":892.5,"yPos":1618},"ID":130,"TMPFontGUID":null,"Text":"*Zack
-    steps in front of you*","parentUIDs":[129,160,129,160],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":131,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":870.5,"yPos":1773},"ID":131,"TMPFontGUID":null,"Text":"Was
-    that necessary?","parentUIDs":[130,130],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[132,133],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":366.5,"yPos":1763},"ID":134,"TMPFontGUID":null,"Text":"I''m
-    sorry you had to see that Zack. He was in the way and wasn''t going to back down.","parentUIDs":[133,133],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":135,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":110.5,"yPos":1772},"ID":135,"TMPFontGUID":null,"Text":"You
-    should''ve handled that differently.","parentUIDs":[134,134],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":136,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-130.5,"yPos":1771},"ID":136,"TMPFontGUID":null,"Text":"Remember
-    that we are peace keepers and we need the village people to trust us.","parentUIDs":[135,135],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":137,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-159.5,"yPos":1913},"ID":137,"TMPFontGUID":null,"Text":"The
+    are known to go missing!","parentUIDs":[127,127],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":129,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":770.5,"yPos":1116},"ID":129,"TMPFontGUID":null,"Text":"*Lisanga
+    retraces his steps and runs away*","parentUIDs":[128,128],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":130,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1044.5,"yPos":1123},"ID":130,"TMPFontGUID":null,"Text":"*Zack
+    steps in front of you*","parentUIDs":[129,160,129,160],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":131,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1038.5,"yPos":1242},"ID":131,"TMPFontGUID":null,"Text":"Was
+    that necessary?","parentUIDs":[130,130],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[132,133],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":534.5,"yPos":1233},"ID":134,"TMPFontGUID":null,"Text":"I''m
+    sorry you had to see that Zack. He was in the way and wasn''t going to back down.","parentUIDs":[133,133],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":135,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":278.5,"yPos":1242},"ID":135,"TMPFontGUID":null,"Text":"You
+    should''ve handled that differently.","parentUIDs":[134,134],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":136,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":37.5,"yPos":1240},"ID":136,"TMPFontGUID":null,"Text":"Remember
+    that we are peace keepers and we need the village people to trust us.","parentUIDs":[135,135],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":137,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":8.5,"yPos":1383},"ID":137,"TMPFontGUID":null,"Text":"The
     people won''t trust us if we''re going around scaring the general public. Clean
-    up your act Sophie!","parentUIDs":[136,136],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[138,142],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-173.5,"yPos":2159},"ID":139,"TMPFontGUID":null,"Text":"I
-    understand. It won''t happen again.","parentUIDs":[138,138],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":140,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-172.5,"yPos":2281},"ID":140,"TMPFontGUID":null,"Text":"Good
-    to hear. Don''t let it happen again. Lets finish the night patrol.","parentUIDs":[139,139],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":88.5,"yPos":2009},"ID":143,"TMPFontGUID":null,"Text":"He
-    was holding a firearm. I had to scare him to get my message across.","parentUIDs":[142,142],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":144,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":88.5,"yPos":2124},"ID":144,"TMPFontGUID":null,"Text":"So
-    scaring him works? He could''ve shot us out of fear!","parentUIDs":[143,143],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":145,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":89.5,"yPos":2242},"ID":145,"TMPFontGUID":null,"Text":"
+    up your act Sophie!","parentUIDs":[136,136],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[138,142],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-5.5,"yPos":1629},"ID":139,"TMPFontGUID":null,"Text":"I
+    understand. It won''t happen again.","parentUIDs":[138,138],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":140,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":-4.5,"yPos":1751},"ID":140,"TMPFontGUID":null,"Text":"Good
+    to hear. Don''t let it happen again. Lets finish the night patrol.","parentUIDs":[139,139],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":256.5,"yPos":1479},"ID":143,"TMPFontGUID":null,"Text":"He
+    was holding a firearm. I had to scare him to get my message across.","parentUIDs":[142,142],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":144,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":256.5,"yPos":1594},"ID":144,"TMPFontGUID":null,"Text":"So
+    scaring him works? He could''ve shot us out of fear!","parentUIDs":[143,143],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":145,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":257.5,"yPos":1712},"ID":145,"TMPFontGUID":null,"Text":"
     Rafael will show interest on how you handled the situation when we go back to
-    the camp.","parentUIDs":[144,144],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":478.5,"yPos":490},"ID":147,"TMPFontGUID":null,"Text":"Listen,
-    we need you out of the way. We''re patrolling the area.","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":148,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":480.5,"yPos":612},"ID":148,"TMPFontGUID":null,"Text":"No!
-    I need money for food. I''m on my own!","parentUIDs":[147,147],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[56,149],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":479.5,"yPos":819},"ID":150,"TMPFontGUID":null,"Text":"I
-    can''t help you with that.","parentUIDs":[149,149],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":151,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":476.5,"yPos":942},"ID":151,"TMPFontGUID":null,"Text":"I''m
-    not moving until you give me money!","parentUIDs":[150,150],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[62,152],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1316.5,"yPos":1052},"ID":153,"TMPFontGUID":null,"Text":"I
-    noticed that you''re carrying a gun...","parentUIDs":[152,152],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":154,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1317.5,"yPos":1189},"ID":154,"TMPFontGUID":null,"Text":"Ye...Yeah
-    what about it","parentUIDs":[153,153],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":155,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1312.5,"yPos":1302},"ID":155,"TMPFontGUID":null,"Text":"I''m
-    here to help out the village. Making sure its safe.","parentUIDs":[154,154],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":156,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1312.5,"yPos":1439},"ID":156,"TMPFontGUID":null,"Text":"However,
-    seeing you with a weapon makes this an unsafe environment for everyone.","parentUIDs":[155,155],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":157,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1310.5,"yPos":1564},"ID":157,"TMPFontGUID":null,"Text":"*Lisanga''s
-    facial expression slowly turns into fear*","parentUIDs":[156,156],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":158,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1316.5,"yPos":1680},"ID":158,"TMPFontGUID":null,"Text":"It
-    means that you should come with us for further questioning kid.","parentUIDs":[157,157],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":159,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1309.5,"yPos":1829},"ID":159,"TMPFontGUID":null,"Text":"I''m
-    here to do a night patrol and protect the families in this village.","parentUIDs":[158,158],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":160,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1304.5,"yPos":1942},"ID":160,"TMPFontGUID":null,"Text":"*Lisanga
-    drops his weapon and runs away*","parentUIDs":[159,159],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":130,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":871.5,"yPos":2009},"ID":161,"TMPFontGUID":null,"Text":"I
-    did what was necessary. He was in the way and I got rid of him.","parentUIDs":[132,132],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":162,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":871.5,"yPos":2127},"ID":162,"TMPFontGUID":null,"Text":"We
+    the camp.","parentUIDs":[144,144],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":646.5,"yPos":-40},"ID":147,"TMPFontGUID":null,"Text":"Listen,
+    we need you out of the way. We''re patrolling the area.","parentUIDs":[57,57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":148,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":648.5,"yPos":82},"ID":148,"TMPFontGUID":null,"Text":"No!
+    I need money for food. I''m on my own!","parentUIDs":[147,147],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[56,149],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":647.5,"yPos":289},"ID":150,"TMPFontGUID":null,"Text":"I
+    can''t help you with that.","parentUIDs":[149,149],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":151,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":646.5,"yPos":391},"ID":151,"TMPFontGUID":null,"Text":"I''m
+    not moving until you give me money!","parentUIDs":[150,150],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[62,152],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1484.5,"yPos":522},"ID":153,"TMPFontGUID":null,"Text":"I
+    noticed that you''re carrying a gun...","parentUIDs":[152,152],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":154,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1485.5,"yPos":658},"ID":154,"TMPFontGUID":null,"Text":"Ye...Yeah
+    what about it","parentUIDs":[153,153],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisanga","OptionUIDs":[],"SpeechUID":155,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1480.5,"yPos":771},"ID":155,"TMPFontGUID":null,"Text":"I''m
+    here to help out the village. Making sure its safe.","parentUIDs":[154,154],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":156,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1480.5,"yPos":909},"ID":156,"TMPFontGUID":null,"Text":"However,
+    seeing you with a weapon makes this an unsafe environment for everyone.","parentUIDs":[155,155],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":157,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1478.5,"yPos":1034},"ID":157,"TMPFontGUID":null,"Text":"*Lisanga''s
+    facial expression slowly turns into fear*","parentUIDs":[156,156],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":158,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1484.5,"yPos":1150},"ID":158,"TMPFontGUID":null,"Text":"It
+    means that you should come with us for further questioning kid.","parentUIDs":[157,157],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":159,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1477.5,"yPos":1299},"ID":159,"TMPFontGUID":null,"Text":"I''m
+    here to do a night patrol and protect the families in this village.","parentUIDs":[158,158],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":160,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1472.5,"yPos":1412},"ID":160,"TMPFontGUID":null,"Text":"*Lisanga
+    drops his weapon and runs away*","parentUIDs":[159,159],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":130,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1039.5,"yPos":1479},"ID":161,"TMPFontGUID":null,"Text":"I
+    did what was necessary. He was in the way and I got rid of him.","parentUIDs":[132,132],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":162,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1039.5,"yPos":1597},"ID":162,"TMPFontGUID":null,"Text":"We
     could''ve been here all night if I didn''t scare him. I didn''t want to but what
-    else could I do?","parentUIDs":[161,161],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":163,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":875.5,"yPos":2249},"ID":163,"TMPFontGUID":null,"Text":"Not
-    scare the kid. The village people have enough to fear.","parentUIDs":[162,162],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":164,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":876.5,"yPos":2373},"ID":164,"TMPFontGUID":null,"Text":"Our
+    else could I do?","parentUIDs":[161,161],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":[],"SpeechUID":163,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1043.5,"yPos":1719},"ID":163,"TMPFontGUID":null,"Text":"Not
+    scare the kid. The village people have enough to fear.","parentUIDs":[162,162],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":164,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1044.5,"yPos":1843},"ID":164,"TMPFontGUID":null,"Text":"Our
     job is to investigate the area, help any children in danger and report back about
-    any suspicious activities we encounter.","parentUIDs":[163,163],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":165,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":879.5,"yPos":2494},"ID":165,"TMPFontGUID":null,"Text":"That
-    child needed our help and you decide to scare them off.","parentUIDs":[164,164],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":166,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":882.5,"yPos":2613},"ID":166,"TMPFontGUID":null,"Text":"*Zack
-    shakes his head in disappointment*","parentUIDs":[165,165],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":167,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":879.5,"yPos":2731},"ID":167,"TMPFontGUID":null,"Text":"Lets
+    any suspicious activities we encounter.","parentUIDs":[163,163],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":165,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1047.5,"yPos":1964},"ID":165,"TMPFontGUID":null,"Text":"That
+    child needed our help and you decide to scare them off.","parentUIDs":[164,164],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":166,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1050.5,"yPos":2083},"ID":166,"TMPFontGUID":null,"Text":"*Zack
+    shakes his head in disappointment*","parentUIDs":[165,165],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":[],"SpeechUID":167,"TimeUntilAdvance":0,"Volume":0},{"EditorInfo":{"isRoot":false,"xPos":1047.5,"yPos":2201},"ID":167,"TMPFontGUID":null,"Text":"Lets
     just go back to partoling the village.","parentUIDs":[166,166],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Zack","OptionUIDs":[],"SpeechUID":-1,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 103
   DefaultName: Ignore
@@ -18868,7 +19118,19 @@ MonoBehaviour:
   - {fileID: 421353400}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 640858596782243504, guid: d78899d67ceff4f45aae33b7692a7bd3,
+          type: 3}
+        m_MethodName: SwitchToAdult
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1058540930
 Transform:
   m_ObjectHideFlags: 0
@@ -18882,7 +19144,7 @@ Transform:
   m_Children:
   - {fileID: 421353323}
   m_Father: {fileID: 516781521}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068209259
 GameObject:
@@ -22087,12 +22349,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1179724840}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &1179724843 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 5170301869411653807, guid: cbc86a6873ccd274f894e45f7dc13e63,
-    type: 3}
-  m_PrefabInstance: {fileID: 1179724840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1179724844 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7795780600767379516, guid: cbc86a6873ccd274f894e45f7dc13e63,
@@ -23071,6 +23327,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2892760aaa15d43358ef5822cfd3a7d1,
     type: 3}
   m_PrefabInstance: {fileID: 1247433316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1260454610 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 519628235031720000, guid: e04d5c44e8da0374fbb717e926c723a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 519628234029464540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1260454611 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 519628235031720002, guid: e04d5c44e8da0374fbb717e926c723a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 519628234029464540}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1278126938
 PrefabInstance:
@@ -25642,7 +25910,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342914881}
-  m_LocalRotation: {x: -0.017069282, y: -0.8631915, z: 0.029249351, w: -0.5037396}
+  m_LocalRotation: {x: -0.017069306, y: -0.8631915, z: 0.02924938, w: -0.50373966}
   m_LocalPosition: {x: 10.27301, y: 1.1924753, z: -77.38861}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -26804,6 +27072,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1410394684}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1447368369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a931d1c243b462c46bad5f7d2aae5949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  animator: {fileID: 1260454611}
+  trigger: Sad
 --- !u!1001 &1451921741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27130,6 +27413,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1464826755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1473529995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 307066390}
+  activeState: 0
 --- !u!1 &1479204758
 GameObject:
   m_ObjectHideFlags: 0
@@ -28686,6 +28984,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1631932245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
+  gameObject: {fileID: 980916258}
+  activeState: 0
 --- !u!1001 &1633304792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29676,8 +29989,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740032740}
-  m_LocalRotation: {x: 0.082719244, y: 0.17440838, z: -0.014705109, w: 0.98108256}
-  m_LocalPosition: {x: 40.603027, y: -0.79999995, z: -97.22601}
+  m_LocalRotation: {x: 0.08323519, y: 0.13538925, z: -0.011414987, w: 0.9872241}
+  m_LocalPosition: {x: 40.74115, y: -0.81478107, z: -97.35315}
   m_LocalScale: {x: 0.99980795, y: 1.0152677, z: 0.98197675}
   m_Children:
   - {fileID: 2043529893}
@@ -29713,7 +30026,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!212 &1740257287
 SpriteRenderer:
@@ -30550,7 +30863,7 @@ Transform:
   m_LocalScale: {x: 1.57172, y: 1.5717201, z: 1.5717201}
   m_Children: []
   m_Father: {fileID: 6460383677138611192}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!212 &1836706175
 SpriteRenderer:
@@ -30736,6 +31049,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1843375729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857741090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857741092}
+  - component: {fileID: 1857741091}
+  m_Layer: 0
+  m_Name: Zach Stand Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1857741091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857741090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 901491162}
+--- !u!4 &1857741092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857741090}
+  m_LocalRotation: {x: -0, y: 0.6086795, z: -0, w: 0.7934163}
+  m_LocalPosition: {x: -0.1992151, y: -0.1164468, z: 0.10042305}
+  m_LocalScale: {x: 0.6974524, y: 0.8617555, z: 0.6974524}
+  m_Children: []
+  m_Father: {fileID: 516781521}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 74.98801, z: 0}
 --- !u!1 &1858627966
 GameObject:
   m_ObjectHideFlags: 0
@@ -31250,6 +31608,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1873688340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3009903921992112618, guid: 2f26fcbefb3159e40a41406b7ca1a267,
+    type: 3}
+  m_PrefabInstance: {fileID: 1147687144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1874164527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32080,8 +32444,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 1873688340}
+  m_Follow: {fileID: 1873688340}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 5
@@ -32104,8 +32468,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929019024}
-  m_LocalRotation: {x: 0.065992445, y: 0.5838902, z: -0.04770398, w: 0.80773854}
-  m_LocalPosition: {x: -1.6799927, y: -0.9, z: -0.77001953}
+  m_LocalRotation: {x: 0.017056363, y: 0.3847006, z: -0.0071100905, w: 0.92285645}
+  m_LocalPosition: {x: -0.40802002, y: -1.124, z: -0.5620117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 668470537}
@@ -33147,6 +33511,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2007733533}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2008577854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 307066390}
+  activeState: 0
 --- !u!1001 &2008832654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33757,6 +34136,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2057044948}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2061919445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 534960988}
+  activeState: 0
+--- !u!1 &2088199547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088199548}
+  - component: {fileID: 2088199549}
+  m_Layer: 0
+  m_Name: Drop Gun and Get Sad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2088199548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088199547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.015300341, y: 1.4824525, z: 0.025552347}
+  m_LocalScale: {x: 0.63624567, y: 0.6362456, z: 0.63624567}
+  m_Children: []
+  m_Father: {fileID: 516781521}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088199549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088199547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1447368369}
+  - {fileID: 1473529995}
 --- !u!1 &2090118426
 GameObject:
   m_ObjectHideFlags: 0
@@ -33781,7 +34221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090118426}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.293, y: 0.209, z: 3.343}
+  m_LocalPosition: {x: 0.293, y: 0.209, z: 3.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 980916259}
@@ -34426,7 +34866,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 516781521}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2144341919
 SpriteRenderer:
@@ -34669,6 +35109,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.000000004519933
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.43656483
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67936826
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.47230217
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.3532713
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 71.839005
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 192.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 515512770135630745, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -56.356003
+      objectReference: {fileID: 0}
+    - target: {fileID: 519588517259188763, guid: e04d5c44e8da0374fbb717e926c723a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 519628235031720001, guid: e04d5c44e8da0374fbb717e926c723a6,
         type: 3}
@@ -35383,7 +35878,7 @@ PrefabInstance:
     - target: {fileID: 4777373551320472414, guid: e04d5c44e8da0374fbb717e926c723a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4777373551320472414, guid: e04d5c44e8da0374fbb717e926c723a6,
         type: 3}
@@ -36335,8 +36830,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700867988182632102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 647.82, y: 0.06, z: 732.85}
-  m_LocalScale: {x: 8.948725, y: 1.0155736, z: 35.26234}
+  m_LocalPosition: {x: 646.874, y: 0.06, z: 723.97}
+  m_LocalScale: {x: 18.840618, y: 1.0155735, z: 53.626392}
   m_Children: []
   m_Father: {fileID: 1454386832}
   m_RootOrder: 0
@@ -36560,27 +37055,27 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 734.29
+      value: 735.4354
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.017810203
+      value: -0.017069306
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9627077
+      value: -0.8631915
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0654682
+      value: 0.02924938
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.26189837
+      value: -0.50373966
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
@@ -36605,12 +37100,12 @@ PrefabInstance:
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 655.94
+      value: 615.1459
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.88
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 3035190535831831741, guid: 6d53a1425c5323c458ae3048da081993,
         type: 3}
@@ -36773,6 +37268,7 @@ Transform:
   m_Children:
   - {fileID: 6481827885806661559}
   - {fileID: 8659950409306835313}
+  - {fileID: 9997753}
   - {fileID: 980916259}
   - {fileID: 1836706174}
   m_Father: {fileID: 1871095083}
@@ -37155,7 +37651,18 @@ MonoBehaviour:
   NodeID: 198
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37307,7 +37814,6 @@ GameObject:
   - component: {fileID: 8659950408605052761}
   - component: {fileID: 8659950408605052760}
   - component: {fileID: 8659950408605052759}
-  - component: {fileID: 8659950408605052758}
   - component: {fileID: 8659950408605052756}
   - component: {fileID: 8659950408605052755}
   - component: {fileID: 8659950408605052754}
@@ -37334,6 +37840,7 @@ GameObject:
   - component: {fileID: 8659950408605052731}
   - component: {fileID: 1823525823}
   - component: {fileID: 1823525827}
+  - component: {fileID: 8659950408605051136}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -37412,6 +37919,36 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &8659950408605051136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8659950408605051131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeID: 264
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!114 &8659950408605052672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37446,7 +37983,18 @@ MonoBehaviour:
   NodeID: 195
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37465,7 +38013,18 @@ MonoBehaviour:
   NodeID: 194
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37522,7 +38081,18 @@ MonoBehaviour:
   NodeID: 190
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37541,7 +38111,18 @@ MonoBehaviour:
   NodeID: 189
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37658,7 +38239,18 @@ MonoBehaviour:
   NodeID: 184
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37696,7 +38288,18 @@ MonoBehaviour:
   NodeID: 182
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -37715,7 +38318,18 @@ MonoBehaviour:
   NodeID: 181
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38049,7 +38663,18 @@ MonoBehaviour:
   NodeID: 197
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38068,7 +38693,18 @@ MonoBehaviour:
   NodeID: 285
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38087,7 +38723,18 @@ MonoBehaviour:
   NodeID: 284
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38144,7 +38791,18 @@ MonoBehaviour:
   NodeID: 281
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38163,7 +38821,18 @@ MonoBehaviour:
   NodeID: 280
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9997752}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38201,7 +38870,18 @@ MonoBehaviour:
   NodeID: 278
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38220,7 +38900,18 @@ MonoBehaviour:
   NodeID: 277
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38277,7 +38968,18 @@ MonoBehaviour:
   NodeID: 274
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38315,7 +39017,18 @@ MonoBehaviour:
   NodeID: 272
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38334,7 +39047,18 @@ MonoBehaviour:
   NodeID: 271
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38372,7 +39096,18 @@ MonoBehaviour:
   NodeID: 178
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38448,7 +39183,18 @@ MonoBehaviour:
   NodeID: 174
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38562,7 +39308,18 @@ MonoBehaviour:
   NodeID: 289
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38581,7 +39338,18 @@ MonoBehaviour:
   NodeID: 288
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38638,7 +39406,18 @@ MonoBehaviour:
   NodeID: 253
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38676,7 +39455,18 @@ MonoBehaviour:
   NodeID: 250
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38695,7 +39485,18 @@ MonoBehaviour:
   NodeID: 249
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9997752}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38714,7 +39515,18 @@ MonoBehaviour:
   NodeID: 248
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38847,7 +39659,18 @@ MonoBehaviour:
   NodeID: 243
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38866,7 +39689,18 @@ MonoBehaviour:
   NodeID: 240
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38885,7 +39719,18 @@ MonoBehaviour:
   NodeID: 239
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38904,7 +39749,18 @@ MonoBehaviour:
   NodeID: 270
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -38983,7 +39839,18 @@ MonoBehaviour:
   NodeID: 267
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39002,26 +39869,18 @@ MonoBehaviour:
   NodeID: 266
   Event:
     m_PersistentCalls:
-      m_Calls: []
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &8659950408605052758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8659950408605051131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeID: 264
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39040,7 +39899,18 @@ MonoBehaviour:
   NodeID: 263
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9997752}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39059,7 +39929,18 @@ MonoBehaviour:
   NodeID: 262
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39097,7 +39978,18 @@ MonoBehaviour:
   NodeID: 260
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39135,7 +40027,18 @@ MonoBehaviour:
   NodeID: 258
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39154,7 +40057,18 @@ MonoBehaviour:
   NodeID: 257
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39173,7 +40087,18 @@ MonoBehaviour:
   NodeID: 256
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39325,7 +40250,18 @@ MonoBehaviour:
   NodeID: 213
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39344,7 +40280,18 @@ MonoBehaviour:
   NodeID: 211
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39363,7 +40310,18 @@ MonoBehaviour:
   NodeID: 210
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39458,7 +40416,29 @@ MonoBehaviour:
   NodeID: 205
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9997752}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39515,7 +40495,18 @@ MonoBehaviour:
   NodeID: 237
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39534,7 +40525,18 @@ MonoBehaviour:
   NodeID: 236
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39610,7 +40612,18 @@ MonoBehaviour:
   NodeID: 231
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39727,7 +40740,18 @@ MonoBehaviour:
   NodeID: 226
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39746,7 +40770,18 @@ MonoBehaviour:
   NodeID: 225
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39765,7 +40800,18 @@ MonoBehaviour:
   NodeID: 224
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39784,7 +40830,18 @@ MonoBehaviour:
   NodeID: 223
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39841,7 +40898,18 @@ MonoBehaviour:
   NodeID: 202
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008979}
+        m_MethodName: SwitchToChild
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -39860,7 +40928,18 @@ MonoBehaviour:
   NodeID: 201
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -40159,7 +41238,6 @@ MonoBehaviour:
   - {fileID: 8659950408605052761}
   - {fileID: 8659950408605052760}
   - {fileID: 8659950408605052759}
-  - {fileID: 8659950408605052758}
   - {fileID: 8659950408605052756}
   - {fileID: 8659950408605052755}
   - {fileID: 8659950408605052754}
@@ -40184,9 +41262,21 @@ MonoBehaviour:
   - {fileID: 8659950408605052734}
   - {fileID: 8659950408605052733}
   - {fileID: 8659950408605052731}
+  - {fileID: 8659950408605051136}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911008980}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FocusOnZach2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &8659950409306835313
 Transform:
   m_ObjectHideFlags: 0

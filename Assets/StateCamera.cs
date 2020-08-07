@@ -52,19 +52,19 @@ public class StateCamera : MonoBehaviour
 
     public void SwitchToPlayer()
     {
-        if(m_animator==null)
-            m_animator = GetComponent<Animator>();
+        //if(m_animator==null)
+         //   m_animator = GetComponent<Animator>();
 
-        ResetTriggers();
+       // ResetTriggers();
         m_animator.SetTrigger("FocusOnPlayer");
     }
 
     public void SwitchToChild(int childNum)
     {
-        if (m_animator == null)
-            m_animator = GetComponent<Animator>();
+        //if (m_animator == null)
+        //    m_animator = GetComponent<Animator>();
 
-        ResetTriggers();
+        //ResetTriggers();
         m_animator.SetTrigger("FocusOnChild" + childNum.ToString());
     }
 
@@ -76,7 +76,7 @@ public class StateCamera : MonoBehaviour
         if (m_animator.gameObject.activeSelf)
         {
             ResetTriggers();
-            m_animator.SetTrigger("FocusOnAdult");
+            m_animator.SetTrigger("FocusOnZack1");
         }
     }
 
@@ -113,7 +113,7 @@ public class StateCamera : MonoBehaviour
         {
             m_animator.ResetTrigger("EndConversation");
             m_animator.ResetTrigger("FocusOnPlayer");
-            m_animator.ResetTrigger("FocusOnAdult");
+            m_animator.ResetTrigger("FocusOnZack1");
             m_animator.ResetTrigger("FocusOnCivilian");
             m_animator.ResetTrigger("FocusOnChild1");
             m_animator.ResetTrigger("FocusOnChild2");
