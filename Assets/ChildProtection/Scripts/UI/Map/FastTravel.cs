@@ -7,20 +7,23 @@ public class FastTravel : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] Transform targetDestination;
-
-    [SerializeField] GameObject mapCamera;
     [SerializeField] GameObject FastTravelUI;
     float speed;
 
     private void Awake()
     {
         player = GameObject.FindObjectOfType<PlayerMovement>().gameObject;
-        speed = player.GetComponent<NavMeshAgent>().speed;       
+        speed = player.GetComponent<NavMeshAgent>().speed;
     }
 
     private void Start()
     {
-        mapCamera = GameObject.Find("MapCamera");
+        
+    }
+
+    private void OnMouseDown()
+    {
+        FastTravelUI.SetActive(true);
     }
 
     public void TravelToDestination()
@@ -30,7 +33,7 @@ public class FastTravel : MonoBehaviour
 
         if (player.transform.position == targetDestination.position)
         {
-            mapCamera.SetActive(false);
+            MapCameraController.Instance.gameObject.SetActive(false);
             FastTravelUI.SetActive(false);
             player.SetActive(true);
         }
