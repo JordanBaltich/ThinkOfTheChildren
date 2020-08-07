@@ -22,16 +22,4 @@ public class PointsSystem : MonoBehaviour
     {
         currentPoints -= pointsSpent;
     }
-
-    public void EndTheGame()
-    {
-        if (keyInfos.Count == 3)
-        {
-            if (GameObject.Find("EndGameTrigger") != null)
-            {
-                GameObject endGameObject = GameObject.Find("EndGameTrigger");
-                endGameObject.SetActive(true);
-            }
-        }
-    }
 }

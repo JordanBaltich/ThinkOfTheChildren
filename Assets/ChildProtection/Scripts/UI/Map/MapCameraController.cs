@@ -6,6 +6,8 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class MapCameraController : MonoBehaviour
 {
+    public static MapCameraController Instance { get; private set; }
+
     [SerializeField] float scaleSpeed, maxScale, minScale, mouseDragSpeed, keyPressMoveSpeed;
     RectTransform myRectTransform;
     [SerializeField] Transform playerIconPosition;
@@ -14,6 +16,16 @@ public class MapCameraController : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         OrthoCamera = GetComponentInChildren<Camera>();
     }
 
