@@ -25,7 +25,6 @@ public class SceneAudioInitializer : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayAmbientClip(ambientIndex);
-               // AudioManager.Instance.PlayMusicClip(musicIndex);
             }
         }
         else
@@ -33,7 +32,6 @@ public class SceneAudioInitializer : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.StopAmbient();
-               // AudioManager.Instance.StopMusic();
 
             }
         }
